@@ -1,8 +1,8 @@
 ﻿public interface IDecisionPool {
 
-	void test();
+    Pair<Decision, Decision> getDecisionPair();
 
-	string getText();
+    Decision getDecision();
 
-	int getValue();
+
 }
