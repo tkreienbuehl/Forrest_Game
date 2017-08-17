@@ -5,7 +5,7 @@ public class DecisionPoolFactory {
     }
 
 	public static IDecisionPool getDecisionPool() {
-	    //TODO
+        return new DecisionPool();
 	}
 
 }
