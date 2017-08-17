@@ -7,18 +7,6 @@ public class DecisionPool : IDecisionPool {
     //Area for global Variables
     private static IDictionary Decissions = new Dictionary<int, int>();
 
-    public string getText() {
-        throw new System.NotImplementedException();
-    }
-
-    public int getValue() {
-        throw new System.NotImplementedException();
-    }
-
-    public void test() {
-        throw new System.NotImplementedException();
-    }
-
     private int SelectRandomID()
     {
         //gobal value
@@ -63,5 +51,15 @@ public class DecisionPool : IDecisionPool {
         Random rm = new Random();
         return rm.Next(0, list.Length);
 
+    }
+
+    public Pair<IDecision, IDecision> getDecisionPair()
+    {
+        throw new NotImplementedException();
+    }
+
+    public IDecision getDecision()
+    {
+        throw new NotImplementedException();
     }
 }
