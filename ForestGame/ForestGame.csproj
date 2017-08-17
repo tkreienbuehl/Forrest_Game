@@ -78,12 +78,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MenuManager.cs" />
     <Compile Include="Assets\UnityVS\AnimationManagerPanels.cs" />
     <Compile Include="Assets\UnityVS\ButtonDecision.cs" />
+    <Compile Include="Assets\UnityVS\Database.cs" />
     <Compile Include="Assets\UnityVS\Decision.cs" />
     <Compile Include="Assets\UnityVS\DecisionPool.cs" />
     <Compile Include="Assets\UnityVS\DecisionPoolFactory.cs" />
+    <Compile Include="Assets\UnityVS\IDecision.cs" />
     <Compile Include="Assets\UnityVS\IDecisionPool.cs" />
+    <Compile Include="Assets\UnityVS\IMultipleDecision.cs" />
+    <Compile Include="Assets\UnityVS\Influences.cs" />
+    <Compile Include="Assets\UnityVS\MultipleDecision.cs" />
     <Compile Include="Assets\UnityVS\Pair.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
