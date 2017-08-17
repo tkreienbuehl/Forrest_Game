@@ -5,18 +5,29 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour {
 
-	public void SwitchToGameSceneCampaignConservatives()
+	public void SwitchToGameSceneCampaign()
 	{
+		Debug.Log ("called");
 		SceneManager.LoadScene (1);
 	}
 
-	public void SwitchToGameSceneCampaignDemocrats()
+	public void SwitchToGameSceneCampaignConservatives()
 	{
 		SceneManager.LoadScene (2);
 	}
 
-	public void SwitchToGameSceneCampaignEnvironmentalist()
+	public void SwitchToGameSceneCampaignDemocrats()
 	{
 		SceneManager.LoadScene (3);
+	}
+
+	public void SwitchToGameSceneCampaignEnvironmentalist()
+	{
+		SceneManager.LoadScene (4);
+	}
+		
+	public void QuitGame()
+	{
+		Application.Quit();
 	}
 }
