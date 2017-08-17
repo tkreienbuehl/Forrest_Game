@@ -1,58 +1,35 @@
-﻿public class Decision {
+﻿public class Decision : IDecision {
 
     private int decisionID;
     private string decisionRequest;
-    private byte industrialInfluence;
-    private byte environmentalInfluence;
-    private byte touristicInfluence;
+    Influences influences;
     private short factionID;
 
     public Decision(int decisionID) {
         this.decisionID = decisionID;
     }
 
-    public byte TouristicInfluence {
-        get {
-            return touristicInfluence;
-        }
-
-        set {
-            touristicInfluence = value;
-        }
+    public void setRequestText(string text) {
+        decisionRequest = text;
     }
 
-    public byte EnvironmentalInfluence {
-        get {
-            return environmentalInfluence;
-        }
-
-        set {
-            environmentalInfluence = value;
-        }
-    }
-
-    public byte IndustrialInfluence {
-        get {
-            return industrialInfluence;
-        }
-
-        set {
-            industrialInfluence = value;
-        }
-    }
-
-    public string DecisionRequest {
-        get {
-            return decisionRequest;
-        }
-
-        set {
-            decisionRequest = value;
-        }
+    public void setFactionID(short id) {
+        factionID = id;
     }
 
     public int getDecisionID() {
         return decisionID; 
     }
 
+    public short getFactionID() {
+        return factionID;
+    }
+
+    public Influences getInfluences(int nrOfAnswer = 0) {
+        return influences;
+    }
+
+    public string getRequestText() {
+        return decisionRequest;
+    }
 }

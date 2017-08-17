@@ -1,8 +1,7 @@
 ﻿public interface IDecisionPool {
 
-    Pair<Decision, Decision> getDecisionPair();
+    Pair<IDecision, IDecision> getDecisionPair();
 
-    Decision getDecision();
-
+    IDecision getDecision();
 
 }
