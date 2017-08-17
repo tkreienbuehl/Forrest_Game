@@ -13,32 +13,24 @@ public class AnimationManagerPanels : MonoBehaviour
 	void Start ()
 	{
 	    canvas = GameObject.Find("PanelCanvas");
+	    animator = canvas.GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
     void Update()
     {
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("MultipleDecisionsPanelAnimation"))
-        {
-            ShowPanel();
-        }
-        else
-        {
-            RemovePanel();
-        }
     }
 
-
-    void RemovePanel()
+    public void RemovePanel(string animationType)
     {
         ReverseAnimation();
-        animator.Play("MultipleDecisionsPanelAnimation");
+        animator.Play(animationType, 0, 1f);
     }
 
-    void ShowPanel()
+    public void ShowPanel(string animationType)
     {
         PlayAnimationNormal();
-        animator.Play("MultipleDecisionsPanelAnimation");
+        animator.Play(animationType, 0, 0f);
     }
 
     void PlayAnimationNormal()

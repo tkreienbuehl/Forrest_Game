@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\UnityVS\AnimationManagerPanels.cs" />
+    <Compile Include="Assets\UnityVS\ButtonDecision.cs" />
     <Compile Include="Assets\UnityVS\Decision.cs" />
     <Compile Include="Assets\UnityVS\DecisionPool.cs" />
     <Compile Include="Assets\UnityVS\DecisionPoolFactory.cs" />
