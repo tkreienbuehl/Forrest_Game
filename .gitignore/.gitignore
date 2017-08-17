@@ -3,17 +3,7 @@
 /[Oo]bj/
 /[Bb]uild/
 /[Bb]uilds/
-
-$PROJDIR/Temp/
-$PROJDIR/Library/
-$PROJDIR/Obj/
- 
- *.csproj
- *.unityproj
- *.sln
- *.user
- *.userprefs
- *.DS_store
+/Assets/AssetStoreTools*
 
 # Visual Studio 2015 cache directory
 /.vs/
