@@ -7,6 +7,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     private IDecisionPool decisionPool;
     private float delay;
     private float actualTimeDelay;
+    private DecisionPanelContent content;
 
     public void setSelectedAnswer(byte answerID) {
         //TODO use the results
@@ -21,6 +22,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     // Use this for initialization
     void Start () {
         decisionPool = DecisionPoolFactory.getDecisionPool();
+        content = new DecisionPanelContent();
 	}
 	
 	// Update is called once per frame
@@ -28,7 +30,8 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
         actualTimeDelay += Time.deltaTime;
         if (actualTimeDelay >= delay) {
             //TODO give decision to DecisionPanelClass
-            decisionPool.getDecisionPair();
+            Pair<IDecision, IDecision> pair = decisionPool.getDecisionPair();
+            content.SetDecisionPair(pair.getKey(), pair.getValue());
         }
 	}
 
