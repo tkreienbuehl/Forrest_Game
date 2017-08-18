@@ -17,6 +17,10 @@
         factionID = id;
     }
 
+    public void setInfluences(Influences influences) {
+        this.influences = influences;
+    }
+
     public int getDecisionID() {
         return decisionID; 
     }
