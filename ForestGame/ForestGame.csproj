@@ -101,7 +101,6 @@
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_DemoPlaySound.cs" />
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_OpenOtherScene.cs" />
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo Basic (CSharp)\Scripts\GUIAnimatorFREEDemo.cs" />
-    <Compile Include="Assets\MenuManager.cs" />
     <Compile Include="Assets\UnityVS\AnimationManagerPanels.cs" />
     <Compile Include="Assets\UnityVS\Database.cs" />
     <Compile Include="Assets\UnityVS\Decision.cs" />
@@ -111,6 +110,7 @@
     <Compile Include="Assets\UnityVS\Event.cs" />
     <Compile Include="Assets\UnityVS\EventPool.cs" />
     <Compile Include="Assets\UnityVS\EventPoolFactory.cs" />
+    <Compile Include="Assets\UnityVS\GameTestManager.cs" />
     <Compile Include="Assets\UnityVS\IDecision.cs" />
     <Compile Include="Assets\UnityVS\IDecisionPanelObserver.cs" />
     <Compile Include="Assets\UnityVS\IDecisionPool.cs" />
@@ -119,6 +119,7 @@
     <Compile Include="Assets\UnityVS\IEventPool.cs" />
     <Compile Include="Assets\UnityVS\IMultipleDecision.cs" />
     <Compile Include="Assets\UnityVS\Influences.cs" />
+    <Compile Include="Assets\UnityVS\MenuManager.cs" />
     <Compile Include="Assets\UnityVS\MultipleDecision.cs" />
     <Compile Include="Assets\UnityVS\Pair.cs" />
     <Compile Include="Assets\Water Flow FREE\Scripts\WaterFlowFREEDemo.cs" />
