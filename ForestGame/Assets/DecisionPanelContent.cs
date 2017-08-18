@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,6 +7,8 @@ using UnityEngine.UI;
 public class DecisionPanelContent : MonoBehaviour
 {
     private GameObject canvas;
+
+    private IDecisionPanelObserver iDecisionPanelObserver;
 
     GameObject panelRightGameObject;
     Text textRight;
@@ -49,5 +52,27 @@ public class DecisionPanelContent : MonoBehaviour
         decisionIDRight = decision.getDecisionID();
         textRight.text = decision.getRequestText();
         //imageRight = rightDecision.getImage();
+    }
+
+    public void SelectedButton(bool isRight)
+    {
+        if (isRight)
+        {
+            iDecisionPanelObserver.setSelectedDecision((Int16)decisionIDRight);
+        }
+        else
+        {
+            iDecisionPanelObserver.setSelectedDecision((Int16)decisionIDLeft);
+        }
+    }
+
+    public void DeniedDecision()
+    {
+        iDecisionPanelObserver.setDeniedDecision((Int16)decisionIDRight);
+    }
+
+    public void RegisterObserver(IDecisionPanelObserver iDecisionPanelObserver)
+    {
+        this.iDecisionPanelObserver = iDecisionPanelObserver;
     }
 }
