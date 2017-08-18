@@ -113,14 +113,15 @@ public class Database
 
     private Influences sql_get_influences(int id) {
 
+        Influences infl = new Influences();
+
         //This is your database connection:
         string connectionString = "data source=81.169.245.35;initial catalog=forestGameDb;uid=User;pwd=Pass12@;";
         SqlConnection cn = new SqlConnection(connectionString);
 
         string command = "SELECT TEXT,fk_FACTION_ID FROM DECISION WHERE DECISION_ID=" + id;
 
-        try
-        {
+        try {
             //Open the sql connection.
             cn.Open();
 
@@ -131,24 +132,22 @@ public class Database
             //get the results.
             int recordsAffected = da.Fill(dataTable);
 
-            if (recordsAffected > 0)
-            {
-                foreach (DataRow dr in dataTable.Rows)
-                {
-                    dc.setRequestText(dr["TEXT"].ToString());
-                    dc.setFactionID(Convert.ToInt16(dr["fk_FACTION_ID"]));
+            if (recordsAffected > 0) {
+                foreach (DataRow dr in dataTable.Rows) {
+                    //dc.setRequestText(dr["TEXT"].ToString());
+                    //dc.setFactionID(Convert.ToInt16(dr["fk_FACTION_ID"]));
                 }
             }
         }
         catch (SqlException sqlEx)
         {
-            if (sqlEx.Message != null || sqlEx.Message != string.Empty) { dc.setRequestText(sqlEx.Message); }
+            if (sqlEx.Message != null || sqlEx.Message != string.Empty) { }
         }
         finally
         {
             cn.Close();
         }
-        return dc;
+        return infl;
 
     }
 }
