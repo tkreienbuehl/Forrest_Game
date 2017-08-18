@@ -45,7 +45,6 @@
     <Reference Include="System" />
     <Reference Include="System.XML" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data" />
     <Reference Include="Boo.Lang" />
     <Reference Include="UnityScript.Lang" />
     <Reference Include="System.Runtime.Serialization" />
@@ -83,6 +82,9 @@
     <Reference Include="GUIAnimatorFREE">
       <HintPath>Assets\GUI Animator\GUI Animator FREE\Plugins\GUIAnimatorFREE.dll</HintPath>
     </Reference>
+    <Reference Include="System.Data">
+      <HintPath>Assets\System.Data.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\DecisionPanelContent.cs" />
@@ -102,21 +104,25 @@
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_DemoPlaySound.cs" />
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_OpenOtherScene.cs" />
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo Basic (CSharp)\Scripts\GUIAnimatorFREEDemo.cs" />
-    <Compile Include="Assets\MenuManager.cs" />
     <Compile Include="Assets\UnityVS\AnimationManagerPanels.cs" />
-    <Compile Include="Assets\UnityVS\ButtonDecision.cs" />
     <Compile Include="Assets\UnityVS\Database.cs" />
     <Compile Include="Assets\UnityVS\Decision.cs" />
     <Compile Include="Assets\UnityVS\DecisionController.cs" />
-    <Compile Include="Assets\UnityVS\DecisionPanel.cs" />
     <Compile Include="Assets\UnityVS\DecisionPool.cs" />
     <Compile Include="Assets\UnityVS\DecisionPoolFactory.cs" />
+    <Compile Include="Assets\UnityVS\Event.cs" />
+    <Compile Include="Assets\UnityVS\EventPool.cs" />
+    <Compile Include="Assets\UnityVS\EventPoolFactory.cs" />
+    <Compile Include="Assets\UnityVS\GameTestManager.cs" />
     <Compile Include="Assets\UnityVS\IDecision.cs" />
-    <Compile Include="Assets\UnityVS\IDecisionPanelContent.cs" />
     <Compile Include="Assets\UnityVS\IDecisionPanelObserver.cs" />
     <Compile Include="Assets\UnityVS\IDecisionPool.cs" />
+    <Compile Include="Assets\UnityVS\IEvent.cs" />
+    <Compile Include="Assets\UnityVS\IEventPanelObserver.cs" />
+    <Compile Include="Assets\UnityVS\IEventPool.cs" />
     <Compile Include="Assets\UnityVS\IMultipleDecision.cs" />
     <Compile Include="Assets\UnityVS\Influences.cs" />
+    <Compile Include="Assets\UnityVS\MenuManager.cs" />
     <Compile Include="Assets\UnityVS\MultipleDecision.cs" />
     <Compile Include="Assets\UnityVS\Pair.cs" />
     <Compile Include="Assets\Water Flow FREE\Scripts\WaterFlowFREEDemo.cs" />
