@@ -21,7 +21,11 @@ public class Database
 
     // get a singl decission selected with a id
     public Decision get_descision(int id) {
-        return sql_get_Decission(id);
+
+        Decision dc = new Decision(id);
+        dc = sql_get_Decission(id);
+        dc.setInfluences(sql_get_influences(id));
+        return dc;
     }
 
     private int[] sql_getID() {
@@ -81,6 +85,40 @@ public class Database
 
         string command = "SELECT TEXT,fk_FACTION_ID FROM DECISION WHERE DECISION_ID="+ id;
 
+            try {
+                //Open the sql connection.
+                cn.Open();
+
+                //send the command string to sql
+                SqlDataAdapter da = new SqlDataAdapter(command, cn);
+                DataTable dataTable = new DataTable();
+
+                //get the results.
+                int recordsAffected = da.Fill(dataTable);
+
+                if (recordsAffected > 0) {
+                    foreach (DataRow dr in dataTable.Rows) {
+                        dc.setRequestText(dr["TEXT"].ToString());
+                        dc.setFactionID(Convert.ToInt16(dr["fk_FACTION_ID"]));
+                    }
+                }
+            } catch (SqlException sqlEx){
+                if (sqlEx.Message != null || sqlEx.Message != string.Empty) { dc.setRequestText(sqlEx.Message); }
+            } finally {
+                cn.Close();
+            }
+        return dc;
+
+    }
+
+    private Influences sql_get_influences(int id) {
+
+        //This is your database connection:
+        string connectionString = "data source=81.169.245.35;initial catalog=forestGameDb;uid=User;pwd=Pass12@;";
+        SqlConnection cn = new SqlConnection(connectionString);
+
+        string command = "SELECT TEXT,fk_FACTION_ID FROM DECISION WHERE DECISION_ID=" + id;
+
         try
         {
             //Open the sql connection.
@@ -98,30 +136,19 @@ public class Database
                 foreach (DataRow dr in dataTable.Rows)
                 {
                     dc.setRequestText(dr["TEXT"].ToString());
-                    dc.setFactionID
-
-
-                    list[i] = Convert.ToInt32(dr["DECISION_ID"]);
-                    i++;
+                    dc.setFactionID(Convert.ToInt16(dr["fk_FACTION_ID"]));
                 }
             }
-
-
-
         }
         catch (SqlException sqlEx)
         {
-
-            if (sqlEx.Message != null || sqlEx.Message != string.Empty) { list[0] = 4004; }
-
+            if (sqlEx.Message != null || sqlEx.Message != string.Empty) { dc.setRequestText(sqlEx.Message); }
         }
         finally
         {
             cn.Close();
         }
-
-
-        return list;
+        return dc;
 
     }
 }
