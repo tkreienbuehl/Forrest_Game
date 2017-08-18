@@ -103,15 +103,12 @@
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo Basic (CSharp)\Scripts\GUIAnimatorFREEDemo.cs" />
     <Compile Include="Assets\MenuManager.cs" />
     <Compile Include="Assets\UnityVS\AnimationManagerPanels.cs" />
-    <Compile Include="Assets\UnityVS\ButtonDecision.cs" />
     <Compile Include="Assets\UnityVS\Database.cs" />
     <Compile Include="Assets\UnityVS\Decision.cs" />
     <Compile Include="Assets\UnityVS\DecisionController.cs" />
-    <Compile Include="Assets\UnityVS\DecisionPanel.cs" />
     <Compile Include="Assets\UnityVS\DecisionPool.cs" />
     <Compile Include="Assets\UnityVS\DecisionPoolFactory.cs" />
     <Compile Include="Assets\UnityVS\IDecision.cs" />
-    <Compile Include="Assets\UnityVS\IDecisionPanelContent.cs" />
     <Compile Include="Assets\UnityVS\IDecisionPanelObserver.cs" />
     <Compile Include="Assets\UnityVS\IDecisionPool.cs" />
     <Compile Include="Assets\UnityVS\IMultipleDecision.cs" />
