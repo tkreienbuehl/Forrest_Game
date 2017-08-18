@@ -1,4 +1,4 @@
-﻿/*
+﻿
 public class DecisionPoolFactory {
 
     private DecisionPoolFactory() {
@@ -8,4 +8,4 @@ public class DecisionPoolFactory {
         return new DecisionPool();
 	}
 
-}*/
+}

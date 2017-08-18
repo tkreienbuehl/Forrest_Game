@@ -78,6 +78,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DecisionPanelContent.cs" />
     <Compile Include="Assets\MenuManager.cs" />
     <Compile Include="Assets\UnityVS\AnimationManagerPanels.cs" />
     <Compile Include="Assets\UnityVS\ButtonDecision.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="Assets\UnityVS\DecisionPool.cs" />
     <Compile Include="Assets\UnityVS\DecisionPoolFactory.cs" />
     <Compile Include="Assets\UnityVS\IDecision.cs" />
+    <Compile Include="Assets\UnityVS\IDecisionPanelContent.cs" />
     <Compile Include="Assets\UnityVS\IDecisionPool.cs" />
     <Compile Include="Assets\UnityVS\IMultipleDecision.cs" />
     <Compile Include="Assets\UnityVS\Influences.cs" />
