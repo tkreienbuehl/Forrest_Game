@@ -4,7 +4,7 @@
 
     }
 
-    public static IEventPool GetEventPool() {
+    public static IEventPool getEventPool() {
         return new EventPool();
     }
 }
