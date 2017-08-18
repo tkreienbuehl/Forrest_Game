@@ -19,6 +19,11 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
         setNewRandomWaitTime();
     }
 
+    public void setDeniedDecision(short decisionID) {
+        //TODO use the results
+        setNewRandomWaitTime();
+    }
+
     // Use this for initialization
     void Start () {
         decisionPool = DecisionPoolFactory.getDecisionPool();
@@ -29,7 +34,6 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
 	void Update () {
         actualTimeDelay += Time.deltaTime;
         if (actualTimeDelay >= delay) {
-            //TODO give decision to DecisionPanelClass
             Pair<IDecision, IDecision> pair = decisionPool.getDecisionPair();
             content.SetDecisionPair(pair.getKey(), pair.getValue());
         }
