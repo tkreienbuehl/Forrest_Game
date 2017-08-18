@@ -6,6 +6,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
 
     private IDecisionPool decisionPool;
     private float delay;
+    private float actualTimeDelay;
 
     public void setSelectedAnswer(byte answerID) {
         //TODO use the results
@@ -24,7 +25,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
 	
 	// Update is called once per frame
 	void Update () {
-        float actualTimeDelay = 12.2f;
+        actualTimeDelay += Time.deltaTime;
         if (actualTimeDelay >= delay) {
             //TODO give decision to DecisionPanelClass
             decisionPool.getDecisionPair();
@@ -33,5 +34,6 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
 
     private void setNewRandomWaitTime() {
         delay = Random.Range(10.0f, max: 20.0f);
+        actualTimeDelay = 0.0f;
     }
 }
