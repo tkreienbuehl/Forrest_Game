@@ -66,6 +66,11 @@ public class DecisionPanelContent : MonoBehaviour
         }
     }
 
+    public void DeniedDecision()
+    {
+        iDecisionPanelObserver.setDeniedDecision((Int16)decisionIDRight);
+    }
+
     public void RegisterObserver(IDecisionPanelObserver iDecisionPanelObserver)
     {
         this.iDecisionPanelObserver = iDecisionPanelObserver;

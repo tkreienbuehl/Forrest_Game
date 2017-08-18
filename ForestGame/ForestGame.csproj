@@ -45,7 +45,6 @@
     <Reference Include="System" />
     <Reference Include="System.XML" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data" />
     <Reference Include="Boo.Lang" />
     <Reference Include="UnityScript.Lang" />
     <Reference Include="System.Runtime.Serialization" />
@@ -109,9 +108,15 @@
     <Compile Include="Assets\UnityVS\DecisionController.cs" />
     <Compile Include="Assets\UnityVS\DecisionPool.cs" />
     <Compile Include="Assets\UnityVS\DecisionPoolFactory.cs" />
+    <Compile Include="Assets\UnityVS\Event.cs" />
+    <Compile Include="Assets\UnityVS\EventPool.cs" />
+    <Compile Include="Assets\UnityVS\EventPoolFactory.cs" />
     <Compile Include="Assets\UnityVS\IDecision.cs" />
     <Compile Include="Assets\UnityVS\IDecisionPanelObserver.cs" />
     <Compile Include="Assets\UnityVS\IDecisionPool.cs" />
+    <Compile Include="Assets\UnityVS\IEvent.cs" />
+    <Compile Include="Assets\UnityVS\IEventPanelObserver.cs" />
+    <Compile Include="Assets\UnityVS\IEventPool.cs" />
     <Compile Include="Assets\UnityVS\IMultipleDecision.cs" />
     <Compile Include="Assets\UnityVS\Influences.cs" />
     <Compile Include="Assets\UnityVS\MultipleDecision.cs" />
