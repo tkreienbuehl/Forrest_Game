@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class DecisionPanelContent : MonoBehaviour
 {
     private GameObject canvas;
-    private IDecisionPool iDecisionPool;
 
     GameObject panelRightGameObject;
     Text textRight;
@@ -21,93 +20,34 @@ public class DecisionPanelContent : MonoBehaviour
     int factionIDLeft;
 
 
-    // Use this for initialization
-    void Start ()
+    public void SetDecisionPair(IDecision leftDecision, IDecision rightDecision)
     {
         canvas = GameObject.Find("PanelCanvas");
-        iDecisionPool = new DecisionPool();
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        panelRightGameObject = canvas.transform.Find("RightPanel").gameObject;
+        textRight = panelRightGameObject.transform.Find("Panel").transform.Find("DecisionDescription").GetComponent<Text>();
+        panelLeftGameObject = canvas.transform.Find("LeftPanel").gameObject;
+        textLeft = panelRightGameObject.transform.Find("DecisionDescription").GetComponent<Text>();
 
+        factionIDLeft = leftDecision.getFactionID();
+        decisionIDLeft = leftDecision.getDecisionID();
+        textLeft.text = leftDecision.getRequestText();
+        //imageLeft = leftDecision.getImage();
 
+        factionIDRight = rightDecision.getFactionID();
+        decisionIDRight = rightDecision.getDecisionID();
+        textRight.text = rightDecision.getRequestText();
+        //imageRight = rightDecision.getImage();
     }
 
-    public void FillSinglePanelContent()
+    public void SetDecision(IDecision decision)
     {
+        canvas = GameObject.Find("PanelCanvas");
         panelRightGameObject = canvas.transform.Find("SingleDecisionPanel").gameObject;
         textRight = panelRightGameObject.transform.Find("Panel").transform.Find("DecisionDescription").GetComponent<Text>();
 
-        RequestText(textRight);
-        RequestFactionID(factionIDRight);
-        RequestImage(imageRight);
-        RequestDecisionID(decisionIDRight);
-    }
-
-    public void FillMultiPanelContent()
-    {
-        panelRightGameObject = canvas.transform.Find("RightPanel").gameObject;
-        textRight = panelRightGameObject.transform.Find("Panel").transform.Find("DecisionDescription").GetComponent<Text>();
-        RequestText(textRight);
-        RequestFactionID(factionIDRight);
-        RequestImage(imageRight);
-        RequestDecisionID(decisionIDRight);
-
-
-
-        panelLeftGameObject = canvas.transform.Find("LeftPanel").gameObject;
-        textLeft = panelRightGameObject.transform.Find("DecisionDescription").GetComponent<Text>();
-        RequestText(textLeft);
-        RequestFactionID(factionIDLeft);
-        RequestImage(imageLeft);
-        RequestDecisionID(decisionIDLeft);
-    }
-
-    void RequestText(Text text)
-    {
-        text.text = iDecisionPool.getDecision().getRequestText();
-        text.text = "it works";
-    }
-
-    void RequestFactionID(int id)
-    {
-        id = iDecisionPool.getDecision().getFactionID();
-        id = 1;
-    }
-
-    void RequestImage(Image image)
-    {
-        //image =iDecisionPool.getDecision().getImage();
-    }
-
-    void RequestDecisionID(int id)
-    {
-        id = iDecisionPool.getDecision().getDecisionID();
-        id = 1;
-    }
-
-    void RequestMultiText(Text textRight, Text textLeft)
-    {
-        textRight.text = iDecisionPool.getDecisionPair().getKey().getRequestText();
-        textLeft.text = iDecisionPool.getDecisionPair().getKey().getRequestText();
-    }
-
-    void RequestMultiFactionID(int idRight, int idLeft)
-    {
-        idRight = iDecisionPool.getDecisionPair().getKey().getFactionID();
-        idLeft = iDecisionPool.getDecisionPair().getKey().getFactionID();
-    }
-
-    void RequestMultiImage(Image imageRight, Image imageLeft)
-    {
-        //imageRight = iDecisionPool.getDecisionPair().getKey().getImage();
-        //imageLeft = iDecisionPool.getDecisionPair().getKey().getImage();
-    }
-
-    void RequestMultiDecisionID(int idRight, int idLeft)
-    {
-        idRight = iDecisionPool.getDecisionPair().getKey().getDecisionID();
-        idLeft = iDecisionPool.getDecisionPair().getKey().getDecisionID();
+        factionIDRight = decision.getFactionID();
+        decisionIDRight = decision.getDecisionID();
+        textRight.text = decision.getRequestText();
+        //imageRight = rightDecision.getImage();
     }
 }

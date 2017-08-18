@@ -107,6 +107,7 @@
     <Compile Include="Assets\UnityVS\Database.cs" />
     <Compile Include="Assets\UnityVS\Decision.cs" />
     <Compile Include="Assets\UnityVS\DecisionController.cs" />
+    <Compile Include="Assets\UnityVS\DecisionPanel.cs" />
     <Compile Include="Assets\UnityVS\DecisionPool.cs" />
     <Compile Include="Assets\UnityVS\DecisionPoolFactory.cs" />
     <Compile Include="Assets\UnityVS\IDecision.cs" />
