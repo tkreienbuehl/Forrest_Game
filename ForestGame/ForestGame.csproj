@@ -45,7 +45,6 @@
     <Reference Include="System" />
     <Reference Include="System.XML" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data" />
     <Reference Include="Boo.Lang" />
     <Reference Include="UnityScript.Lang" />
     <Reference Include="System.Runtime.Serialization" />
