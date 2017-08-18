@@ -581,6 +581,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114178332960282070, guid: 8780596e39f7ccc4f831174dba16112b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 224071036722599056, guid: 8780596e39f7ccc4f831174dba16112b,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -719,6 +724,31 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114178332960282070, guid: 8780596e39f7ccc4f831174dba16112b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114178332960282070, guid: 8780596e39f7ccc4f831174dba16112b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114178332960282070, guid: 8780596e39f7ccc4f831174dba16112b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1738290327}
+    - target: {fileID: 114178332960282070, guid: 8780596e39f7ccc4f831174dba16112b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DeniedDecision
+      objectReference: {fileID: 0}
+    - target: {fileID: 114178332960282070, guid: 8780596e39f7ccc4f831174dba16112b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8780596e39f7ccc4f831174dba16112b, type: 2}
