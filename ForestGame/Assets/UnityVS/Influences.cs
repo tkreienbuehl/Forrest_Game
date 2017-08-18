@@ -5,6 +5,9 @@
     private byte touristicInfluence;
 
     public Influences() {
+        industrialInfluence = 0;
+        environmentalInfluence = 0;
+        touristicInfluence = 0;
     }
 
     public void setIndustrialInfluence(byte influence) {
