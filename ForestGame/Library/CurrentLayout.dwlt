@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 9
+  controlID: 69
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 10
+  controlID: 83
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -324,7 +324,8 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 0
-    m_Folders: []
+    m_Folders:
+    - Assets/UnityVS
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders:
@@ -336,7 +337,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: c6260000
     m_LastClickedID: 9926
-    m_ExpandedIDs: 00000000ac260000242900005e2a0000302c00007e2e0000
+    m_ExpandedIDs: 000000008e26000006290000402a0000122c0000682e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -361,10 +362,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 744}
+    scrollPos: {x: 0, y: 520}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ac260000242900005e2a0000302c00007e2e0000
+    m_ExpandedIDs: 000000008e26000006290000402a0000122c0000682e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -445,7 +446,7 @@ MonoBehaviour:
     y: 92
     width: 309
     height: 710
-  m_ScrollPosition: {x: 0, y: 363.95508}
+  m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 160
@@ -480,9 +481,9 @@ MonoBehaviour:
     height: 419
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7cfbffff
-    m_LastClickedID: -1156
-    m_ExpandedIDs: 96fbffff98fbffff9afbffffe2fbffff14fcffff00000000542d0000
+    m_SelectedIDs: a0050000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 1afcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -532,14 +533,14 @@ MonoBehaviour:
     width: 918
     height: 419
   m_SceneLighting: 1
-  lastFramingTime: 2036.1082731813378
+  lastFramingTime: 727.1050700927098
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 810.8293, y: -110.925095, z: 0}
+    m_Target: {x: 469.2237, y: 206.0548, z: 0}
     speed: 2
-    m_Value: {x: 810.8293, y: -110.925095, z: 0}
+    m_Value: {x: 469.2237, y: 206.0548, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -566,9 +567,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0, y: 0, z: -0, w: -1}
   m_Size:
-    m_Target: 294.0904
+    m_Target: 208.41432
     speed: 2
-    m_Value: 294.0904
+    m_Value: 208.41432
   m_Ortho:
     m_Target: 0
     speed: 2

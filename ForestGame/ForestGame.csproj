@@ -113,6 +113,7 @@
     <Compile Include="Assets\UnityVS\DecisionPoolFactory.cs" />
     <Compile Include="Assets\UnityVS\Event.cs" />
     <Compile Include="Assets\UnityVS\EventController.cs" />
+    <Compile Include="Assets\UnityVS\EventPanelContent.cs" />
     <Compile Include="Assets\UnityVS\EventPool.cs" />
     <Compile Include="Assets\UnityVS\EventPoolFactory.cs" />
     <Compile Include="Assets\UnityVS\GameTestManager.cs" />
