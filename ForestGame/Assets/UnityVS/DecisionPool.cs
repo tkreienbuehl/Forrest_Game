@@ -56,11 +56,13 @@ public class DecisionPool : IDecisionPool {
     public Pair<IDecision, IDecision> getDecisionPair()
     {
         DecisionExample ex = new DecisionExample();
-       return new Pair<IDecision, IDecision>(ex.Decision1(), ex.Decision2());
+        return new Pair<IDecision, IDecision>(ex.Decision1(), ex.Decision2());
     }
 
     public IDecision getDecision()
     {
-        throw new NotImplementedException();
+        // TODO get decisions
+        DecisionExample ex = new DecisionExample();
+        return ex.SingleDecision();
     }
 }
