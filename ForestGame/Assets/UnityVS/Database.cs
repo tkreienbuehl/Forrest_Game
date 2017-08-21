@@ -113,14 +113,16 @@ public class Database
 
     private Influences sql_get_influences(int id) {
 
+        Influences infl = new Influences();
+
         //This is your database connection:
         string connectionString = "data source=81.169.245.35;initial catalog=forestGameDb;uid=User;pwd=Pass12@;";
         SqlConnection cn = new SqlConnection(connectionString);
 
-        string command = "SELECT TEXT,fk_FACTION_ID FROM DECISION WHERE DECISION_ID=" + id;
+        //ned the change thinggy 
+        string command = "SELECT INFLUENCE.VALUE,DECISION.fk_FACTION_ID FROM INFLUENCE INNER JOIN CONNECTED_INFLUENCE on CONNECTED_INFLUENCE.fk_INFLUENCE_ID = UNFLUENCE.INFLUENCE_ID INNER JOIN DECISION on CONNECTED_INFLUENCE.fk_DECISION_ID = DECISION.DECISION_ID WHERE DECISION.DECISION_ID =" + id;
 
-        try
-        {
+        try {
             //Open the sql connection.
             cn.Open();
 
@@ -131,24 +133,34 @@ public class Database
             //get the results.
             int recordsAffected = da.Fill(dataTable);
 
-            if (recordsAffected > 0)
-            {
-                foreach (DataRow dr in dataTable.Rows)
-                {
-                    dc.setRequestText(dr["TEXT"].ToString());
-                    dc.setFactionID(Convert.ToInt16(dr["fk_FACTION_ID"]));
+            if (recordsAffected > 0) {
+                foreach (DataRow dr in dataTable.Rows) {
+
+                    int value   = Convert.ToInt32(dr["value"]);
+                    int faction = Convert.ToInt32(dr["faction_id"]);
+
+                    if (faction == 1) {
+                        //facction id 1 == industry
+                        infl.setIndustrialInfluence(Convert.ToByte(value));
+                    } else if (faction == 2) {
+                        //faction id 2 == toerisme
+                        infl.setTouristicalInfluence(Convert.ToByte(value));
+                    } else if (faction == 3) {
+                        //faction id 3 == envoirment
+                        infl.setEnvironmentalInfluence(Convert.ToByte(value));
+                    }
                 }
             }
         }
         catch (SqlException sqlEx)
         {
-            if (sqlEx.Message != null || sqlEx.Message != string.Empty) { dc.setRequestText(sqlEx.Message); }
+            if (sqlEx.Message != null || sqlEx.Message != string.Empty) { }
         }
         finally
         {
             cn.Close();
         }
-        return dc;
+        return infl;
 
     }
 }
