@@ -4,7 +4,8 @@
     private string decisionRequest;
     Influences influences;
     private short factionID;
-    private short income;
+    private float income;
+    private float yearlyCosts;
 
     public Decision(int decisionID) {
         this.decisionID = decisionID;
@@ -26,6 +27,14 @@
         this.influences = influences;
     }
 
+    public void setIncome(float income) {
+        this.income = income;
+    }
+
+    public void setYearlyCosts(float costs) {
+        yearlyCosts = costs;
+    }
+
     public int getDecisionID() {
         return decisionID; 
     }
@@ -40,5 +49,13 @@
 
     public string getRequestText() {
         return decisionRequest;
+    }
+
+    public float getIncome() {
+        return income;
+    }
+
+    public float getYearlyCosts() {
+        return yearlyCosts;
     }
 }
