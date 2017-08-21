@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
@@ -8,33 +7,38 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     private float delay;
     private float actualTimeDelay;
     private DecisionPanelContent content;
-    private bool waitingForAnswer; 
+    private bool waitingForAnswer;
+    private List<IDecision> decisions;
 
     public void setSelectedAnswer(byte answerID) {
+        waitingForAnswer = false;
         //TODO use the results
         setNewRandomWaitTime();
-        waitingForAnswer = false;
     }
 
     public void setSelectedDecision(short decisionID) {
-        //TODO use the results
-        setNewRandomWaitTime();
         waitingForAnswer = false;
+        foreach (IDecision dec in decisions) {
+            if (dec.getDecisionID() == decisionID) {
+                //TODO send the results to the bar controller
+            }
+        }        
+        setNewRandomWaitTime();
     }
 
     public void setDeniedDecision(short decisionID) {
-        //TODO use the results
-        setNewRandomWaitTime();
         waitingForAnswer = false;
+        setNewRandomWaitTime();
     }
 
     // Use this for initialization
     void Start () {
+        waitingForAnswer = false;
         decisionPool = DecisionPoolFactory.getDecisionPool();
         content = GameObject.Find("PanelCanvas").gameObject.GetComponent<DecisionPanelContent>();
+        decisions = new List<IDecision>();
         content.RegisterObserver(this);
         setNewRandomWaitTime();
-        waitingForAnswer = false;
 	}
 	
 	// Update is called once per frame
@@ -42,13 +46,27 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
         actualTimeDelay += Time.deltaTime;
         if (actualTimeDelay >= delay  && !waitingForAnswer) {
             waitingForAnswer = true;
-            Pair<IDecision, IDecision> pair = decisionPool.getDecisionPair();
-            content.SetDecisionPair(pair.getKey(), pair.getValue());
+            decisions.Clear();
+            if (getSingleDecision()) {
+                IDecision desc = decisionPool.getDecision();
+                decisions.Add(desc);
+                content.SetDecision(desc);
+            }
+            else {
+                Pair<IDecision, IDecision> pair = decisionPool.getDecisionPair();
+                decisions.Add(pair.getKey());
+                decisions.Add(pair.getValue());
+                content.SetDecisionPair(pair.getKey(), pair.getValue());
+            }
         }
 	}
 
     private void setNewRandomWaitTime() {
         delay = Random.Range(10.0f, max: 20.0f);
         actualTimeDelay = 0.0f;
+    }
+
+    private bool getSingleDecision() {
+        return (Random.Range(1.0f, max: 100.0f) % 3 == 0);
     }
 }

@@ -7,6 +7,8 @@ public class MultipleDecision : IMultipleDecision{
     private ArrayList influences;
     private ArrayList answers;
     private short factionID;
+    private float income;
+    private float yearlyCosts;
 
 
     public MultipleDecision(int decisionID) {
@@ -45,5 +47,13 @@ public class MultipleDecision : IMultipleDecision{
 
     public string getRequestText() {
         return decisionRequest;
+    }
+
+    public float getIncome() {
+        return income;
+    }
+
+    public float getYearlyCosts() {
+        return yearlyCosts;
     }
 }
