@@ -35,12 +35,12 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     // Use this for initialization
     void Start () {
         waitingForAnswer = false;
+        speedUpFactor = 3;
         decisionPool = DecisionPoolFactory.getDecisionPool();
         content = GameObject.Find("PanelCanvas").gameObject.GetComponent<DecisionPanelContent>();
         decisions = new List<IDecision>();
         content.RegisterObserver(this);
         setNewRandomWaitTime();
-        speedUpFactor = 3;
 	}
 	
 	// Update is called once per frame
