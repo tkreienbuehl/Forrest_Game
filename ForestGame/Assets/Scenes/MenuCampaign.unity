@@ -218,7 +218,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 728788334}
+      - m_Target: {fileID: 728788339}
         m_MethodName: SwitchToGameSceneCampaignEnvironmentalist
         m_Mode: 1
         m_Arguments:
@@ -459,6 +459,7 @@ GameObject:
   - component: {fileID: 728788336}
   - component: {fileID: 728788335}
   - component: {fileID: 728788334}
+  - component: {fileID: 728788339}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -553,6 +554,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &728788339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 728788333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f61084438f95834897115264f56ea5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &806545497
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,7 +675,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 728788334}
+      - m_Target: {fileID: 728788339}
         m_MethodName: SwitchToGameSceneCampaignDemocrats
         m_Mode: 1
         m_Arguments:
@@ -1040,7 +1052,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 728788334}
+      - m_Target: {fileID: 728788339}
         m_MethodName: SwitchToGameSceneCampaignConservatives
         m_Mode: 1
         m_Arguments:
