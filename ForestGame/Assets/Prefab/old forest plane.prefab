@@ -1933,7 +1933,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4680619228264276}
   - component: {fileID: 33735697294386542}
-  - component: {fileID: 64552556592902276}
   - component: {fileID: 23984381045599982}
   m_Layer: 0
   m_Name: old forest plane
@@ -10515,7 +10514,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1627010775456996}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -11746,20 +11745,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1653083015051258}
   m_Mesh: {fileID: 4300000, guid: dbf57e3f0778b034ba3077371d7f91ea, type: 3}
---- !u!64 &64552556592902276
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1627010775456996}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!65 &65359711153764178
 BoxCollider:
   m_ObjectHideFlags: 1
