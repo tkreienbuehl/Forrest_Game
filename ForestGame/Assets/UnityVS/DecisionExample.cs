@@ -16,7 +16,7 @@
 
     public Decision SingleDecision() {
         InfluenceExp(3, 3, 3);
-        return DecisionExp(3, 4, "Mayor, let us build a more modern hospital to increise health level in town");
+        return DecisionExp(3, 4, "Mayor, let us build a more modern hospital to increase health level in town");
     }
 
     Decision DecisionExp(short decisionID, short factionId, string requestText) {

@@ -9,6 +9,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     private DecisionPanelContent content;
     private bool waitingForAnswer;
     private List<IDecision> decisions;
+    private byte speedUpFactor;
 
     public void setSelectedAnswer(byte answerID) {
         waitingForAnswer = false;
@@ -39,6 +40,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
         decisions = new List<IDecision>();
         content.RegisterObserver(this);
         setNewRandomWaitTime();
+        speedUpFactor = 3;
 	}
 	
 	// Update is called once per frame
@@ -62,11 +64,12 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
 	}
 
     private void setNewRandomWaitTime() {
-        delay = Random.Range(10.0f, max: 20.0f);
+        delay = Random.Range(10.0f / speedUpFactor, max: 20.0f / speedUpFactor);
         actualTimeDelay = 0.0f;
     }
 
     private bool getSingleDecision() {
-        return (Random.Range(1.0f, max: 100.0f) % 3 == 0);
+        double nr = Random.Range(1.0f, max: 100.0f);
+        return ((int)nr % 3 == 0);
     }
 }
