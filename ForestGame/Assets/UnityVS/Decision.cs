@@ -4,9 +4,14 @@
     private string decisionRequest;
     Influences influences;
     private short factionID;
+    private short income;
 
     public Decision(int decisionID) {
         this.decisionID = decisionID;
+        income = 0;
+        influences = new Influences();
+        factionID = 0;
+        decisionRequest = "";
     }
 
     public void setRequestText(string text) {

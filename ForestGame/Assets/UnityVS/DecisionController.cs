@@ -47,15 +47,26 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
         if (actualTimeDelay >= delay  && !waitingForAnswer) {
             waitingForAnswer = true;
             decisions.Clear();
-            Pair<IDecision, IDecision> pair = decisionPool.getDecisionPair();
-            decisions.Add(pair.getKey());
-            decisions.Add(pair.getValue());
-            content.SetDecisionPair(pair.getKey(), pair.getValue());
+            if (getSingleDecision()) {
+                IDecision desc = decisionPool.getDecision();
+                decisions.Add(desc);
+                content.SetDecision(desc);
+            }
+            else {
+                Pair<IDecision, IDecision> pair = decisionPool.getDecisionPair();
+                decisions.Add(pair.getKey());
+                decisions.Add(pair.getValue());
+                content.SetDecisionPair(pair.getKey(), pair.getValue());
+            }
         }
 	}
 
     private void setNewRandomWaitTime() {
         delay = Random.Range(10.0f, max: 20.0f);
         actualTimeDelay = 0.0f;
+    }
+
+    private bool getSingleDecision() {
+        return (Random.Range(1.0f, max: 100.0f) % 3 == 0);
     }
 }
