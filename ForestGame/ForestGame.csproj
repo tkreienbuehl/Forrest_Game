@@ -76,15 +76,6 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
     <Reference Include="System.Data">
       <HintPath>Assets\System.Data.dll</HintPath>
     </Reference>
@@ -122,6 +113,7 @@
     <Compile Include="Assets\UnityVS\DecisionPoolFactory.cs" />
     <Compile Include="Assets\UnityVS\Event.cs" />
     <Compile Include="Assets\UnityVS\EventController.cs" />
+    <Compile Include="Assets\UnityVS\EventPanelContent.cs" />
     <Compile Include="Assets\UnityVS\EventPool.cs" />
     <Compile Include="Assets\UnityVS\EventPoolFactory.cs" />
     <Compile Include="Assets\UnityVS\GameTestManager.cs" />
