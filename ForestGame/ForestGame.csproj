@@ -105,6 +105,7 @@
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_OpenOtherScene.cs" />
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo Basic (CSharp)\Scripts\GUIAnimatorFREEDemo.cs" />
     <Compile Include="Assets\UnityVS\AnimationManagerPanels.cs" />
+    <Compile Include="Assets\UnityVS\BackgroundSound.cs" />
     <Compile Include="Assets\UnityVS\Database.cs" />
     <Compile Include="Assets\UnityVS\Decision.cs" />
     <Compile Include="Assets\UnityVS\DecisionController.cs" />

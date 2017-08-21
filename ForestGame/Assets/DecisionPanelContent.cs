@@ -32,15 +32,15 @@ public class DecisionPanelContent : MonoBehaviour
 
     public void SetDecisionPair(IDecision leftDecision, IDecision rightDecision)
     {
-        factionIDLeft = leftDecision.getFactionID();
-        decisionIDLeft = leftDecision.getDecisionID();
-        textLeft.text = leftDecision.getRequestText();
-        //imageLeft = leftDecision.getImage();
+        factionIDLeft = rightDecision.getFactionID();
+        decisionIDLeft = rightDecision.getDecisionID();
+        textLeft.text = rightDecision.getRequestText();
+        //imageLeft = rightDecision.getImage();
 
-        factionIDRight = rightDecision.getFactionID();
-        decisionIDRight = rightDecision.getDecisionID();
-        textRight.text = rightDecision.getRequestText();
-        //imageRight = rightDecision.getImage();
+        factionIDRight = leftDecision.getFactionID();
+        decisionIDRight = leftDecision.getDecisionID();
+        textRight.text = leftDecision.getRequestText();
+        //imageRight = leftDecision.getImage();
         animationManagerPanels.ShowPanel("MultipleDecisionsPanelAnimation");
     }
 
