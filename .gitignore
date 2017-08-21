@@ -1,9 +1,9 @@
-../ForestGame/[Ll]ibrary/
-../ForestGame/[Tt]emp/
-../ForestGame/[Oo]bj/
-../ForestGame/[Bb]uild/
-../ForestGame/[Bb]uilds/
-../ForestGame/Assets/AssetStoreTools*
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+Assets/AssetStoreTools*
 
 # Visual Studio 2015 cache directory
 /.vs/
@@ -32,3 +32,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+ForestGame/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll.meta
+ForestGame/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Messaging.dll.meta
+*.meta

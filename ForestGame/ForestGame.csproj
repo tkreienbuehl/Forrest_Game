@@ -76,14 +76,23 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>Assets\System.Data.dll</HintPath>
+    </Reference>
     <Reference Include="GETween">
       <HintPath>Assets\GUI Animator\Common\Plugins\GETween.dll</HintPath>
     </Reference>
     <Reference Include="GUIAnimatorFREE">
       <HintPath>Assets\GUI Animator\GUI Animator FREE\Plugins\GUIAnimatorFREE.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data">
-      <HintPath>Assets\System.Data.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -108,9 +117,11 @@
     <Compile Include="Assets\UnityVS\Database.cs" />
     <Compile Include="Assets\UnityVS\Decision.cs" />
     <Compile Include="Assets\UnityVS\DecisionController.cs" />
+    <Compile Include="Assets\UnityVS\DecisionExample.cs" />
     <Compile Include="Assets\UnityVS\DecisionPool.cs" />
     <Compile Include="Assets\UnityVS\DecisionPoolFactory.cs" />
     <Compile Include="Assets\UnityVS\Event.cs" />
+    <Compile Include="Assets\UnityVS\EventController.cs" />
     <Compile Include="Assets\UnityVS\EventPool.cs" />
     <Compile Include="Assets\UnityVS\EventPoolFactory.cs" />
     <Compile Include="Assets\UnityVS\GameTestManager.cs" />
