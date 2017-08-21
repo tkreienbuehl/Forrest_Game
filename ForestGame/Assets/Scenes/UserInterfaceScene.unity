@@ -1049,7 +1049,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1738290328}
     - target: {fileID: 114178332960282070, guid: 8780596e39f7ccc4f831174dba16112b,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -1063,6 +1063,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8780596e39f7ccc4f831174dba16112b, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1166270103 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114978936836439938, guid: 8780596e39f7ccc4f831174dba16112b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1166270102}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!114 &1305807157 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114412949598608994, guid: 5f77fa4d9a35faf45b02cc1c0d3232e1,
@@ -1301,12 +1307,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1738290319}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94258b3f2695c3b4b89838cc24fc9c5b, type: 3}
+  m_Script: {fileID: 11500000, guid: 670657c68eccf1b4d94eeb0ec5b13032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  environmental: {fileID: 137628504}
-  industry: {fileID: 550816076}
-  tourist: {fileID: 271816198}
+  environmental: {fileID: 1395004415}
+  industry: {fileID: 1005880392}
+  tourist: {fileID: 331595631}
 --- !u!114 &1738290328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1323,19 +1329,26 @@ MonoBehaviour:
   resultHandler: {fileID: 1738290327}
   panelRightGameObject: {fileID: 718829105}
   textRight: {fileID: 789359725}
+  typeRight: {fileID: 1765144931}
   imageRight: {fileID: 782129455}
   decisionIDRight: 0
   factionIDRight: 0
   panelLeftGameObject: {fileID: 590487346}
   textLeft: {fileID: 591650140}
+  typeLeft: {fileID: 1765144930}
   imageLeft: {fileID: 1305807157}
   decisionIDLeft: 0
   factionIDLeft: 0
   panelSingleGameObject: {fileID: 979840011}
   singlePanelText: {fileID: 1804893109}
+  singleTypeText: {fileID: 1166270103}
   imageSingle: {fileID: 1641347128}
   decisionIDSingle: 0
   factionIDSingle: 0
+  touristSprite: {fileID: 21300000, guid: aeb899455aac6094581df209e286d9d7, type: 3}
+  EnvironmentalSprite: {fileID: 21300000, guid: 9ec045ea2e8447a4f82f01f3e564be7f,
+    type: 3}
+  IndustrialSprite: {fileID: 21300000, guid: c9d0e2beab77db9419e3963b3084a198, type: 3}
 --- !u!1 &1764072983
 GameObject:
   m_ObjectHideFlags: 0
@@ -1599,6 +1612,18 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5f77fa4d9a35faf45b02cc1c0d3232e1, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1765144930 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114599208184354394, guid: 5f77fa4d9a35faf45b02cc1c0d3232e1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1765144929}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1765144931 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114199903918733400, guid: 5f77fa4d9a35faf45b02cc1c0d3232e1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1765144929}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!114 &1804893109 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114829185226367946, guid: 8780596e39f7ccc4f831174dba16112b,
