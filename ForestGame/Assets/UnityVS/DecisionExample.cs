@@ -7,6 +7,7 @@ public class DecisionExample
 	public DecisionExample ()
 	{
         influences = new Influences();
+        decision = new Decision(1);
 	}
 
 	public Decision Decision1(){
@@ -23,8 +24,10 @@ public class DecisionExample
         return DecisionExp(4, "Mayor, let us build a more modern hospital to increise health level in town");
     }
 
-	Decision DecisionExp(int factionId, string requestText){
-		decision.setInfluences (influences);
+	Decision DecisionExp(short factionId, string requestText){
+		decision.setInfluences(influences);
+        decision.setRequestText(requestText);
+        decision.setFactionID(factionId);
         return decision;
 	}
 
