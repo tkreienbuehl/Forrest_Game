@@ -55,7 +55,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
 	}
 
     private void setNewRandomWaitTime() {
-        delay = Random.Range(20.0f, max: 30.0f);
+        delay = Random.Range(10.0f, max: 20.0f);
         actualTimeDelay = 0.0f;
     }
 }
