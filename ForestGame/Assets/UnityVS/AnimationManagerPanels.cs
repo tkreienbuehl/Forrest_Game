@@ -7,6 +7,7 @@ public class AnimationManagerPanels : MonoBehaviour
     private Animator animator;
 
     private GameObject canvas;
+    public GameObject eventPanel;
     
 
 	// Use this for initialization
