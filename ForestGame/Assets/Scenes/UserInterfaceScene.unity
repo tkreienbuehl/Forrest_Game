@@ -860,10 +860,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1738290319}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c0640d0c0cf19547bba1ecdcc132ab0, type: 3}
+  m_Script: {fileID: 11500000, guid: eddca1d8253bf7842809b44fe21e2b4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 718829105}
+  canvas: {fileID: 1738290319}
+  animationManagerPanels: {fileID: 1738290326}
   panelRightGameObject: {fileID: 718829105}
   textRight: {fileID: 789359725}
   imageRight: {fileID: 782129455}
@@ -874,12 +875,11 @@ MonoBehaviour:
   imageLeft: {fileID: 1305807157}
   decisionIDLeft: 0
   factionIDLeft: 0
-  singlePanelGameObject: {fileID: 979840011}
+  panelSingleGameObject: {fileID: 979840011}
   singlePanelText: {fileID: 1804893109}
-  singleImage: {fileID: 1641347128}
+  imageSingle: {fileID: 1641347128}
   decisionIDSingle: 0
   factionIDSingle: 0
-  animationManagerPanels: {fileID: 1738290326}
 --- !u!1 &1764072983
 GameObject:
   m_ObjectHideFlags: 0

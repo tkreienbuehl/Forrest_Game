@@ -6,21 +6,28 @@ using UnityEngine.UI;
 
 public class DecisionPanelContent : MonoBehaviour
 {
-    private GameObject canvas;
+    public GameObject canvas;
 
-    private IDecisionPanelObserver iDecisionPanelObserver;
+    public IDecisionPanelObserver iDecisionPanelObserver;
+    public AnimationManagerPanels animationManagerPanels;
 
-    GameObject panelRightGameObject;
-    Text textRight;
-    Image imageRight;
-    int decisionIDRight;
-    int factionIDRight;
+    public GameObject panelRightGameObject;
+    public Text textRight;
+    public Image imageRight;
+    public int decisionIDRight;
+    public int factionIDRight;
 
-    GameObject panelLeftGameObject;
-    Text textLeft;
-    Image imageLeft;
-    int decisionIDLeft;
-    int factionIDLeft;
+    public GameObject panelLeftGameObject;
+    public Text textLeft;
+    public Image imageLeft;
+    public int decisionIDLeft;
+    public int factionIDLeft;
+
+    public GameObject panelSingleGameObject;
+    public Text singlePanelText;
+    public Image imageSingle;
+    public int decisionIDSingle;
+    public int factionIDSingle;
 
 
     public void SetDecisionPair(IDecision leftDecision, IDecision rightDecision)
