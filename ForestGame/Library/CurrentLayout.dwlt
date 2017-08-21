@@ -645,16 +645,26 @@ MonoBehaviour:
 <<<<<<< HEAD
     - Assets
 =======
+<<<<<<< HEAD
+    - Assets
+=======
     - Assets/Scenes
 >>>>>>> d47e97b12911b029e8948ff90e9accf6e23c4713
+>>>>>>> 00b1227eb8d1cd75512fe2b13ca71d2c95684557
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Documents\sourcetree\ForestGame
   m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
+    scrollPos: {x: 0, y: 95}
+    m_SelectedIDs: ae260000
+    m_LastClickedID: 9902
+    m_ExpandedIDs: 00000000ae260000ce260000a6270000202900005e2a0000322c00007a2e000000ca9a3bffffff7f
+=======
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 90260000
@@ -666,6 +676,7 @@ MonoBehaviour:
     m_LastClickedID: 10826
     m_ExpandedIDs: 000000009a260000ba260000922700000c2900004a2a00001c2c00006a2e000000ca9a3bffffff7f
 >>>>>>> d47e97b12911b029e8948ff90e9accf6e23c4713
+>>>>>>> 00b1227eb8d1cd75512fe2b13ca71d2c95684557
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -694,10 +705,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+    m_ExpandedIDs: 00000000ae260000ce260000a6270000202900005e2a0000322c00007a2e0000
+=======
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000090260000e4260000ce270000fa28000004290000342a000004400000
 =======
     m_ExpandedIDs: 000000009a260000ba260000922700000c2900004a2a00001c2c00006a2e0000
 >>>>>>> d47e97b12911b029e8948ff90e9accf6e23c4713
+>>>>>>> 00b1227eb8d1cd75512fe2b13ca71d2c95684557
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -826,25 +841,25 @@ MonoBehaviour:
     height: 421
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a62e0000
-    m_LastClickedID: 11942
-    m_ExpandedIDs: 60f4ffff14fcffff00000000b62e0000
+    m_SelectedIDs: a6f5ffff
+    m_LastClickedID: -2650
+    m_ExpandedIDs: c0f5ffff32f6ffffe8fbffff00000000942e0000982e0000c02e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: TypeOfStakeHolder
+      m_OriginalName: TypeOfStakeHolder
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -2672
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 4}
     m_SearchString: 
   m_ExpandedScenes:
   - UserInterfaceScene
@@ -878,14 +893,14 @@ MonoBehaviour:
     width: 918
     height: 421
   m_SceneLighting: 1
-  lastFramingTime: 0
+  lastFramingTime: 383.7041473829501
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 165.28331, y: -117.57086, z: 0}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 165.28331, y: -117.57086, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -912,9 +927,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_Size:
-    m_Target: 10
+    m_Target: 136.11894
     speed: 2
-    m_Value: 10
+    m_Value: 136.11894
   m_Ortho:
     m_Target: 0
     speed: 2

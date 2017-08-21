@@ -25,33 +25,25 @@ public class DecisionPanelContent : MonoBehaviour
 
     public void SetDecisionPair(IDecision leftDecision, IDecision rightDecision)
     {
-        canvas = GameObject.Find("PanelCanvas");
-        panelRightGameObject = canvas.transform.Find("RightPanel").gameObject;
-        textRight = panelRightGameObject.transform.Find("Panel").transform.Find("DecisionDescription").GetComponent<Text>();
-        panelLeftGameObject = canvas.transform.Find("LeftPanel").gameObject;
-        textLeft = panelRightGameObject.transform.Find("DecisionDescription").GetComponent<Text>();
+        factionIDLeft = rightDecision.getFactionID();
+        decisionIDLeft = rightDecision.getDecisionID();
+        textLeft.text = rightDecision.getRequestText();
+        //imageLeft = rightDecision.getImage();
 
-        factionIDLeft = leftDecision.getFactionID();
-        decisionIDLeft = leftDecision.getDecisionID();
-        textLeft.text = leftDecision.getRequestText();
-        //imageLeft = leftDecision.getImage();
-
-        factionIDRight = rightDecision.getFactionID();
-        decisionIDRight = rightDecision.getDecisionID();
-        textRight.text = rightDecision.getRequestText();
-        //imageRight = rightDecision.getImage();
+        factionIDRight = leftDecision.getFactionID();
+        decisionIDRight = leftDecision.getDecisionID();
+        textRight.text = leftDecision.getRequestText();
+        //imageRight = leftDecision.getImage();
+        animationManagerPanels.ShowPanel("MultipleDecisionsPanelAnimation");
     }
 
     public void SetDecision(IDecision decision)
     {
-        canvas = GameObject.Find("PanelCanvas");
-        panelRightGameObject = canvas.transform.Find("SingleDecisionPanel").gameObject;
-        textRight = panelRightGameObject.transform.Find("Panel").transform.Find("DecisionDescription").GetComponent<Text>();
-
-        factionIDRight = decision.getFactionID();
-        decisionIDRight = decision.getDecisionID();
-        textRight.text = decision.getRequestText();
-        //imageRight = rightDecision.getImage();
+        decisionIDSingle = decision.getDecisionID();
+        factionIDSingle = decision.getDecisionID();
+        singlePanelText.text = decision.getRequestText();
+        //singleImage = decision.getImage();
+        animationManagerPanels.ShowPanel("SingleDecisionPanelAnimation");
     }
 
     public void SelectedButton(bool isRight)
