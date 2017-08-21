@@ -8,32 +8,40 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     private float delay;
     private float actualTimeDelay;
     private DecisionPanelContent content;
+    private bool waitingForAnswer; 
 
     public void setSelectedAnswer(byte answerID) {
         //TODO use the results
         setNewRandomWaitTime();
+        waitingForAnswer = false;
     }
 
     public void setSelectedDecision(short decisionID) {
         //TODO use the results
         setNewRandomWaitTime();
+        waitingForAnswer = false;
     }
 
     public void setDeniedDecision(short decisionID) {
         //TODO use the results
         setNewRandomWaitTime();
+        waitingForAnswer = false;
     }
 
     // Use this for initialization
     void Start () {
         decisionPool = DecisionPoolFactory.getDecisionPool();
-        content = new DecisionPanelContent();
+        content = GameObject.Find("PanelCanvas").gameObject.GetComponent<DecisionPanelContent>();
+        content.RegisterObserver(this);
+        setNewRandomWaitTime();
+        waitingForAnswer = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
         actualTimeDelay += Time.deltaTime;
-        if (actualTimeDelay >= delay) {
+        if (actualTimeDelay >= delay  && !waitingForAnswer) {
+            waitingForAnswer = true;
             Pair<IDecision, IDecision> pair = decisionPool.getDecisionPair();
             content.SetDecisionPair(pair.getKey(), pair.getValue());
         }

@@ -11,7 +11,7 @@ public class GameTestManager : MonoBehaviour {
 	void Update () {
 		time += Time.deltaTime;
 
-		if (time > 10) {
+		if (time > 5) {
 			SceneManager.LoadScene (6);
 		}
 	}

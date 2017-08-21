@@ -1,8 +1,8 @@
 ﻿public class Influences {
 
-    private byte industrialInfluence;
-    private byte environmentalInfluence;
-    private byte touristicInfluence;
+    private short industrialInfluence;
+    private short environmentalInfluence;
+    private short touristicInfluence;
 
     public Influences() {
         industrialInfluence = 0;
@@ -10,27 +10,27 @@
         touristicInfluence = 0;
     }
 
-    public void setIndustrialInfluence(byte influence) {
+    public void setIndustrialInfluence(short influence) {
         industrialInfluence = influence;
     }
 
-    public byte getIndustrialInfluence() {
+    public short getIndustrialInfluence() {
         return industrialInfluence;
     }
 
-    public void setEnvironmentalInfluence(byte influence) {
+    public void setEnvironmentalInfluence(short influence) {
         industrialInfluence = influence;
     }
 
-    public byte getEnvironmentalInfluence() {
+    public short getEnvironmentalInfluence() {
         return environmentalInfluence;
     }
 
-    public void setTouristicalInfluence(byte influence) {
+    public void setTouristicalInfluence(short influence) {
         touristicInfluence = influence;
     }
 
-    public byte getTouristicalInfluence() {
+    public short getTouristicalInfluence() {
         return touristicInfluence;
     }
 
