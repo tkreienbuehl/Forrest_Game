@@ -6,8 +6,11 @@ public class ForestTileHandler : MonoBehaviour {
 
 	public Color GlowColor;
 	public float LerpFactor = 10;
+    public GameObject clearCutFab;
+    public GameObject selectiveFab;
 
-	public Renderer[] Renderers
+
+    public Renderer[] Renderers
 	{
 		get;
 		private set;
@@ -44,10 +47,36 @@ public class ForestTileHandler : MonoBehaviour {
 		enabled = true;
 	}
 
-	/// <summary>
-	/// Loop over all cached materials and update their color, disable self if we reach our target color.
-	/// </summary>
-	private void Update()
+    private void OnMouseDown()
+    {
+        GameObject gameObject;
+        if (transform.tag == "Old Forest")
+        {
+            Destroy(transform.GetChild(0).gameObject);
+            gameObject = Instantiate(selectiveFab, transform.position, transform.rotation);
+            gameObject.transform.SetParent(transform);
+            transform.tag = "Selective Forest";
+        }
+        else if (transform.tag == "Managed Forest")
+        {
+            Destroy(transform.GetChild(0).gameObject);
+            gameObject = Instantiate(clearCutFab, transform.position, transform.rotation);
+            gameObject.transform.SetParent(transform);
+            transform.tag = "Clear Cut Forest";
+        }
+        else if (transform.tag == "Selective Forest")
+        {
+            Destroy(transform.GetChild(0).gameObject);
+            gameObject = Instantiate(clearCutFab, transform.position, transform.rotation);
+            gameObject.transform.SetParent(transform);
+            transform.tag = "Clear Cut Forest";
+        }
+    }
+
+    /// <summary>
+    /// Loop over all cached materials and update their color, disable self if we reach our target color.
+    /// </summary>
+    private void Update()
 	{
 		_currentColor = Color.Lerp(_currentColor, _targetColor, Time.deltaTime * LerpFactor);
 
