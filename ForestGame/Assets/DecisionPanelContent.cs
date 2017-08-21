@@ -28,6 +28,8 @@ public class DecisionPanelContent : MonoBehaviour
     public int decisionIDSingle;
     public int factionIDSingle;
 
+    public AnimationManagerPanels animationManagerPanels;
+
     public void SetDecisionPair(IDecision leftDecision, IDecision rightDecision)
     {
         factionIDLeft = leftDecision.getFactionID();
@@ -39,19 +41,16 @@ public class DecisionPanelContent : MonoBehaviour
         decisionIDRight = rightDecision.getDecisionID();
         textRight.text = rightDecision.getRequestText();
         //imageRight = rightDecision.getImage();
+        animationManagerPanels.ShowPanel("MultipleDecisionsPanelAnimation");
     }
 
     public void SetDecision(IDecision decision)
     {
-        factionIDRight = decision.getFactionID();
-        decisionIDRight = decision.getDecisionID();
-        textRight.text = decision.getRequestText();
-        //imageRight = rightDecision.getImage();
-
         decisionIDSingle = decision.getDecisionID();
         factionIDSingle = decision.getDecisionID();
         singlePanelText.text = decision.getRequestText();
         //singleImage = decision.getImage();
+        animationManagerPanels.ShowPanel("SingleDecisionPanelAnimation");
     }
 
     public void SelectedButton(bool isRight)
