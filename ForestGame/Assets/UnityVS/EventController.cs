@@ -37,9 +37,10 @@ public class EventController : MonoBehaviour, IEventPanelObserver {
     // Update is called once per frame
     void Update() {
         actualTimeDelay += Time.deltaTime;
-        if (actualTimeDelay >= delay) {
+        if (actualTimeDelay >= delay && !waitForAnswer) {
+            waitForAnswer = true;
             IEvent ievent = eventPool.getEvent();
-            
+            content.SetEvent(ievent);
         }
     }
 
@@ -49,7 +50,7 @@ public class EventController : MonoBehaviour, IEventPanelObserver {
     }
 
     public void setEventCommited() {
-        //TODO
+        //TODO give the influences to the bar controller
         setNewRandomWaitTime();
     }
 
