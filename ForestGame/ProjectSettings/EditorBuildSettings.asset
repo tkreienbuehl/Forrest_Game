@@ -4,4 +4,25 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MenuStart.unity
+    guid: 4d5f4ac80cfb25a48887225be2677f37
+  - enabled: 1
+    path: Assets/Scenes/MenuCampaign.unity
+    guid: fe6edf839a8a5884f94309c798d589ee
+  - enabled: 1
+    path: Assets/Scenes/MenuConservatives.unity
+    guid: 283833328e200df4ebb2f69d706870e6
+  - enabled: 1
+    path: Assets/Scenes/MenuDemocrats.unity
+    guid: bca4c38c78aa28542970f2f0db69c564
+  - enabled: 1
+    path: Assets/Scenes/MenuEnvironmentalist.unity
+    guid: 2711ebcfde69ca04895e0af29fdd8d04
+  - enabled: 1
+    path: Assets/Scenes/MapOverview.unity
+    guid: 5a55a35399e309042bb54c202513a7d0
+  - enabled: 1
+    path: Assets/Scenes/MenuFinish.unity
+    guid: 97717c373d1972549b663e9f79a61db2

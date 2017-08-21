@@ -5,21 +5,33 @@ using UnityEngine;
 public class fill : MonoBehaviour {
 
     public GameObject go;
-    public Vector3[] pos;
+    public Transform[] pos;
     public GameObject treeFab;
+    public GameObject treeFabManaged;
 
     // Use this for initialization
     void Start () {
-        Vector3[] pos = new Vector3[transform.childCount];
+        Transform[] pos = new Transform[transform.childCount];
         for(int i = 0; i < pos.Length; i++)
         {
-            pos[i] = go.transform.GetChild(i).position;
+            pos[i] = go.transform.GetChild(i);
         }
+        int differentTree = 0;
 
-        foreach (Vector3 positions in pos)
+        foreach (Transform positions in pos)
         {
-            GameObject gameObject = Instantiate(treeFab, positions, new Quaternion(0, 0, 0, 1));
-             
+            GameObject gameObject;
+            if (differentTree % 5 != 0)
+            {
+                gameObject = Instantiate(treeFab, positions.position, positions.rotation);
+                gameObject.transform.SetParent(positions);
+            }
+            else
+            {
+                gameObject = Instantiate(treeFabManaged, positions.position, positions.rotation);
+                gameObject.transform.SetParent(positions);
+            }
+            differentTree++;
         }
 	}
 	

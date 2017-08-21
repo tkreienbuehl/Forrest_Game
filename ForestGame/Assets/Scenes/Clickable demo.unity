@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 161616274}
   - component: {fileID: 161616273}
   m_Layer: 0
-  m_Name: block31
+  m_Name: block28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -571,7 +571,7 @@ GameObject:
   - component: {fileID: 423104997}
   - component: {fileID: 423104996}
   m_Layer: 0
-  m_Name: block39
+  m_Name: block36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -961,6 +961,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 83096b84f665d8d4abdd9f45886d9632, type: 2}
   m_IsPrefabParent: 0
@@ -980,7 +984,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &547014172
 Transform:
   m_ObjectHideFlags: 0
@@ -1128,6 +1132,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 5.1405845
       objectReference: {fileID: 0}
+    - target: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   m_IsPrefabParent: 0
@@ -1145,7 +1153,7 @@ GameObject:
   - component: {fileID: 635557120}
   - component: {fileID: 635557119}
   m_Layer: 0
-  m_Name: block33
+  m_Name: block30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1341,7 +1349,7 @@ GameObject:
   - component: {fileID: 750785862}
   - component: {fileID: 750785861}
   m_Layer: 0
-  m_Name: block34
+  m_Name: block31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1635,7 +1643,7 @@ GameObject:
   - component: {fileID: 907819943}
   - component: {fileID: 907819942}
   m_Layer: 0
-  m_Name: block36
+  m_Name: block33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1945,6 +1953,8 @@ MonoBehaviour:
   go: {fileID: 981076183}
   pos: []
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
 --- !u!4 &981076185
 Transform:
   m_ObjectHideFlags: 0
@@ -2694,7 +2704,7 @@ GameObject:
   - component: {fileID: 1556786269}
   - component: {fileID: 1556786268}
   m_Layer: 0
-  m_Name: block37
+  m_Name: block34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2890,7 +2900,7 @@ GameObject:
   - component: {fileID: 1579399774}
   - component: {fileID: 1579399773}
   m_Layer: 0
-  m_Name: block38
+  m_Name: block35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3478,7 +3488,7 @@ GameObject:
   - component: {fileID: 1878166407}
   - component: {fileID: 1878166406}
   m_Layer: 0
-  m_Name: block35
+  m_Name: block32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3576,7 +3586,7 @@ GameObject:
   - component: {fileID: 1928792833}
   - component: {fileID: 1928792832}
   m_Layer: 0
-  m_Name: block32
+  m_Name: block29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
