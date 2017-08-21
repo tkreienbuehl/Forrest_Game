@@ -15,10 +15,22 @@ public class ResultHandler : MonoBehaviour
 
     void Update()
     {
-        // TODO calculate the amount of influences
-        environmental.fillAmount = 1f;
-        industry.fillAmount = 0.2f;
-        tourist.fillAmount = 0.7f;
+
+    }
+
+    public void CalculateIndustrialInfluences(int influences)
+    {
+        industry.fillAmount += influences / 100;
+    }
+
+    public void CalculateEnvironmentalInfluences(int influences)
+    {
+        environmental.fillAmount +=influences / 100;
+    }
+
+    public void CalculateTouristInfluences(int influences)
+    {
+        tourist.fillAmount += influences / 100;
     }
 
 }
