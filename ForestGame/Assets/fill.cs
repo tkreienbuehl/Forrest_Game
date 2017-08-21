@@ -23,14 +23,17 @@ public class fill : MonoBehaviour {
             GameObject gameObject;
             if (differentTree % 5 != 0)
             {
-                gameObject = Instantiate(treeFab, positions.position, positions.rotation);
+                gameObject = Instantiate(treeFab, positions.position, positions.rotation);                
                 gameObject.transform.SetParent(positions);
+                positions.tag = "Old Forest";
             }
             else
             {
-                gameObject = Instantiate(treeFabManaged, positions.position, positions.rotation);
+                gameObject = Instantiate(treeFabManaged, positions.position, positions.rotation);                
                 gameObject.transform.SetParent(positions);
+                positions.tag = "Managed Forest";
             }
+
             differentTree++;
         }
 	}
