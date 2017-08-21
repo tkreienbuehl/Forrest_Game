@@ -34,4 +34,3 @@ sysinfo.txt
 *.unitypackage
 ForestGame/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll.meta
 ForestGame/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Messaging.dll.meta
-*.meta
