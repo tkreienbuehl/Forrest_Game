@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
@@ -8,7 +7,8 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     private float delay;
     private float actualTimeDelay;
     private DecisionPanelContent content;
-    private bool waitingForAnswer; 
+    private bool waitingForAnswer;
+    private List<IDecision> decisions;
 
     public void setSelectedAnswer(byte answerID) {
         //TODO use the results
@@ -17,13 +17,16 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     }
 
     public void setSelectedDecision(short decisionID) {
-        //TODO use the results
+        foreach(IDecision dec in decisions) {
+            if (dec.getDecisionID() == decisionID) {
+                //TODO send the results to the bar controller
+            }
+        }        
         setNewRandomWaitTime();
         waitingForAnswer = false;
     }
 
     public void setDeniedDecision(short decisionID) {
-        //TODO use the results
         setNewRandomWaitTime();
         waitingForAnswer = false;
     }
@@ -32,6 +35,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     void Start () {
         decisionPool = DecisionPoolFactory.getDecisionPool();
         content = GameObject.Find("PanelCanvas").gameObject.GetComponent<DecisionPanelContent>();
+        decisions = new List<IDecision>();
         content.RegisterObserver(this);
         setNewRandomWaitTime();
         waitingForAnswer = false;
@@ -42,7 +46,10 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
         actualTimeDelay += Time.deltaTime;
         if (actualTimeDelay >= delay  && !waitingForAnswer) {
             waitingForAnswer = true;
+            decisions.Clear();
             Pair<IDecision, IDecision> pair = decisionPool.getDecisionPair();
+            decisions.Add(pair.getKey());
+            decisions.Add(pair.getValue());
             content.SetDecisionPair(pair.getKey(), pair.getValue());
         }
 	}

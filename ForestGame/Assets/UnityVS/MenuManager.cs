@@ -12,22 +12,22 @@ public class MenuManager : MonoBehaviour {
 
 	public void SwitchToGameSceneCampaign()
 	{
-		SceneManager.LoadScene (1);
+		StartCoroutine(DelaySceneLoad(1));
 	}
 
 	public void SwitchToGameSceneCampaignConservatives()
 	{
-		SceneManager.LoadScene (2);
+		StartCoroutine(DelaySceneLoad(2));
 	}
 
 	public void SwitchToGameSceneCampaignDemocrats()
 	{
-		SceneManager.LoadScene (3);
+		StartCoroutine(DelaySceneLoad(3));
 	}
 
 	public void SwitchToGameSceneCampaignEnvironmentalist()
 	{
-		SceneManager.LoadScene (4);
+		StartCoroutine(DelaySceneLoad(4));
 	}
 		
 	public void SwitchToGameSceneMapOverview()
@@ -43,5 +43,11 @@ public class MenuManager : MonoBehaviour {
 	public void QuitGame()
 	{
 		Application.Quit();
+	}
+
+	IEnumerator DelaySceneLoad(int number)
+	{
+		yield return new WaitForSeconds(0.3f);
+		SceneManager.LoadScene(number);
 	}
 }
