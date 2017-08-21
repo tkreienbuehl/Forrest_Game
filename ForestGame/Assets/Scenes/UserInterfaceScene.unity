@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -439,6 +439,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 441949181}
+--- !u!1 &590487346 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1190751690503970, guid: 5f77fa4d9a35faf45b02cc1c0d3232e1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1765144929}
+--- !u!114 &591650140 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114094210354723062, guid: 5f77fa4d9a35faf45b02cc1c0d3232e1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1765144929}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1 &718829105 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1920440926645962, guid: 5f77fa4d9a35faf45b02cc1c0d3232e1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1765144929}
 --- !u!1 &746816614 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1802434628059474, guid: 5f7179004e0af61408d0cc0842e96d51,
@@ -566,6 +582,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 752732230}
+--- !u!114 &782129455 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114079455417508198, guid: 5f77fa4d9a35faf45b02cc1c0d3232e1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1765144929}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &789359725 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114973967701247896, guid: 5f77fa4d9a35faf45b02cc1c0d3232e1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1765144929}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!224 &809413839 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224618825334895698, guid: 5f7179004e0af61408d0cc0842e96d51,
@@ -719,6 +747,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 921169779}
+--- !u!1 &979840011 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1394865763427524, guid: 8780596e39f7ccc4f831174dba16112b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1166270102}
 --- !u!1 &1136230280
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,6 +1161,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1212337715}
+--- !u!114 &1305807157 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114412949598608994, guid: 5f77fa4d9a35faf45b02cc1c0d3232e1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1765144929}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1467310929
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,6 +1294,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224101865050251570, guid: 5f77fa4d9a35faf45b02cc1c0d3232e1,
     type: 2}
   m_PrefabInternal: {fileID: 1765144929}
+--- !u!114 &1641347128 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114668356374728106, guid: 8780596e39f7ccc4f831174dba16112b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1166270102}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1738290319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,6 +1454,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c0640d0c0cf19547bba1ecdcc132ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 718829105}
+  panelRightGameObject: {fileID: 718829105}
+  textRight: {fileID: 789359725}
+  imageRight: {fileID: 782129455}
+  decisionIDRight: 0
+  factionIDRight: 0
+  panelLeftGameObject: {fileID: 590487346}
+  textLeft: {fileID: 591650140}
+  imageLeft: {fileID: 1305807157}
+  decisionIDLeft: 0
+  factionIDLeft: 0
+  singlePanelGameObject: {fileID: 979840011}
+  singlePanelText: {fileID: 1804893109}
+  singleImage: {fileID: 1641347128}
+  decisionIDSingle: 0
+  factionIDSingle: 0
 --- !u!1 &1764072983
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,6 +1728,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5f77fa4d9a35faf45b02cc1c0d3232e1, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1804893109 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114829185226367946, guid: 8780596e39f7ccc4f831174dba16112b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1166270102}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!114 &1907686474 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114091539993635654, guid: 8780596e39f7ccc4f831174dba16112b,
