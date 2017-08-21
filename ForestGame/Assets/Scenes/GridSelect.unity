@@ -154,11 +154,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &9335391
 MeshRenderer:
@@ -260,11 +263,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &39397738
 MeshRenderer:
@@ -366,11 +372,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &64488761
 MeshRenderer:
@@ -472,11 +481,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &77553783
 MeshRenderer:
@@ -667,11 +679,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &144680544
 MeshRenderer:
@@ -773,11 +788,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &195502711
 MeshRenderer:
@@ -879,11 +897,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &204668878
 MeshRenderer:
@@ -985,11 +1006,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &243977792
 MeshRenderer:
@@ -1091,11 +1115,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &260488668
 MeshRenderer:
@@ -1197,11 +1224,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &284150706
 MeshRenderer:
@@ -1303,11 +1333,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &311458411
 MeshRenderer:
@@ -1409,11 +1442,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &311794943
 MeshRenderer:
@@ -1515,11 +1551,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &358459389
 MeshRenderer:
@@ -1967,11 +2006,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &614905844
 MeshRenderer:
@@ -2073,11 +2115,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &817779549
 MeshRenderer:
@@ -2220,11 +2265,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &956964798
 MeshRenderer:
@@ -2326,11 +2374,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &977782714
 MeshRenderer:
@@ -2517,11 +2568,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &1049599109
 MeshRenderer:
@@ -2702,11 +2756,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &1131775536
 MeshRenderer:
@@ -2808,11 +2865,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &1152902923
 MeshRenderer:
@@ -2914,11 +2974,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &1166441944
 MeshRenderer:
@@ -3020,11 +3083,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &1191938823
 MeshRenderer:
@@ -3126,11 +3192,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &1299179356
 MeshRenderer:
@@ -3232,11 +3301,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &1309891763
 MeshRenderer:
@@ -3338,11 +3410,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &1318785305
 MeshRenderer:
@@ -3444,11 +3519,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &1321884613
 MeshRenderer:
@@ -3568,11 +3646,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &1377503998
 MeshRenderer:
@@ -3674,11 +3755,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &1438632275
 MeshRenderer:
@@ -3780,11 +3864,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &1547478763
 MeshRenderer:
@@ -3886,11 +3973,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &1555924905
 MeshRenderer:
@@ -3992,11 +4082,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &1729429395
 MeshRenderer:
@@ -4098,11 +4191,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &1821191916
 MeshRenderer:
@@ -4204,11 +4300,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &1968607585
 MeshRenderer:
@@ -4310,11 +4409,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &2093769968
 MeshRenderer:
@@ -4416,11 +4518,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &2095656077
 MeshRenderer:
@@ -4522,11 +4627,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &2109309126
 MeshRenderer:
@@ -4628,11 +4736,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada0ab828866bf449ae853f9223e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 1}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0}
   LerpFactor: 10
   clearCutFab: {fileID: 1052957925202384, guid: ac616a8cbde7a8f4e82b4521a5472e30,
     type: 2}
   selectiveFab: {fileID: 1999482960416572, guid: 354b04fe65f024447ac2bf8bff3e74ea,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
 --- !u!23 &2135192436
 MeshRenderer:
