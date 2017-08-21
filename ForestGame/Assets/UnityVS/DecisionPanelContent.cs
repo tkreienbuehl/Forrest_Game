@@ -14,18 +14,21 @@ public class DecisionPanelContent : MonoBehaviour
 
     public GameObject panelRightGameObject;
     public Text textRight;
+    public Text typeRight;
     public Image imageRight;
     public int decisionIDRight;
     public int factionIDRight;
 
     public GameObject panelLeftGameObject;
     public Text textLeft;
+    public Text typeLeft;
     public Image imageLeft;
     public int decisionIDLeft;
     public int factionIDLeft;
 
     public GameObject panelSingleGameObject;
     public Text singlePanelText;
+    public Text singleTypeText;
     public Image imageSingle;
     public int decisionIDSingle;
     public int factionIDSingle;
@@ -34,20 +37,26 @@ public class DecisionPanelContent : MonoBehaviour
     private Influences rightInfluences;
     private Influences singleInfluences;
 
+    public Sprite touristSprite;
+    public Sprite EnvironmentalSprite;
+    public Sprite IndustrialSprite;
+
 
     public void SetDecisionPair(IDecision leftDecision, IDecision rightDecision)
     {
         factionIDLeft = rightDecision.getFactionID();
         decisionIDLeft = rightDecision.getDecisionID();
         textLeft.text = rightDecision.getRequestText();
-        //imageLeft = rightDecision.getImage();
+        typeLeft.text = SelectText(rightDecision.getFactionID());
+        imageLeft.sprite = SelectImage(rightDecision.getFactionID());
         leftInfluences = rightDecision.getInfluences();
 
         factionIDRight = leftDecision.getFactionID();
         decisionIDRight = leftDecision.getDecisionID();
         textRight.text = leftDecision.getRequestText();
+        typeRight.text = SelectText(leftDecision.getFactionID());
         rightInfluences = leftDecision.getInfluences();
-        //imageRight = leftDecision.getImage();
+        imageRight.sprite = SelectImage(leftDecision.getFactionID());
         animationManagerPanels.ShowPanel("MultipleDecisionsPanelAnimation");
     }
 
@@ -56,8 +65,9 @@ public class DecisionPanelContent : MonoBehaviour
         decisionIDSingle = decision.getDecisionID();
         factionIDSingle = decision.getDecisionID();
         singlePanelText.text = decision.getRequestText();
+        singleTypeText.text = SelectText(decision.getFactionID());
         singleInfluences = decision.getInfluences();
-        //singleImage = decision.getImage();
+        imageSingle.sprite = SelectImage(decision.getFactionID());
         animationManagerPanels.ShowPanel("SingleDecisionPanelAnimation");
     }
 
@@ -95,5 +105,42 @@ public class DecisionPanelContent : MonoBehaviour
     public void RegisterObserver(IDecisionPanelObserver iDecisionPanelObserver)
     {
         this.iDecisionPanelObserver = iDecisionPanelObserver;
+    }
+
+    private Sprite SelectImage(int imageNumber)
+    {
+        if (imageNumber == 1)
+        {
+            return IndustrialSprite;
+        }
+
+        if (imageNumber == 2)
+        {
+            return touristSprite;
+        }
+        if (imageNumber == 3)
+        {
+            return EnvironmentalSprite;
+        }
+
+        return null;
+    }
+
+    private string SelectText(int factionNumber)
+    {
+        if (factionNumber == 1)
+        {
+            return "Industry";
+        }
+        if (factionNumber == 2)
+        {
+            return "Tourism";
+        }
+        if (factionNumber == 3)
+        {
+            return "Environment";
+        }
+
+        return null;
     }
 }
