@@ -79,6 +79,14 @@ public class DecisionPanelContent : MonoBehaviour
         }
     }
 
+    public void SelectedSingleButton() {
+        iDecisionPanelObserver.setSelectedDecision((Int16)decisionIDSingle);
+        resultHandler.CalculateEnvironmentalInfluences(singleInfluences.getEnvironmentalInfluence());
+        resultHandler.CalculateIndustrialInfluences(singleInfluences.getIndustrialInfluence());
+        resultHandler.CalculateTouristInfluences(singleInfluences.getTouristicalInfluence());
+        Debug.Log("YOOO");
+    }
+
     public void DeniedDecision()
     {
         iDecisionPanelObserver.setDeniedDecision((Int16)decisionIDRight);
