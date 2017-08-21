@@ -6,32 +6,31 @@ using UnityEngine.UI;
 
 public class DecisionPanelContent : MonoBehaviour
 {
-    public GameObject canvas;
+    private GameObject canvas;
 
     private IDecisionPanelObserver iDecisionPanelObserver;
 
-    public GameObject panelRightGameObject;
-    public Text textRight;
-    public Image imageRight;
-    public int decisionIDRight;
-    public int factionIDRight;
+    GameObject panelRightGameObject;
+    Text textRight;
+    Image imageRight;
+    int decisionIDRight;
+    int factionIDRight;
 
-    public GameObject panelLeftGameObject;
-    public Text textLeft;
-    public Image imageLeft;
-    public int decisionIDLeft;
-    public int factionIDLeft;
+    GameObject panelLeftGameObject;
+    Text textLeft;
+    Image imageLeft;
+    int decisionIDLeft;
+    int factionIDLeft;
 
-    public GameObject singlePanelGameObject;
-    public Text singlePanelText;
-    public Image singleImage;
-    public int decisionIDSingle;
-    public int factionIDSingle;
-
-    public AnimationManagerPanels animationManagerPanels;
 
     public void SetDecisionPair(IDecision leftDecision, IDecision rightDecision)
     {
+        canvas = GameObject.Find("PanelCanvas");
+        panelRightGameObject = canvas.transform.Find("RightPanel").gameObject;
+        textRight = panelRightGameObject.transform.Find("Panel").transform.Find("DecisionDescription").GetComponent<Text>();
+        panelLeftGameObject = canvas.transform.Find("LeftPanel").gameObject;
+        textLeft = panelRightGameObject.transform.Find("DecisionDescription").GetComponent<Text>();
+
         factionIDLeft = leftDecision.getFactionID();
         decisionIDLeft = leftDecision.getDecisionID();
         textLeft.text = leftDecision.getRequestText();
@@ -41,16 +40,18 @@ public class DecisionPanelContent : MonoBehaviour
         decisionIDRight = rightDecision.getDecisionID();
         textRight.text = rightDecision.getRequestText();
         //imageRight = rightDecision.getImage();
-        animationManagerPanels.ShowPanel("MultipleDecisionsPanelAnimation");
     }
 
     public void SetDecision(IDecision decision)
     {
-        decisionIDSingle = decision.getDecisionID();
-        factionIDSingle = decision.getDecisionID();
-        singlePanelText.text = decision.getRequestText();
-        //singleImage = decision.getImage();
-        animationManagerPanels.ShowPanel("SingleDecisionPanelAnimation");
+        canvas = GameObject.Find("PanelCanvas");
+        panelRightGameObject = canvas.transform.Find("SingleDecisionPanel").gameObject;
+        textRight = panelRightGameObject.transform.Find("Panel").transform.Find("DecisionDescription").GetComponent<Text>();
+
+        factionIDRight = decision.getFactionID();
+        decisionIDRight = decision.getDecisionID();
+        textRight.text = decision.getRequestText();
+        //imageRight = rightDecision.getImage();
     }
 
     public void SelectedButton(bool isRight)
