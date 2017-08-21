@@ -11,34 +11,34 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     private List<IDecision> decisions;
 
     public void setSelectedAnswer(byte answerID) {
+        waitingForAnswer = false;
         //TODO use the results
         setNewRandomWaitTime();
-        waitingForAnswer = false;
     }
 
     public void setSelectedDecision(short decisionID) {
-        foreach(IDecision dec in decisions) {
+        waitingForAnswer = false;
+        foreach (IDecision dec in decisions) {
             if (dec.getDecisionID() == decisionID) {
                 //TODO send the results to the bar controller
             }
         }        
         setNewRandomWaitTime();
-        waitingForAnswer = false;
     }
 
     public void setDeniedDecision(short decisionID) {
-        setNewRandomWaitTime();
         waitingForAnswer = false;
+        setNewRandomWaitTime();
     }
 
     // Use this for initialization
     void Start () {
+        waitingForAnswer = false;
         decisionPool = DecisionPoolFactory.getDecisionPool();
         content = GameObject.Find("PanelCanvas").gameObject.GetComponent<DecisionPanelContent>();
         decisions = new List<IDecision>();
         content.RegisterObserver(this);
         setNewRandomWaitTime();
-        waitingForAnswer = false;
 	}
 	
 	// Update is called once per frame
