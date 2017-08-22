@@ -6,6 +6,13 @@ public class DecisionPool : IDecisionPool {
 
     //Area for global Variables
     private static IDictionary Decissions = new Dictionary<int, int>();
+    private Database db;
+    private static bool useStub = false;
+
+    public DecisionPool() {
+        //instance of db class.
+        db = new Database();
+    }
 
     private int SelectRandomID()
     {
@@ -13,12 +20,8 @@ public class DecisionPool : IDecisionPool {
         int returnID = 0;
         Boolean badid = true;
 
-        //instance of other classes.
-        Database db = new Database();
-
         // get value array from database class
-        int[] ID = db.GetidArray();
-
+        int[] ID = db.get_id();
 
         while (badid){
 
@@ -55,8 +58,15 @@ public class DecisionPool : IDecisionPool {
 
     public Pair<IDecision, IDecision> getDecisionPair()
     {
-        DecisionExample ex = new DecisionExample();
-        return new Pair<IDecision, IDecision>(ex.Decision1(), ex.Decision2());
+        if (useStub) {
+            DecisionExample ex = new DecisionExample();
+            return new Pair<IDecision, IDecision>(ex.Decision1(), ex.Decision2());
+        }
+        else {
+            IDecision desc1 = db.get_descision(SelectRandomID());
+            IDecision desc2 = db.get_descision(SelectRandomID());
+            return new Pair<IDecision, IDecision>(desc1, desc2);
+        }
     }
 
     public IDecision getDecision()
