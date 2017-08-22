@@ -51,6 +51,7 @@ public class ForestTileHandler : MonoBehaviour {
     private void OnMouseDown()
     {
         GameObject gameObject;
+
         if (transform.tag == "Old Forest")
         {
             Destroy(transform.GetChild(0).gameObject);
