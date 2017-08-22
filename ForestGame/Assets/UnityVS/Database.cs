@@ -163,7 +163,7 @@ public class Database {
         SqlConnection cn = new SqlConnection(connStr);
 
         //ned the change thinggy 
-        string command = "SELECT INFLUENCE.VALUE, DECISION.fk_FACTION_ID, MONETARY_INFLUENCES.INCOME, MONETARY_INFLUENCES.YEARLY_COST\n" +
+        string command = "SELECT INFLUENCE.fk_INFLUENCE_TYPE, INFLUENCE.VALUE, DECISION.fk_FACTION_ID, MONETARY_INFLUENCES.INCOME, MONETARY_INFLUENCES.YEARLY_COST\n" +
             "FROM INFLUENCE\n" +
             "INNER JOIN CONNECTED_INFLUENCE on CONNECTED_INFLUENCE.fk_INFLUENCE_ID = INFLUENCE.INFLUENCE_ID\n" +
             "INNER JOIN DECISION on CONNECTED_INFLUENCE.fk_DECISION_ID = DECISION.DECISION_ID\n" + 
@@ -185,7 +185,7 @@ public class Database {
                 foreach (DataRow dr in dataTable.Rows) {
 
                     int value = Convert.ToInt32(dr["value"]);
-                    int faction = Convert.ToInt32(dr["faction_id"]);
+                    int faction = Convert.ToInt32(dr["fk_INFLUENCE_TYPE"]);
                     infl.setIncomeInfluence(Convert.ToDecimal(dr["income"]));
                     infl.setCostYearlyInfluence(Convert.ToDecimal(dr["yearly_cost"]));
 
