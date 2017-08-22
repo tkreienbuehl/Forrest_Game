@@ -45,7 +45,7 @@ public class EventController : MonoBehaviour, IEventPanelObserver {
     }
 
     private void setNewRandomWaitTime() {
-        delay = Random.Range(100.0f, max: 300.0f);
+        delay = Random.Range(100f, max: 300f);
         actualTimeDelay = 0.0f;
     }
 
