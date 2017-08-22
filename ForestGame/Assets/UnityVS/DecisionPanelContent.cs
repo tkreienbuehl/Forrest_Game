@@ -11,6 +11,7 @@ public class DecisionPanelContent : MonoBehaviour
     public IDecisionPanelObserver iDecisionPanelObserver;
     public AnimationManagerPanels animationManagerPanels;
     public ResultHandler resultHandler;
+    public MoneyHandler moneyHandler;
 
     public GameObject panelRightGameObject;
     public Text textRight;
@@ -81,6 +82,8 @@ public class DecisionPanelContent : MonoBehaviour
             resultHandler.CalculateEnvironmentalInfluences(rightInfluences.getEnvironmentalInfluence());
             resultHandler.CalculateIndustrialInfluences(rightInfluences.getIndustrialInfluence());
             resultHandler.CalculateTouristInfluences(rightInfluences.getTouristicalInfluence());
+            moneyHandler.ChangeMoneyAmount((float)rightInfluences.getCostInfluence());
+            moneyHandler.ChangeMoneyAmount((float)rightInfluences.getCostYearlyInfluence());
         }
         else
         {
@@ -88,6 +91,8 @@ public class DecisionPanelContent : MonoBehaviour
             resultHandler.CalculateEnvironmentalInfluences(leftInfluences.getEnvironmentalInfluence());
             resultHandler.CalculateIndustrialInfluences(leftInfluences.getIndustrialInfluence());
             resultHandler.CalculateTouristInfluences(leftInfluences.getTouristicalInfluence());
+            moneyHandler.ChangeMoneyAmount((float)leftInfluences.getCostInfluence());
+            moneyHandler.ChangeMoneyAmount((float)leftInfluences.getCostYearlyInfluence());
         }
     }
 
@@ -96,7 +101,8 @@ public class DecisionPanelContent : MonoBehaviour
         resultHandler.CalculateEnvironmentalInfluences(singleInfluences.getEnvironmentalInfluence());
         resultHandler.CalculateIndustrialInfluences(singleInfluences.getIndustrialInfluence());
         resultHandler.CalculateTouristInfluences(singleInfluences.getTouristicalInfluence());
-        Debug.Log("YOOO");
+        moneyHandler.ChangeMoneyAmount((float)singleInfluences.getCostInfluence());
+        moneyHandler.ChangeMoneyAmount((float)singleInfluences.getCostYearlyInfluence());
     }
 
     public void DeniedDecision()
