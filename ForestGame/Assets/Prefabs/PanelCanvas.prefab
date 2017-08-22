@@ -1414,9 +1414,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 670657c68eccf1b4d94eeb0ec5b13032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  environmental: {fileID: 114960892898281370}
-  industry: {fileID: 114989292692396706}
-  tourist: {fileID: 114334954712519946}
+  environmental: {fileID: 114079984831407086}
+  industry: {fileID: 114839614394075214}
+  tourist: {fileID: 114874928554454196}
 --- !u!114 &114442453029089600
 MonoBehaviour:
   m_ObjectHideFlags: 1
