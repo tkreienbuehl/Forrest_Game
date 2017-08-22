@@ -22,7 +22,10 @@ public class Database {
             command = "SELECT DECISION_ID FROM DECISION JOIN (SELECT * FROM OPPONENT WHERE fk_OPPONENT_ID != 0) AS OPP ON DECISION_ID = OPP.fk_REQUEST_ID"; //tested query on DB
         }
         else {
-            command = "SELECT DECISION_ID FROM DECISION JOIN (SELECT * FROM OPPONENT WHERE fk_OPPONENT_ID != 0) AS OPP ON DECISION_ID = OPP.fk_REQUEST_ID"; //tested query on DB
+            command =   "SELECT DECISION_ID" +
+                        "FROM DECISION D" +
+                        "WHERE NOT EXISTS" + 
+                        "(SELECT * FROM OPPONENT OP WHERE D.DECISION_ID = OP.fk_OPPONENT_ID OR D.DECISION_ID = OP.fk_REQUEST_ID)"; //tested query on DB
         }
 
         try {
