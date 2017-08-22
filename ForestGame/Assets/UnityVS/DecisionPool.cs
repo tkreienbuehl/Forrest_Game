@@ -8,7 +8,7 @@ public class DecisionPool : IDecisionPool {
     //Area for global Variables
     private static IDictionary decisions = new Dictionary<int, int>();
     private Database db;
-    private static bool useStub = true;
+    private static bool useStub = false;
 
     public DecisionPool() {
         //instance of db class.

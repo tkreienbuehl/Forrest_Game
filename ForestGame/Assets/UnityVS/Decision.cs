@@ -6,6 +6,7 @@
     private short factionID;
     private short actionID;
     private short nrOfFieldsAffected;
+    private bool isBribe;
 
     public Decision(int decisionID) {
         this.decisionID = decisionID;
@@ -14,6 +15,7 @@
         decisionRequest = "";
         actionID = 0;
         nrOfFieldsAffected = 0;
+        isBribe = false;
     }
 
     public void setRequestText(string text) {
@@ -32,6 +34,10 @@
         nrOfFieldsAffected = nr;
     }
 
+    public void setIsBribe(bool bribe) {
+        isBribe = bribe;
+    }
+ 
     public int getDecisionID() {
         return decisionID; 
     }
@@ -58,5 +64,9 @@
 
     public short getNrOfAffectedFields() {
         return nrOfFieldsAffected;
+    }
+
+    public bool getIsBribe() {
+        return isBribe;
     }
 }

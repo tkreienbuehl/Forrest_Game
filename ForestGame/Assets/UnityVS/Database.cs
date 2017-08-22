@@ -123,7 +123,7 @@ public class Database {
         //This is your database connection:
         SqlConnection cn = new SqlConnection(connStr);
 
-        string command = "SELECT TEXT,fk_FACTION_ID FROM DECISION WHERE DECISION_ID=" + id;
+        string command = "SELECT TEXT, fk_FACTION_ID, ACTION_ID, BRIBE, NR_OF_FIELDS FROM DECISION WHERE DECISION_ID=" + id;
 
         try {
             //Open the sql connection.
@@ -141,6 +141,9 @@ public class Database {
                     foreach (DataRow dr in dataTable.Rows) {
                         dc.setRequestText(dr["TEXT"].ToString());
                         dc.setFactionID(Convert.ToInt16(dr["fk_FACTION_ID"]));
+                        dc.setIsBribe(Convert.ToBoolean(dr["BRIBE"]));
+                        dc.setActionID(Convert.ToInt16(dr["ACTION_ID"]));
+                        dc.setNrOfFieldsAffected(Convert.ToInt16(dr["NR_OF_FIELDS"]));
                     }
                 }
             }
@@ -179,9 +182,9 @@ public class Database {
             DataTable dataTable = new DataTable();
 
             //get the results.
-            int recordsAffected = da.Fill(dataTable);
+            da.Fill(dataTable);
 
-            if (recordsAffected > 0) {
+            if (cn.State == ConnectionState.Open) {
                 foreach (DataRow dr in dataTable.Rows) {
 
                     int value = Convert.ToInt32(dr["value"]);

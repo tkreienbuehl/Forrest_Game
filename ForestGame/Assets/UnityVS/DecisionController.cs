@@ -22,9 +22,15 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
         waitingForAnswer = false;
         foreach (IDecision dec in decisions) {
             if (dec.getDecisionID() == decisionID) {
-                //TODO send the results to the bar controller
                 if (dec.getActionID() == 1) {
                     handler.StartClickEvent(CuttingType.ClearCut, 4);
+                }
+
+                if (dec.getIsBribe()) {
+                    double nr = Random.Range(1.0f, max: 100.0f);
+                    if ((int)nr % 4 == 0) {
+                        //TODO set jail event
+                    }
                 }
             }
         }        
@@ -39,7 +45,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     // Use this for initialization
     void Start () {
         waitingForAnswer = false;
-        speedUpFactor = 3;
+        speedUpFactor = 1;
         decisionPool = DecisionPoolFactory.getDecisionPool();
         content = GameObject.Find("PanelCanvas").gameObject.GetComponent<DecisionPanelContent>();
         decisions = new List<IDecision>();

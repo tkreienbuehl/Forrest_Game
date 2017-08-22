@@ -32,6 +32,7 @@ public class EventController : MonoBehaviour, IEventPanelObserver {
     void Start() {
         content = GameObject.Find("PanelCanvas").gameObject.GetComponent<EventPanelContent>();
         eventPool = EventPoolFactory.getEventPool();
+        setNewRandomWaitTime();
     }
 
     // Update is called once per frame

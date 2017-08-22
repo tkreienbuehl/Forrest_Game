@@ -61,4 +61,8 @@ public class MultipleDecision : IMultipleDecision{
     public short getNrOfAffectedFields() {
         return 0;
     }
+
+    public bool getIsBribe() {
+        return false;
+    }
 }

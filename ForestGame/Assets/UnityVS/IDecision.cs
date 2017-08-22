@@ -12,4 +12,6 @@
 
     short getNrOfAffectedFields();
 
+    bool getIsBribe();
+
 }
