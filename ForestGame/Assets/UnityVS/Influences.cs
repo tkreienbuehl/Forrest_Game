@@ -5,17 +5,17 @@
     private short touristicInfluence;
 
     //added new part.
-    private short nrOfFields;
-    private short actionID;
-    private decimal costYearly;
-    private decimal income;
+    private decimal Cost;
+    private decimal Cost_Yearly;
+    private decimal Income;
 
     public Influences() {
         industrialInfluence     = 0;
         environmentalInfluence  = 0;
         touristicInfluence      = 0;
-        costYearly              = 0;
-        income                  = 0;
+        Cost                    = 0;
+        Cost_Yearly             = 0;
+        Income                  = 0;
     }
 
     public void setIndustrialInfluence(short influence) {
@@ -27,7 +27,7 @@
     }
 
     public void setEnvironmentalInfluence(short influence) {
-        environmentalInfluence = influence;
+        industrialInfluence = influence;
     }
 
     public short getEnvironmentalInfluence() {
@@ -42,20 +42,28 @@
         return touristicInfluence;
     }
 
+    public void setCostInfluence(decimal influence) {
+        Cost = influence;
+    }
+
     public void setCostYearlyInfluence(decimal influence) {
-        costYearly = influence;
+        Cost_Yearly = influence;
     }
 
     public void setIncomeInfluence(decimal influence) {
-        income = influence;
+        Income = influence;
+    }
+
+    public decimal getCostInfluence() {
+        return Cost;
     }
 
     public decimal getCostYearlyInfluence() {
-        return costYearly;
+        return Cost_Yearly;
     }
 
     public decimal getIncomeInfluence() {
-        return income;
+        return Income;
     }
 
 }

@@ -7,19 +7,30 @@ public class ResultHandler : MonoBehaviour
     public Image industry;
     public Image tourist;
 
-    public void CalculateIndustrialInfluences(short influences)
-    {
-        industry.fillAmount = industry.fillAmount + influences / 100f;
+    Influences influences;
+
+    void Start() {
+        
     }
 
-    public void CalculateEnvironmentalInfluences(short influences)
+    void Update()
     {
-        environmental.fillAmount = environmental.fillAmount + influences / 100f;
+        
     }
 
-    public void CalculateTouristInfluences(short influences)
+    public void CalculateIndustrialInfluences(int influences)
     {
-        tourist.fillAmount = tourist.fillAmount + influences / 100f;
+        industry.fillAmount += influences / 10f;
+    }
+
+    public void CalculateEnvironmentalInfluences(int influences)
+    {
+        environmental.fillAmount += influences / 10f;
+    }
+
+    public void CalculateTouristInfluences(int influences)
+    {
+        tourist.fillAmount += influences / 10f;
     }
 
 }

@@ -10,7 +10,7 @@
         return DecisionExp(1, 1, "We want to clearcut 4 fields of old forest. \n Income: 10000K, 11000K if labeled");
     }
     public Decision Decision2() {
-        InfluenceExp(-2, 2, 2);
+        InfluenceExp(-2, -2, 2);
         return DecisionExp(2, 2, "Clearcut? That will keep our guests away! Please choose selective cut!. \n Income: 6000K, 6600K if labeled");
     }
 

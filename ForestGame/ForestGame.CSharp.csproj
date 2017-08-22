@@ -87,8 +87,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DecisionPanelContent.cs" />
     <Compile Include="Assets\fill.cs" />
-    <Compile Include="Assets\ForestTileHandler.cs" />
     <Compile Include="Assets\GE Common Assets\GE Orbit Camera\Scripts\GE_OrbitCamera.cs" />
     <Compile Include="Assets\GE Common Assets\GE Orbit Camera\Scripts\GE_OrbitCameraUI.cs" />
     <Compile Include="Assets\GE Common Assets\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs" />
@@ -105,14 +105,11 @@
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_DemoPlaySound.cs" />
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_OpenOtherScene.cs" />
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo Basic (CSharp)\Scripts\GUIAnimatorFREEDemo.cs" />
-    <Compile Include="Assets\Scripts\GlowObject.cs" />
     <Compile Include="Assets\UnityVS\AnimationManagerPanels.cs" />
-    <Compile Include="Assets\UnityVS\BackgroundSound.cs" />
     <Compile Include="Assets\UnityVS\Database.cs" />
     <Compile Include="Assets\UnityVS\Decision.cs" />
     <Compile Include="Assets\UnityVS\DecisionController.cs" />
     <Compile Include="Assets\UnityVS\DecisionExample.cs" />
-    <Compile Include="Assets\UnityVS\DecisionPanelContent.cs" />
     <Compile Include="Assets\UnityVS\DecisionPool.cs" />
     <Compile Include="Assets\UnityVS\DecisionPoolFactory.cs" />
     <Compile Include="Assets\UnityVS\Event.cs" />
@@ -138,12 +135,6 @@
     <None Include="Assets\GE Common Assets\Readme.txt" />
     <None Include="Assets\GUI Animator\GUI Animator FREE\!How to.txt" />
     <None Include="Assets\GUI Animator\GUI Animator FREE\Readme.txt" />
-    <None Include="Assets\Resources\Blur.shader" />
-    <None Include="Assets\Resources\GlowCmdShader.shader" />
-    <None Include="Assets\Resources\GlowComposite.shader" />
-    <None Include="Assets\Resources\GlowReplace.shader" />
-    <None Include="Assets\Resources\GlowTEst.shader" />
-    <None Include="Assets\Resources\Standard-Glow.shader" />
     <None Include="Assets\VertexColorTrees\Shaders\VertexColorUnlit.shader" />
     <None Include="Assets\Water Flow FREE\Readme.txt" />
     <None Include="Assets\Water Flow FREE\Shaders\Water Flow FREE Simple.shader" />

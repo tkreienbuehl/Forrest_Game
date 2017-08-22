@@ -1207,8 +1207,8 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 3
-    m_AlignByGeometry: 1
+    m_Alignment: 4
+    m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -1414,9 +1414,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 670657c68eccf1b4d94eeb0ec5b13032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  environmental: {fileID: 114079984831407086}
-  industry: {fileID: 114839614394075214}
-  tourist: {fileID: 114874928554454196}
+  environmental: {fileID: 114960892898281370}
+  industry: {fileID: 114989292692396706}
+  tourist: {fileID: 114334954712519946}
 --- !u!114 &114442453029089600
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1612,8 +1612,8 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 3
-    m_AlignByGeometry: 1
+    m_Alignment: 4
+    m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -1727,8 +1727,8 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 3
-    m_AlignByGeometry: 1
+    m_Alignment: 4
+    m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0

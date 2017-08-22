@@ -94,6 +94,7 @@ public class DecisionPanelContent : MonoBehaviour
         resultHandler.CalculateEnvironmentalInfluences(singleInfluences.getEnvironmentalInfluence());
         resultHandler.CalculateIndustrialInfluences(singleInfluences.getIndustrialInfluence());
         resultHandler.CalculateTouristInfluences(singleInfluences.getTouristicalInfluence());
+        Debug.Log("YOOO");
     }
 
     public void DeniedDecision()
