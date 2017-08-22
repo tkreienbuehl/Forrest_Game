@@ -5,6 +5,7 @@
     Influences influences;
     private short factionID;
     private short actionID;
+    private short nrOfFieldsAffected;
 
     public Decision(int decisionID) {
         this.decisionID = decisionID;
@@ -12,6 +13,7 @@
         factionID = 0;
         decisionRequest = "";
         actionID = 0;
+        nrOfFieldsAffected = 0;
     }
 
     public void setRequestText(string text) {
@@ -24,6 +26,10 @@
 
     public void setInfluences(Influences influences) {
         this.influences = influences;
+    }
+
+    public void setNrOfFieldsAffected(short nr) {
+        nrOfFieldsAffected = nr;
     }
 
     public int getDecisionID() {
@@ -48,5 +54,9 @@
 
     public void setActionID(short actionID) {
         this.actionID = actionID;
+    }
+
+    public short getNrOfAffectedFields() {
+        return nrOfFieldsAffected;
     }
 }
