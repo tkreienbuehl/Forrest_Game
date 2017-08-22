@@ -20,17 +20,17 @@ public class ResultHandler : MonoBehaviour
 
     public void CalculateIndustrialInfluences(int influences)
     {
-        industry.fillAmount += influences / 10f;
+        industry.fillAmount += influences / 100f;
     }
 
     public void CalculateEnvironmentalInfluences(int influences)
     {
-        environmental.fillAmount += influences / 10f;
+        environmental.fillAmount += influences / 100f;
     }
 
     public void CalculateTouristInfluences(int influences)
     {
-        tourist.fillAmount += influences / 10f;
+        tourist.fillAmount += influences / 100f;
     }
 
 }
