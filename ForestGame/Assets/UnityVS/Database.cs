@@ -139,7 +139,6 @@ public class Database
                     int value                   = Convert.ToInt32(dr["value"]);
                     int faction                 = Convert.ToInt32(dr["faction_id"]);
                     infl.setIncomeInfluence(Convert.ToDecimal(dr["income"]));
-                    infl.setCostInfluence(Convert.ToDecimal(dr["cost"]));
                     infl.setCostYearlyInfluence(Convert.ToDecimal(dr["yearly_cost"]));
 
                     if (faction == 1) {
