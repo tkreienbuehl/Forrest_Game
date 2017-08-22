@@ -27,7 +27,7 @@
     }
 
     public void setEnvironmentalInfluence(short influence) {
-        industrialInfluence = influence;
+        environmentalInfluence = influence;
     }
 
     public short getEnvironmentalInfluence() {
