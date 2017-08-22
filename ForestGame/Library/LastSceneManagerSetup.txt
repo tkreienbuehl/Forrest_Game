@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/UserInterfaceScene.unity
-=======
-- path: Assets/Scenes/GridSelect.unity
->>>>>>> b72067a848e79310a403827714acb114004044dd
   isLoaded: 1
   isActive: 1
