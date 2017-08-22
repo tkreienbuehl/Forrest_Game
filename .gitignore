@@ -34,3 +34,5 @@ sysinfo.txt
 *.unitypackage
 ForestGame/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll.meta
 ForestGame/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Messaging.dll.meta
+ForestGame/.vs/ForestGame/v14/sqlite3/
+ForestGame/.vs/ForestGame/v15/sqlite3/
