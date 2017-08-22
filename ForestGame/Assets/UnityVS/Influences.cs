@@ -5,9 +5,9 @@
     private short touristicInfluence;
 
     //added new part.
-    private decimal Cost;
-    private decimal Cost_Yearly;
-    private decimal Income;
+    private double Cost;
+    private double Cost_Yearly;
+    private double Income;
 
     public Influences() {
         industrialInfluence     = 0;
@@ -42,27 +42,27 @@
         return touristicInfluence;
     }
 
-    public void setCostInfluence(decimal influence) {
+    public void setCostInfluence(double influence) {
         Cost = influence;
     }
 
-    public void setCostYearlyInfluence(decimal influence) {
+    public void setCostYearlyInfluence(double influence) {
         Cost_Yearly = influence;
     }
 
-    public void setIncomeInfluence(decimal influence) {
+    public void setIncomeInfluence(double influence) {
         Income = influence;
     }
 
-    public decimal getCostInfluence() {
+    public double getCostInfluence() {
         return Cost;
     }
 
-    public decimal getCostYearlyInfluence() {
+    public double getCostYearlyInfluence() {
         return Cost_Yearly;
     }
 
-    public decimal getIncomeInfluence() {
+    public double getIncomeInfluence() {
         return Income;
     }
 

@@ -171,7 +171,7 @@ public class Database {
             "INNER JOIN CONNECTED_INFLUENCE on CONNECTED_INFLUENCE.fk_INFLUENCE_ID = INFLUENCE.INFLUENCE_ID\n" +
             "INNER JOIN DECISION on CONNECTED_INFLUENCE.fk_DECISION_ID = DECISION.DECISION_ID\n" + 
             "INNER JOIN MONETARY_INFLUENCES on CONNECTED_INFLUENCE.fk_MONETARY_INFLUENCE = MONETARY_INFLUENCES.MONETARY_INFLUENCES_ID\n" + 
-            "WHERE DECISION.DECISION_ID" + id; //tested
+            "WHERE DECISION.DECISION_ID = " + id; //tested
 
         try {
             //Open the sql connection.
@@ -189,8 +189,8 @@ public class Database {
 
                     int value = Convert.ToInt32(dr["value"]);
                     int faction = Convert.ToInt32(dr["fk_INFLUENCE_TYPE"]);
-                    infl.setIncomeInfluence(Convert.ToDecimal(dr["income"]));
-                    infl.setCostYearlyInfluence(Convert.ToDecimal(dr["yearly_cost"]));
+                    infl.setIncomeInfluence(Convert.ToDouble(dr["income"]));
+                    infl.setCostYearlyInfluence(Convert.ToDouble(dr["yearly_cost"]));
 
                     if (faction == 1) {
                         //facction id 1 == industry
