@@ -32,7 +32,6 @@ public class EventController : MonoBehaviour, IEventPanelObserver {
     void Start() {
         content = GameObject.Find("PanelCanvas").gameObject.GetComponent<EventPanelContent>();
         eventPool = EventPoolFactory.getEventPool();
-        content.RegisterObserver(this);
     }
 
     // Update is called once per frame
@@ -46,7 +45,7 @@ public class EventController : MonoBehaviour, IEventPanelObserver {
     }
 
     private void setNewRandomWaitTime() {
-        delay = Random.Range(40.0f, max: 60.0f);
+        delay = Random.Range(100f, max: 300f);
         actualTimeDelay = 0.0f;
     }
 
