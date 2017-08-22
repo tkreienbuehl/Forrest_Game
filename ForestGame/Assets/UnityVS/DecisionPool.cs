@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class DecisionPool : IDecisionPool {
 
     //Area for global Variables
-    private static IDictionary Decissions = new Dictionary<int, int>();
+    private static IDictionary decisions = new Dictionary<int, int>();
     private Database db;
     private static bool useStub = false;
 
@@ -14,46 +14,52 @@ public class DecisionPool : IDecisionPool {
         db = new Database();
     }
 
-    private int SelectRandomID()
+    private int SelectRandomID(bool pairDecisionAsked)
     {
         //gobal value
         int returnID = 0;
         Boolean badid = true;
 
         // get value array from database class
-        int[] ID = db.get_id();
+        int[] id = { 0 };
+        if (pairDecisionAsked) {
+            id = db.getPairRequestIDs();
+        }
+        else {
+            id = db.getSingleDecisionsIDs(); 
+        }
 
         while (badid){
 
-            int extractNumber = ID[getRandom(ID)];
+            int extractNumber = id[getRandom(id)];
 
-            if (Decissions.Contains(extractNumber)){
+            if (decisions.Contains(extractNumber)){
 
-                int amount = Convert.ToInt32(Decissions[extractNumber]);
+                int amount = Convert.ToInt32(decisions[extractNumber]);
                 if (amount == 10){
 
-                    //can reuse the ecission.
+                    //can reuse the decision.
                     amount = 1;
-                    Decissions[extractNumber] = amount;
+                    decisions[extractNumber] = amount;
                     badid = false;
                 } else {
                     amount += 1;
-                    Decissions[extractNumber] = amount;
+                    decisions[extractNumber] = amount;
                 }
             } else {
                 // add the decission to the map.
-                Decissions.Add(extractNumber, 1);
+                decisions.Add(extractNumber, 1);
                 badid = false;
             }
             returnID = extractNumber;   
         }
         return returnID;
     }
+
     private int getRandom(int[] list) {
         //select a random id from the array
         Random rm = new Random();
         return rm.Next(0, list.Length);
-
     }
 
     public Pair<IDecision, IDecision> getDecisionPair()
@@ -63,16 +69,22 @@ public class DecisionPool : IDecisionPool {
             return new Pair<IDecision, IDecision>(ex.Decision1(), ex.Decision2());
         }
         else {
-            IDecision desc1 = db.get_descision(SelectRandomID());
-            IDecision desc2 = db.get_descision(SelectRandomID());
+            int requestID = SelectRandomID(true);
+            IDecision desc1 = db.get_descision(requestID);
+            IDecision desc2 = db.get_descision(db.getOpponentID(requestID));
             return new Pair<IDecision, IDecision>(desc1, desc2);
         }
     }
 
     public IDecision getDecision()
     {
-        // TODO get decisions
-        DecisionExample ex = new DecisionExample();
-        return ex.SingleDecision();
+        if (useStub) {
+            DecisionExample ex = new DecisionExample();
+            return ex.SingleDecision();
+        }
+        else {
+            return db.get_descision(SelectRandomID(false));
+        }
+
     }
 }
