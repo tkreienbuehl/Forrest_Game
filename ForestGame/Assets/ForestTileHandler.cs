@@ -38,6 +38,11 @@ public class ForestTileHandler : MonoBehaviour {
 
 	private void OnMouseEnter()
 	{
+        if(!ClickerEventHandler.IsClickEventActive)
+        {
+            return;
+        }
+
 		_targetColor = GlowColor;
 		enabled = true;
 	}
@@ -50,29 +55,37 @@ public class ForestTileHandler : MonoBehaviour {
 
     private void OnMouseDown()
     {
+        if (!ClickerEventHandler.IsClickEventActive || transform.tag == "Clear Cut Forest" || (transform.tag == "Selective Forest" && ClickerEventHandler.currentCuttingType == CuttingType.ClearCut))
+        {
+            return;
+        }
+
         GameObject gameObject;
 
-        if (transform.tag == "Old Forest")
+        Destroy(transform.GetChild(0).gameObject);
+
+        if (transform.tag == "Old Forest" || transform.tag == "Managed Forest")
         {
-            Destroy(transform.GetChild(0).gameObject);
-            gameObject = Instantiate(selectiveFab, transform.position, transform.rotation);
-            gameObject.transform.SetParent(transform);
-            transform.tag = "Selective Forest";
+            if (ClickerEventHandler.currentCuttingType == CuttingType.SelectiveCut)
+            {
+                gameObject = Instantiate(selectiveFab, transform.position, transform.rotation);
+                transform.tag = "Selective Forest";
+            }
+            else
+            {
+                gameObject = Instantiate(clearCutFab, transform.position, transform.rotation);
+                transform.tag = "Clear Cut Forest";
+            }
         }
-        else if (transform.tag == "Managed Forest")
+        else
         {
-            Destroy(transform.GetChild(0).gameObject);
             gameObject = Instantiate(clearCutFab, transform.position, transform.rotation);
-            gameObject.transform.SetParent(transform);
             transform.tag = "Clear Cut Forest";
         }
-        else if (transform.tag == "Selective Forest")
-        {
-            Destroy(transform.GetChild(0).gameObject);
-            gameObject = Instantiate(clearCutFab, transform.position, transform.rotation);
-            gameObject.transform.SetParent(transform);
-            transform.tag = "Clear Cut Forest";
-        }
+
+        gameObject.transform.SetParent(transform);
+
+        ClickerEventHandler.amountOfForestCut++;
     }
 
     /// <summary>
