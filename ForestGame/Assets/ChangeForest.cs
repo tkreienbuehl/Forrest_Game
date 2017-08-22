@@ -7,10 +7,23 @@ public class ChangeForest : MonoBehaviour {
     public GameObject treeFab;
     public GameObject treeFabManaged;
     public float timer;
+    public float selectiveTime = 12.0f, managedTime = 20.0f, clearCutTime = 10.0f;
 
     // Use this for initialization
     void Start () {
-        timer = 5.0f;
+        if(transform.tag == "Selective Forest")
+        {
+            timer = selectiveTime;
+        }
+        else if (transform.tag == "Managed Forest")
+        {
+            timer = managedTime;
+
+        }
+        else if (transform.tag == "Clear Cut Forest")
+        {
+            timer = clearCutTime;
+        }
     }
 
     // Update is called once per frame
@@ -35,7 +48,7 @@ public class ChangeForest : MonoBehaviour {
                 gameObject = Instantiate(treeFab, go.transform.position, go.transform.rotation);
                 gameObject.transform.SetParent(go.transform);
                 go.transform.tag = "Old Forest";
-                timer = 6.0f;
+                timer = selectiveTime;
 
             }
 
@@ -45,7 +58,7 @@ public class ChangeForest : MonoBehaviour {
                 gameObject = Instantiate(treeFabManaged, go.transform.position, go.transform.rotation);
                 gameObject.transform.SetParent(go.transform);
                 go.transform.tag = "Managed Forest";
-                timer = 5.0f;
+                timer = clearCutTime;
 
             }
 
@@ -55,10 +68,13 @@ public class ChangeForest : MonoBehaviour {
                 gameObject = Instantiate(treeFab, go.transform.position, go.transform.rotation);
                 gameObject.transform.SetParent(transform);
                 go.transform.tag = "Old Forest";
-                timer = 10.0f;
+                timer = managedTime;
 
             }
         }
-        timer = 2.0f;
+        else
+        {
+            timer = clearCutTime;
+        }
     }
 }
