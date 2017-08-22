@@ -8,8 +8,6 @@
 
     string getRequestText();
 
-    float getIncome();
-
-    float getYearlyCosts();
+    short getActionID();
 
 }

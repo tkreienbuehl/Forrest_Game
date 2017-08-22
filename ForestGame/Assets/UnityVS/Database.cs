@@ -10,8 +10,18 @@ public class Database {
         return sqlGetRequestIDs(true);
     }
 
+    //get opponent id chosen by request id
+    public int getOpponentID(int requestID) {
+        return sqlGetOpponentID(requestID);
+    }
+
+    // get the id from all the id from decisions.
+    public int[] getSingleDecisionsIDs() {
+        return sqlGetRequestIDs(false);
+    }
+
     // get the id's from all pair decisions requests.
-    public int[] sqlGetRequestIDs(bool pairRequestsOnly) {
+    private int[] sqlGetRequestIDs(bool pairRequestsOnly) {
         int[] list = new int[2];
 
         //This is your database connection:
@@ -22,9 +32,9 @@ public class Database {
             command = "SELECT DECISION_ID FROM DECISION JOIN (SELECT * FROM OPPONENT WHERE fk_OPPONENT_ID != 0) AS OPP ON DECISION_ID = OPP.fk_REQUEST_ID"; //tested query on DB
         }
         else {
-            command =   "SELECT DECISION_ID" +
-                        "FROM DECISION D" +
-                        "WHERE NOT EXISTS" + 
+            command = "SELECT DECISION_ID " +
+                        "FROM DECISION D " +
+                        "WHERE NOT EXISTS " +
                         "(SELECT * FROM OPPONENT OP WHERE D.DECISION_ID = OP.fk_OPPONENT_ID OR D.DECISION_ID = OP.fk_REQUEST_ID)"; //tested query on DB
         }
 
@@ -97,12 +107,6 @@ public class Database {
         return retID;
     }
 
-
-    // get the id from all the id from decissions.
-    public int[] get_id() {
-        return sql_getID();
-    }
-
     // get a singl decission selected with a id
     public Decision get_descision(int id) {
 
@@ -110,51 +114,6 @@ public class Database {
         dc = sql_get_Decission(id);
         dc.setInfluences(sql_get_influences(id));
         return dc;
-    }
-
-    private int[] sql_getID() {
-
-        int[] list = new int[2];
-
-        //This is your database connection:
-        SqlConnection cn = new SqlConnection(connStr);
-
-        string command = "SELECT DECISION_ID FROM DECISION"; //tested query on DB
-
-        try {
-            //Open the sql connection.
-            cn.Open();
-
-            //send the command string to sql
-            SqlDataAdapter da = new SqlDataAdapter(command, cn);
-            DataTable dataTable = new DataTable();
-
-            //get the results.
-            int recordsAffected = da.Fill(dataTable);
-            list = new int[recordsAffected];
-
-            if (recordsAffected > 0) {
-                int i = 0;
-                foreach (DataRow dr in dataTable.Rows) {
-                    list[i] = Convert.ToInt32(dr["DECISION_ID"]);
-                    i++;
-                }
-            }
-
-
-
-        }
-        catch (SqlException sqlEx) {
-
-            if (sqlEx.Message != null || sqlEx.Message != string.Empty) { list[0] = 4004; }
-
-        }
-        finally {
-            cn.Close();
-        }
-
-
-        return list;
     }
 
     private Decision sql_get_Decission(int id) {
@@ -204,7 +163,12 @@ public class Database {
         SqlConnection cn = new SqlConnection(connStr);
 
         //ned the change thinggy 
-        string command = "SELECT INFLUENCE.VALUE,DECISION.fk_FACTION_ID,MONETARY_INFLUENCES.COST, MONETARY_INFLUENCES.INCOME, MONETARY_INFLUENCES.YEARLY_COST FROM INFLUENCE INNER JOIN CONNECTED_INFLUENCE on CONNECTED_INFLUENCE.fk_INFLUENCE_ID = INFLUENCE.INFLUENCE_ID INNER JOIN DECISION on CONNECTED_INFLUENCE.fk_DECISION_ID = DECISION.DECISION_ID INNER JOIN MONETARY_INFLUENCES on CONNECTED_INFLUENCE.fk_MONETARY_INFLUENCE = MONETARY_INFLUENCES.MONETARY_INFLUENCES_ID WHERE DECISION.DECISION_ID" + id; //tested
+        string command = "SELECT INFLUENCE.VALUE, DECISION.fk_FACTION_ID, MONETARY_INFLUENCES.INCOME, MONETARY_INFLUENCES.YEARLY_COST\n" +
+            "FROM INFLUENCE\n" +
+            "INNER JOIN CONNECTED_INFLUENCE on CONNECTED_INFLUENCE.fk_INFLUENCE_ID = INFLUENCE.INFLUENCE_ID\n" +
+            "INNER JOIN DECISION on CONNECTED_INFLUENCE.fk_DECISION_ID = DECISION.DECISION_ID\n" + 
+            "INNER JOIN MONETARY_INFLUENCES on CONNECTED_INFLUENCE.fk_MONETARY_INFLUENCE = MONETARY_INFLUENCES.MONETARY_INFLUENCES_ID\n" + 
+            "WHERE DECISION.DECISION_ID" + id; //tested
 
         try {
             //Open the sql connection.
