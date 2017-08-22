@@ -10,4 +10,6 @@
 
     short getActionID();
 
+    short getNrOfAffectedFields();
+
 }

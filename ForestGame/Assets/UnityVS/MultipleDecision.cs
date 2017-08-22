@@ -57,4 +57,8 @@ public class MultipleDecision : IMultipleDecision{
     public short getActionID() {
         return actionID;
     }
+
+    public short getNrOfAffectedFields() {
+        return 0;
+    }
 }
