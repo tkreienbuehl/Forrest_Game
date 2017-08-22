@@ -6,6 +6,7 @@
     private short factionID;
     private float income;
     private float yearlyCosts;
+    private short actionID;
 
     public Decision(int decisionID) {
         this.decisionID = decisionID;

@@ -5,6 +5,99 @@ using System.Data.SqlClient;
 public class Database {
     private static String connStr = "data source=81.169.245.35;initial catalog=forestGameDb;uid=User;pwd=Pass12@;";
 
+    //get all ID's from requests with an opponent
+    public int[] getPairRequestIDs() {
+        return sqlGetRequestIDs(true);
+    }
+
+    // get the id's from all pair decisions requests.
+    public int[] sqlGetRequestIDs(bool pairRequestsOnly) {
+        int[] list = new int[2];
+
+        //This is your database connection:
+        SqlConnection cn = new SqlConnection(connStr);
+        string command;
+
+        if (pairRequestsOnly) {
+            command = "SELECT DECISION_ID FROM DECISION JOIN (SELECT * FROM OPPONENT WHERE fk_OPPONENT_ID != 0) AS OPP ON DECISION_ID = OPP.fk_REQUEST_ID"; //tested query on DB
+        }
+        else {
+            command =   "SELECT DECISION_ID" +
+                        "FROM DECISION D" +
+                        "WHERE NOT EXISTS" + 
+                        "(SELECT * FROM OPPONENT OP WHERE D.DECISION_ID = OP.fk_OPPONENT_ID OR D.DECISION_ID = OP.fk_REQUEST_ID)"; //tested query on DB
+        }
+
+        try {
+            //Open the sql connection.
+            cn.Open();
+
+            //send the command string to sql
+            SqlDataAdapter da = new SqlDataAdapter(command, cn);
+            DataTable dataTable = new DataTable();
+
+            //get the results.
+            int recordsAffected = da.Fill(dataTable);
+            list = new int[recordsAffected];
+
+            if (recordsAffected > 0) {
+                int i = 0;
+                foreach (DataRow dr in dataTable.Rows) {
+                    list[i] = Convert.ToInt32(dr["DECISION_ID"]);
+                    i++;
+                }
+            }
+        }
+        catch (SqlException sqlEx) {
+
+            if (sqlEx.Message != null || sqlEx.Message != string.Empty) { list[0] = 4004; }
+
+        }
+        finally {
+            cn.Close();
+        }
+
+
+        return list;
+    }
+
+    private int sqlGetOpponentID(int requestID) {
+        int retID = 0;
+
+        //This is your database connection:
+        SqlConnection cn = new SqlConnection(connStr);
+
+        string command = "SELECT fk_OPPONENT_ID FROM OPPONENT WHERE fk_REQUEST_ID =" + requestID;
+
+        try {
+            //Open the sql connection.
+            cn.Open();
+            if (cn.State == ConnectionState.Open) {
+
+                //send the command string to sql
+                SqlDataAdapter da = new SqlDataAdapter(command, cn);
+                DataTable dataTable = new DataTable();
+
+                //get the results.
+                da.Fill(dataTable);
+
+                if (da != null) {
+                    foreach (DataRow dr in dataTable.Rows) {
+                        retID = (Convert.ToInt16(dr["fk_OPPONENT_ID"]));
+                    }
+                }
+            }
+        }
+        catch (SqlException sqlEx) {
+            if (sqlEx.Message != null || sqlEx.Message != string.Empty) { retID = 0; }
+        }
+        finally {
+            cn.Close();
+        }
+        return retID;
+    }
+
+
     // get the id from all the id from decissions.
     public int[] get_id() {
         return sql_getID();
