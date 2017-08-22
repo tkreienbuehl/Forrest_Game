@@ -36,7 +36,7 @@ public class Database
         string connectionString = "data source=81.169.245.35;initial catalog=forestGameDb;uid=User;pwd=Pass12@;";
         SqlConnection cn = new SqlConnection(connectionString);
 
-        string command = "SELECT DECISION_ID FROM DECISION";
+        string command = "SELECT DECISION_ID FROM DECISION"; //tested query on DB
 
         try {
             //Open the sql connection.
@@ -120,7 +120,7 @@ public class Database
         SqlConnection cn = new SqlConnection(connectionString);
 
         //ned the change thinggy 
-        string command = "SELECT INFLUENCE.VALUE,DECISION.fk_FACTION_ID FROM INFLUENCE INNER JOIN CONNECTED_INFLUENCE on CONNECTED_INFLUENCE.fk_INFLUENCE_ID = INFLUENCE.INFLUENCE_ID INNER JOIN DECISION on CONNECTED_INFLUENCE.fk_DECISION_ID = DECISION.DECISION_ID WHERE DECISION.DECISION_ID =" + id;
+        string command = "SELECT INFLUENCE.VALUE,DECISION.fk_FACTION_ID,MONETARY_INFLUENCES.COST, MONETARY_INFLUENCES.INCOME, MONETARY_INFLUENCES.YEARLY_COST FROM INFLUENCE INNER JOIN CONNECTED_INFLUENCE on CONNECTED_INFLUENCE.fk_INFLUENCE_ID = INFLUENCE.INFLUENCE_ID INNER JOIN DECISION on CONNECTED_INFLUENCE.fk_DECISION_ID = DECISION.DECISION_ID INNER JOIN MONETARY_INFLUENCES on CONNECTED_INFLUENCE.fk_MONETARY_INFLUENCE = MONETARY_INFLUENCES.MONETARY_INFLUENCES_ID WHERE DECISION.DECISION_ID" + id; //tested
 
         try {
             //Open the sql connection.
@@ -136,8 +136,11 @@ public class Database
             if (recordsAffected > 0) {
                 foreach (DataRow dr in dataTable.Rows) {
 
-                    int value   = Convert.ToInt32(dr["value"]);
-                    int faction = Convert.ToInt32(dr["faction_id"]);
+                    int value                   = Convert.ToInt32(dr["value"]);
+                    int faction                 = Convert.ToInt32(dr["faction_id"]);
+                    infl.setIncomeInfluence(Convert.ToDecimal(dr["income"]));
+                    infl.setCostInfluence(Convert.ToDecimal(dr["cost"]));
+                    infl.setCostYearlyInfluence(Convert.ToDecimal(dr["yearly_cost"]));
 
                     if (faction == 1) {
                         //facction id 1 == industry
