@@ -21,7 +21,7 @@ public class DecisionPool : IDecisionPool {
         Boolean badid = true;
 
         // get value array from database class
-        int[] ID = db.GetidArray();
+        int[] ID = db.get_id();
 
         while (badid){
 
