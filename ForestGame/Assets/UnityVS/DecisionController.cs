@@ -23,7 +23,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
         foreach (IDecision dec in decisions) {
             if (dec.getDecisionID() == decisionID) {
                 if (dec.getActionID() == 1) {
-                    handler.StartClickEvent(CuttingType.ClearCut, 4);
+                    handler.StartClickEvent(CuttingType.ClearCut, dec.getNrOfAffectedFields());
                 }
 
                 if (dec.getIsBribe()) {

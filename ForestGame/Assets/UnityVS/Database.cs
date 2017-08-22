@@ -194,15 +194,15 @@ public class Database {
 
                     if (faction == 1) {
                         //facction id 1 == industry
-                        infl.setIndustrialInfluence(Convert.ToByte(value));
+                        infl.setIndustrialInfluence(Convert.ToInt16(value));
                     }
                     else if (faction == 2) {
                         //faction id 2 == toerisme
-                        infl.setTouristicalInfluence(Convert.ToByte(value));
+                        infl.setTouristicalInfluence(Convert.ToInt16(value));
                     }
                     else if (faction == 3) {
                         //faction id 3 == envoirment
-                        infl.setEnvironmentalInfluence(Convert.ToByte(value));
+                        infl.setEnvironmentalInfluence(Convert.ToInt16(value));
                     }
                 }
             }
