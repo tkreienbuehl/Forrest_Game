@@ -7,7 +7,7 @@
 
     public Decision Decision1() {
         InfluenceExp(-5, 5, -2);
-        return DecisionExp(1, 1, "We want to clearcut 4 fields of old forest. \n Income: 10000K, 11000K if labeled");
+        return DecisionExp(1, 1, "We want to clearcut 4 fields of old forest. \n Income: 10000K, 11000K if labeled", 1, 4);
     }
     public Decision Decision2() {
         InfluenceExp(-2, -2, 2);
@@ -19,7 +19,7 @@
         return DecisionExp(3, 4, "Mayor, let us build a more modern hospital to increase health level in town");
     }
 
-    Decision DecisionExp(short decisionID, short factionId, string requestText) {
+    Decision DecisionExp(short decisionID, short factionId, string requestText, short eventID = 0, short nrOfFields = 0) {
         Decision decision;
         decision = new Decision(decisionID);
         decision.setInfluences(influences);
@@ -32,5 +32,6 @@
         influences.setEnvironmentalInfluence(envInfluence);
         influences.setIndustrialInfluence(indInfluence);
         influences.setTouristicalInfluence(touInfluence);
+        influences.setCostInfluence(10000);
     }
 }

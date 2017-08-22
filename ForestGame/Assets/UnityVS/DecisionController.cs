@@ -10,6 +10,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     private bool waitingForAnswer;
     private List<IDecision> decisions;
     private byte speedUpFactor;
+    public ClickerEventHandler handler;
 
     public void setSelectedAnswer(byte answerID) {
         waitingForAnswer = false;
@@ -22,6 +23,9 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
         foreach (IDecision dec in decisions) {
             if (dec.getDecisionID() == decisionID) {
                 //TODO send the results to the bar controller
+                if (dec.getActionID() == 1) {
+                    handler.StartClickEvent(CuttingType.ClearCut, 4);
+                }
             }
         }        
         setNewRandomWaitTime();
