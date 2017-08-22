@@ -7,13 +7,14 @@ public class MultipleDecision : IMultipleDecision{
     private ArrayList influences;
     private ArrayList answers;
     private short factionID;
-    private float income;
-    private float yearlyCosts;
-
+    private short actionID;
 
     public MultipleDecision(int decisionID) {
         this.decisionID = decisionID;
         answers = new ArrayList();
+        influences = new ArrayList();
+        factionID = 0;
+        actionID = 0;
     }
 
     public string[] getAnswers() {
@@ -36,6 +37,10 @@ public class MultipleDecision : IMultipleDecision{
         this.influences.Add(influences);
     }
 
+    public void setActionID(short id) {
+        actionID = id;
+    }
+
     public short getFactionID() {
         throw new System.NotImplementedException();
     }
@@ -49,11 +54,7 @@ public class MultipleDecision : IMultipleDecision{
         return decisionRequest;
     }
 
-    public float getIncome() {
-        return income;
-    }
-
-    public float getYearlyCosts() {
-        return yearlyCosts;
+    public short getActionID() {
+        return actionID;
     }
 }

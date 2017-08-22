@@ -40,7 +40,9 @@ public class DecisionPanelContent : MonoBehaviour
     public Sprite touristSprite;
     public Sprite EnvironmentalSprite;
     public Sprite IndustrialSprite;
-
+    public Sprite otherSprite;
+    public Sprite medicineSprite;
+    public Sprite fireFightSprite;
 
     public void SetDecisionPair(IDecision leftDecision, IDecision rightDecision)
     {
@@ -122,6 +124,18 @@ public class DecisionPanelContent : MonoBehaviour
         {
             return EnvironmentalSprite;
         }
+        if (imageNumber == 4)
+        {
+            return otherSprite;
+        }
+        if (imageNumber == 5)
+        {
+            return medicineSprite;
+        }
+        if (imageNumber == 6)
+        {
+            return fireFightSprite;
+        }
 
         return null;
     }
@@ -139,6 +153,18 @@ public class DecisionPanelContent : MonoBehaviour
         if (factionNumber == 3)
         {
             return "Environment";
+        }
+        if (factionNumber == 4)
+        {
+            return "Other";
+        }
+        if (factionNumber == 5)
+        {
+            return "Medicine";
+        }
+        if (factionNumber == 6)
+        {
+            return "FireFight";
         }
 
         return null;
