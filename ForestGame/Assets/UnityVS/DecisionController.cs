@@ -70,6 +70,6 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
 
     private bool getSingleDecision() {
         double nr = Random.Range(1.0f, max: 100.0f);
-        return ((int)nr % 3 == 0);
+        return ((int)nr % 5 == 0);
     }
 }
