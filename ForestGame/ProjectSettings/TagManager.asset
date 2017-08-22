@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Old Forest
+  - Managed Forest
+  - Selective Forest
+  - Clear Cut Forest
   layers:
   - Default
   - TransparentFX

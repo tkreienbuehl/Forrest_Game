@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 33949708038093174}
   - component: {fileID: 23319973053153800}
   - component: {fileID: 114374175822880760}
+  - component: {fileID: 114186971717710252}
   m_Layer: 0
   m_Name: block12
   m_TagString: Untagged
@@ -42,6 +43,7 @@ GameObject:
   - component: {fileID: 33145801299850048}
   - component: {fileID: 23606742365560532}
   - component: {fileID: 114398939449871368}
+  - component: {fileID: 114691666349789116}
   m_Layer: 0
   m_Name: block5
   m_TagString: Untagged
@@ -61,6 +63,7 @@ GameObject:
   - component: {fileID: 33846000048062388}
   - component: {fileID: 23169294438919434}
   - component: {fileID: 114189505366014002}
+  - component: {fileID: 114815037785303626}
   m_Layer: 0
   m_Name: block
   m_TagString: Untagged
@@ -80,6 +83,7 @@ GameObject:
   - component: {fileID: 33707762914320468}
   - component: {fileID: 23378349675890202}
   - component: {fileID: 114502401508368138}
+  - component: {fileID: 114570996316503270}
   m_Layer: 0
   m_Name: block9
   m_TagString: Untagged
@@ -99,6 +103,7 @@ GameObject:
   - component: {fileID: 33617328582167408}
   - component: {fileID: 23450165777567878}
   - component: {fileID: 114674328109729180}
+  - component: {fileID: 114699433987014656}
   m_Layer: 0
   m_Name: block3
   m_TagString: Untagged
@@ -118,6 +123,7 @@ GameObject:
   - component: {fileID: 33779757854538446}
   - component: {fileID: 23248114978550070}
   - component: {fileID: 114965161265152700}
+  - component: {fileID: 114438428129079880}
   m_Layer: 0
   m_Name: block21
   m_TagString: Untagged
@@ -137,6 +143,7 @@ GameObject:
   - component: {fileID: 33491326818098690}
   - component: {fileID: 23947483308051462}
   - component: {fileID: 114115607095089222}
+  - component: {fileID: 114436278589415526}
   m_Layer: 0
   m_Name: block28
   m_TagString: Untagged
@@ -156,6 +163,7 @@ GameObject:
   - component: {fileID: 33509588204087166}
   - component: {fileID: 23817708212098706}
   - component: {fileID: 114463887098880218}
+  - component: {fileID: 114278153649696990}
   m_Layer: 0
   m_Name: block26
   m_TagString: Untagged
@@ -175,6 +183,7 @@ GameObject:
   - component: {fileID: 33955686335419892}
   - component: {fileID: 23428161277796586}
   - component: {fileID: 114963684241345416}
+  - component: {fileID: 114678962312399156}
   m_Layer: 0
   m_Name: block32
   m_TagString: Untagged
@@ -194,6 +203,7 @@ GameObject:
   - component: {fileID: 33347639188646214}
   - component: {fileID: 23873277772771230}
   - component: {fileID: 114656319880748966}
+  - component: {fileID: 114137017729916950}
   m_Layer: 0
   m_Name: block16
   m_TagString: Untagged
@@ -213,6 +223,7 @@ GameObject:
   - component: {fileID: 33432447984136204}
   - component: {fileID: 23177434283231426}
   - component: {fileID: 114159150254187712}
+  - component: {fileID: 114886522413705694}
   m_Layer: 0
   m_Name: block33
   m_TagString: Untagged
@@ -232,6 +243,7 @@ GameObject:
   - component: {fileID: 33463126162206506}
   - component: {fileID: 23423888338212792}
   - component: {fileID: 114749126217600212}
+  - component: {fileID: 114888503724463330}
   m_Layer: 0
   m_Name: block23
   m_TagString: Untagged
@@ -251,6 +263,7 @@ GameObject:
   - component: {fileID: 33840893853703244}
   - component: {fileID: 23341493869815906}
   - component: {fileID: 114678990041204820}
+  - component: {fileID: 114304576545078504}
   m_Layer: 0
   m_Name: block35
   m_TagString: Untagged
@@ -270,6 +283,7 @@ GameObject:
   - component: {fileID: 33478350756720136}
   - component: {fileID: 23372370316139972}
   - component: {fileID: 114821378034864012}
+  - component: {fileID: 114085154475442094}
   m_Layer: 0
   m_Name: block31
   m_TagString: Untagged
@@ -305,6 +319,7 @@ GameObject:
   - component: {fileID: 33549122653766348}
   - component: {fileID: 23712829362525280}
   - component: {fileID: 114911431179970244}
+  - component: {fileID: 114569058127392274}
   m_Layer: 0
   m_Name: block20
   m_TagString: Untagged
@@ -324,6 +339,7 @@ GameObject:
   - component: {fileID: 33498265681849142}
   - component: {fileID: 23040193431817744}
   - component: {fileID: 114070596554586068}
+  - component: {fileID: 114730740136274226}
   m_Layer: 0
   m_Name: block24
   m_TagString: Untagged
@@ -343,6 +359,7 @@ GameObject:
   - component: {fileID: 33231977381728632}
   - component: {fileID: 23432774330119388}
   - component: {fileID: 114986545677431376}
+  - component: {fileID: 114510760810018894}
   m_Layer: 0
   m_Name: block17
   m_TagString: Untagged
@@ -362,6 +379,7 @@ GameObject:
   - component: {fileID: 33528907979292072}
   - component: {fileID: 23102218874185838}
   - component: {fileID: 114551162078063036}
+  - component: {fileID: 114104705075153454}
   m_Layer: 0
   m_Name: block27
   m_TagString: Untagged
@@ -381,6 +399,7 @@ GameObject:
   - component: {fileID: 33675174868033864}
   - component: {fileID: 23252077219919810}
   - component: {fileID: 114764908647823444}
+  - component: {fileID: 114367079006993840}
   m_Layer: 0
   m_Name: block19
   m_TagString: Untagged
@@ -400,6 +419,7 @@ GameObject:
   - component: {fileID: 33689863990660778}
   - component: {fileID: 23889833943690170}
   - component: {fileID: 114254423248813190}
+  - component: {fileID: 114616964659206596}
   m_Layer: 0
   m_Name: block6
   m_TagString: Untagged
@@ -419,9 +439,10 @@ GameObject:
   - component: {fileID: 33819336568055786}
   - component: {fileID: 23357668665211768}
   - component: {fileID: 114027162374519412}
+  - component: {fileID: 114244343573510434}
   m_Layer: 0
   m_Name: block34
-  m_TagString: Untagged
+  m_TagString: Old Forest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -438,6 +459,7 @@ GameObject:
   - component: {fileID: 33047442096493458}
   - component: {fileID: 23792192937361460}
   - component: {fileID: 114998634754030588}
+  - component: {fileID: 114226301438023606}
   m_Layer: 0
   m_Name: block13
   m_TagString: Untagged
@@ -457,6 +479,7 @@ GameObject:
   - component: {fileID: 33173097024115626}
   - component: {fileID: 23662340869667926}
   - component: {fileID: 114508536227193098}
+  - component: {fileID: 114716613194590160}
   m_Layer: 0
   m_Name: block10
   m_TagString: Untagged
@@ -476,6 +499,7 @@ GameObject:
   - component: {fileID: 33464315527209476}
   - component: {fileID: 23800139384372224}
   - component: {fileID: 114790112542787778}
+  - component: {fileID: 114702462721699060}
   m_Layer: 0
   m_Name: block15
   m_TagString: Untagged
@@ -495,6 +519,7 @@ GameObject:
   - component: {fileID: 33144092242645300}
   - component: {fileID: 23007665943301478}
   - component: {fileID: 114029019680956718}
+  - component: {fileID: 114787284906269018}
   m_Layer: 0
   m_Name: block22
   m_TagString: Untagged
@@ -514,6 +539,7 @@ GameObject:
   - component: {fileID: 33056768578731610}
   - component: {fileID: 23019755508348788}
   - component: {fileID: 114964326020917836}
+  - component: {fileID: 114216101819683046}
   m_Layer: 0
   m_Name: block29
   m_TagString: Untagged
@@ -533,6 +559,7 @@ GameObject:
   - component: {fileID: 33977703598018876}
   - component: {fileID: 23650412307112862}
   - component: {fileID: 114794064589697390}
+  - component: {fileID: 114444977492727626}
   m_Layer: 0
   m_Name: block2
   m_TagString: Untagged
@@ -552,6 +579,7 @@ GameObject:
   - component: {fileID: 33942562936427252}
   - component: {fileID: 23524828394115438}
   - component: {fileID: 114623454106785848}
+  - component: {fileID: 114986268980630640}
   m_Layer: 0
   m_Name: block25
   m_TagString: Untagged
@@ -571,6 +599,7 @@ GameObject:
   - component: {fileID: 33349539619529920}
   - component: {fileID: 23516446775975724}
   - component: {fileID: 114026351156952958}
+  - component: {fileID: 114099159395120476}
   m_Layer: 0
   m_Name: block8
   m_TagString: Untagged
@@ -590,6 +619,7 @@ GameObject:
   - component: {fileID: 33581451582991712}
   - component: {fileID: 23042666803265978}
   - component: {fileID: 114546284444931998}
+  - component: {fileID: 114519518357750998}
   m_Layer: 0
   m_Name: block36
   m_TagString: Untagged
@@ -609,6 +639,7 @@ GameObject:
   - component: {fileID: 33374286239448672}
   - component: {fileID: 23049356306193950}
   - component: {fileID: 114573161382399462}
+  - component: {fileID: 114921737920845336}
   m_Layer: 0
   m_Name: block1
   m_TagString: Untagged
@@ -628,6 +659,7 @@ GameObject:
   - component: {fileID: 33986426231619676}
   - component: {fileID: 23880006791291238}
   - component: {fileID: 114880538078885086}
+  - component: {fileID: 114158505968475826}
   m_Layer: 0
   m_Name: block14
   m_TagString: Untagged
@@ -647,6 +679,7 @@ GameObject:
   - component: {fileID: 33158475902118138}
   - component: {fileID: 23208520646019984}
   - component: {fileID: 114341685271688292}
+  - component: {fileID: 114476796784118738}
   m_Layer: 0
   m_Name: block30
   m_TagString: Untagged
@@ -666,6 +699,7 @@ GameObject:
   - component: {fileID: 33891675652507274}
   - component: {fileID: 23182764148311706}
   - component: {fileID: 114133395054798140}
+  - component: {fileID: 114294331690151366}
   m_Layer: 0
   m_Name: block18
   m_TagString: Untagged
@@ -685,6 +719,7 @@ GameObject:
   - component: {fileID: 33969989224699676}
   - component: {fileID: 23242949135578146}
   - component: {fileID: 114287242580580412}
+  - component: {fileID: 114411640614988408}
   m_Layer: 0
   m_Name: block7
   m_TagString: Untagged
@@ -704,6 +739,7 @@ GameObject:
   - component: {fileID: 33637260806345258}
   - component: {fileID: 23609696645082848}
   - component: {fileID: 114845805522641060}
+  - component: {fileID: 114065558865311640}
   m_Layer: 0
   m_Name: block11
   m_TagString: Untagged
@@ -723,6 +759,7 @@ GameObject:
   - component: {fileID: 33705658742514358}
   - component: {fileID: 23500079499170362}
   - component: {fileID: 114815927364011006}
+  - component: {fileID: 114821834930198822}
   m_Layer: 0
   m_Name: block4
   m_TagString: Untagged
@@ -1062,7 +1099,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1541819334129860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.1, y: 38, z: 25.8}
+  m_LocalPosition: {x: 26, y: 42.6, z: 25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4767388121906232}
@@ -3159,13 +3196,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
-  timer: 0
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
 --- !u!114 &114027162374519412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3177,13 +3216,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
-  timer: 0
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
 --- !u!114 &114029019680956718
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3195,12 +3236,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114065558865311640
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1971757229328772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114070596554586068
 MonoBehaviour:
@@ -3213,12 +3271,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114085154475442094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1533392741060138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+  timer: 0
+--- !u!114 &114099159395120476
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1775718790500460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+  timer: 0
+--- !u!114 &114104705075153454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1592164771382926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114115607095089222
 MonoBehaviour:
@@ -3231,13 +3336,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
-  timer: 0
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
 --- !u!114 &114133395054798140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3249,12 +3356,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114137017729916950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1453104660939854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+  timer: 0
+--- !u!114 &114158505968475826
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1814104009490458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114159150254187712
 MonoBehaviour:
@@ -3267,12 +3406,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114186971717710252
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1022209186694928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114189505366014002
 MonoBehaviour:
@@ -3285,12 +3441,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114216101819683046
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1713734685830470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+  timer: 0
+--- !u!114 &114226301438023606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1671348389646750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+  timer: 0
+--- !u!114 &114244343573510434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1661536196877664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114254423248813190
 MonoBehaviour:
@@ -3303,12 +3506,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114278153649696990
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1268747257439986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114287242580580412
 MonoBehaviour:
@@ -3321,12 +3541,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114294331690151366
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1914319003232150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+  timer: 0
+--- !u!114 &114304576545078504
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1530138231009810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114341685271688292
 MonoBehaviour:
@@ -3339,12 +3591,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114367079006993840
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1606485534298868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114374175822880760
 MonoBehaviour:
@@ -3357,13 +3626,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
-  timer: 0
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
 --- !u!114 &114398939449871368
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3375,12 +3646,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114411640614988408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1964384191949470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114420655226314358
 MonoBehaviour:
@@ -3398,6 +3686,51 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+--- !u!114 &114436278589415526
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1216009629908242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+  timer: 0
+--- !u!114 &114438428129079880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1151229819794500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+  timer: 0
+--- !u!114 &114444977492727626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1724759781113290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+  timer: 0
 --- !u!114 &114463887098880218
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3409,12 +3742,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114476796784118738
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1844018757353666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114502401508368138
 MonoBehaviour:
@@ -3427,13 +3777,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
-  timer: 0
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
 --- !u!114 &114508536227193098
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3445,12 +3797,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114510760810018894
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1571234451360686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+  timer: 0
+--- !u!114 &114519518357750998
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781115956691900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114546284444931998
 MonoBehaviour:
@@ -3463,13 +3847,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
-  timer: 0
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
 --- !u!114 &114551162078063036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3481,12 +3867,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114569058127392274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1561192445854098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+  timer: 0
+--- !u!114 &114570996316503270
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1132675241600108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114573161382399462
 MonoBehaviour:
@@ -3499,12 +3917,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114616964659206596
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1613465119764518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114623454106785848
 MonoBehaviour:
@@ -3517,13 +3952,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
-  timer: 0
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
 --- !u!114 &114656319880748966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3535,13 +3972,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
-  timer: 0
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
 --- !u!114 &114674328109729180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3553,12 +3992,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114678962312399156
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1326687332762182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114678990041204820
 MonoBehaviour:
@@ -3571,12 +4027,89 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114691666349789116
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1042924846631816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+  timer: 0
+--- !u!114 &114699433987014656
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1140660041550374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+  timer: 0
+--- !u!114 &114702462721699060
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1693103303056544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+  timer: 0
+--- !u!114 &114716613194590160
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1678640534192372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+  timer: 0
+--- !u!114 &114730740136274226
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563821578681290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114749126217600212
 MonoBehaviour:
@@ -3589,13 +4122,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
-  timer: 0
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
 --- !u!114 &114764908647823444
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3607,12 +4142,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114787284906269018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1706319186252776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114790112542787778
 MonoBehaviour:
@@ -3625,13 +4177,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
-  timer: 0
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
 --- !u!114 &114794064589697390
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3643,12 +4197,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114815037785303626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1111886849869450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114815927364011006
 MonoBehaviour:
@@ -3661,13 +4232,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
-  timer: 0
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
 --- !u!114 &114821378034864012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3679,12 +4252,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114821834930198822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1978288434463770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114845805522641060
 MonoBehaviour:
@@ -3697,13 +4287,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
-  timer: 0
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
 --- !u!114 &114880538078885086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3715,12 +4307,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114886522413705694
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1464052075356858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+  timer: 0
+--- !u!114 &114888503724463330
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1488315910003324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114911431179970244
 MonoBehaviour:
@@ -3733,12 +4357,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114921737920845336
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1794508122692620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114963684241345416
 MonoBehaviour:
@@ -3751,13 +4392,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
-  timer: 0
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
 --- !u!114 &114964326020917836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3769,13 +4412,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
-  timer: 0
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
 --- !u!114 &114965161265152700
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3787,12 +4432,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
+--- !u!114 &114986268980630640
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1767275327720046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8c31fd482d1345ba114a247a78b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
   timer: 0
 --- !u!114 &114986545677431376
 MonoBehaviour:
@@ -3805,13 +4467,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
-  timer: 0
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}
 --- !u!114 &114998634754030588
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3823,10 +4487,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9e2827f95c70e4daa32acc620a0717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowColor: {r: 0, g: 0, b: 0, a: 0}
+  GlowColor: {r: 0, g: 0, b: 0, a: 0.497}
   LerpFactor: 10
-  clearCutFab: {fileID: 0}
-  selectiveFab: {fileID: 0}
-  treeFab: {fileID: 0}
-  treeFabManaged: {fileID: 0}
-  timer: 0
+  clearCutFab: {fileID: 1052957925202384, guid: baf439e40895ddf47968f652b1c66c38,
+    type: 2}
+  selectiveFab: {fileID: 1999482960416572, guid: cc17ad311d362114189a9aef6a2bfe20,
+    type: 2}
+  treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
+  treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
+    type: 2}

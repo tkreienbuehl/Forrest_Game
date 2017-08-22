@@ -25,7 +25,6 @@ public class ForestTileHandler : MonoBehaviour {
 	private List<Material> _materials = new List<Material>();
 	private Color _currentColor;
 	private Color _targetColor;
-    public float timer;
 
 	void Start()
 	{
@@ -35,7 +34,6 @@ public class ForestTileHandler : MonoBehaviour {
 		{	
 			_materials.AddRange(renderer.materials);
 		}
-        timer = 5.0f;
 	}
 
 	private void OnMouseEnter()
@@ -53,6 +51,7 @@ public class ForestTileHandler : MonoBehaviour {
     private void OnMouseDown()
     {
         GameObject gameObject;
+
         if (transform.tag == "Old Forest")
         {
             Destroy(transform.GetChild(0).gameObject);
@@ -91,42 +90,6 @@ public class ForestTileHandler : MonoBehaviour {
 		if (_currentColor.Equals(_targetColor))
 		{
 			enabled = false;
-		}
-
-        timer -= Time.deltaTime;
-        
-        if (timer <= 0)
-        {
-            if (transform.GetChild(0).tag != "Old Forest")
-            {
-                    GameObject gameObject;
-
-                    if (transform.GetChild(0).tag == "Selective Forest")
-                    {
-                        Destroy(transform.GetChild(0).gameObject);
-                        gameObject = Instantiate(treeFab, transform.position, transform.rotation);
-                        gameObject.transform.SetParent(transform);
-                        transform.tag = "Old Forest";
-                    }
-
-                    else if (transform.GetChild(0).tag == "Clear Cut Forest")
-                    {
-                        Destroy(transform.GetChild(0).gameObject);
-                        gameObject = Instantiate(treeFabManaged, transform.position, transform.rotation);
-                        gameObject.transform.SetParent(transform);
-                        transform.tag = "Managed Forest";
-                    }
-                }
-            
-            else if (transform.GetChild(0).tag == "Managed Forest")
-            {
-                    Destroy(transform.GetChild(0).gameObject);
-                    GameObject gameObject;              
-                    gameObject = Instantiate(treeFab, transform.position, transform.rotation);
-                    gameObject.transform.SetParent(transform);
-                    transform.tag = "Old Forest";
-            }
-          timer = 5.0f;
-        }
+		}        
     }
 }
