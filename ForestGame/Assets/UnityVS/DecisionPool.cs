@@ -5,7 +5,13 @@ using System.Collections.Generic;
 public class DecisionPool : IDecisionPool {
 
     //Area for global Variables
-    private static IDictionary Decissions = new Dictionary<int, int>();
+    private static IDictionary Decisions = new Dictionary<int, int>();
+    private Database db;
+
+    public DecisionPool() {
+        //instance of other classes.
+        db = new Database();
+    }
 
     private int SelectRandomID()
     {
@@ -13,50 +19,49 @@ public class DecisionPool : IDecisionPool {
         int returnID = 0;
         Boolean badid = true;
 
-        //instance of other classes.
-        Database db = new Database();
-
         // get value array from database class
-        int[] ID = db.GetidArray();
-
+        int[] ID = db.get_id();
 
         while (badid){
 
             int extractNumber = ID[getRandom(ID)];
 
-            if (Decissions.Contains(extractNumber)){
+            if (Decisions.Contains(extractNumber)){
 
-                int amount = Convert.ToInt32(Decissions[extractNumber]);
+                int amount = Convert.ToInt32(Decisions[extractNumber]);
                 if (amount == 10){
 
                     //can reuse the ecission.
                     amount = 1;
-                    Decissions[extractNumber] = amount;
+                    Decisions[extractNumber] = amount;
                     badid = false;
                 } else {
                     amount += 1;
-                    Decissions[extractNumber] = amount;
+                    Decisions[extractNumber] = amount;
                 }
             } else {
                 // add the decission to the map.
-                Decissions.Add(extractNumber, 1);
+                Decisions.Add(extractNumber, 1);
                 badid = false;
             }
             returnID = extractNumber;   
         }
         return returnID;
     }
+
     private int getRandom(int[] list) {
         //select a random id from the array
         Random rm = new Random();
         return rm.Next(0, list.Length);
-
     }
 
     public Pair<IDecision, IDecision> getDecisionPair()
     {
-        DecisionExample ex = new DecisionExample();
-        return new Pair<IDecision, IDecision>(ex.Decision1(), ex.Decision2());
+        IDecision desc1 = db.get_descision(SelectRandomID());
+        IDecision desc2 = db.get_descision(SelectRandomID());
+        //DecisionExample ex = new DecisionExample();
+        //return new Pair<IDecision, IDecision>(ex.Decision1(), ex.Decision2());
+        return new Pair<IDecision, IDecision>(desc1, desc2);
     }
 
     public IDecision getDecision()
