@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/AnimationShip.unity
+=======
+- path: Assets/Scenes/GridSelect.unity
+>>>>>>> 9b121be4c1e2b5467adb07d22c73f6db8b94ad98
   isLoaded: 1
   isActive: 1
