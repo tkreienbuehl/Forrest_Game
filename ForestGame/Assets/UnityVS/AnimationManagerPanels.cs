@@ -22,6 +22,14 @@ public class AnimationManagerPanels : MonoBehaviour
     {
     }
 
+    void ShowEventPanel() {
+        eventPanel.SetActive(true);
+    }
+
+    public void HideEventPanel() {
+        eventPanel.SetActive(false);
+    }
+
     public void RemovePanel(string animationType)
     {
         ReverseAnimation();
