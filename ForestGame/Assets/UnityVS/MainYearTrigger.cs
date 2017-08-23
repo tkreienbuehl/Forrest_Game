@@ -40,7 +40,7 @@ public class MainYearTrigger : MonoBehaviour
             if (yearCounter == 4) {
                 // triggers the elections after a certain amount of time
 
-                bool isReelected = content.resultHandler.isReelected();
+                bool isReelected = content.resultHandler.IsReelected();
 
                 // triggers reelected UI based on influence
                 if (isReelected) {
