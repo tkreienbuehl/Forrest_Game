@@ -54,7 +54,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver
                 }
                 if (dec.getActionID() == (short)actionIDs.PROTECT_COSTLINE) {
                     decisionPool.setCostIsprotected(true);
-                    //TODO call the event
+                    calculator.StartProtectEvent();
                 }
                 if (dec.getIsBribe()) {
                     double nr = Random.Range(1.0f, max: 100.0f);
