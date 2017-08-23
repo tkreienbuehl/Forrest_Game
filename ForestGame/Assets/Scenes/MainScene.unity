@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -223,6 +223,46 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d6bb2b5ddea2e640a053f02421937e0, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &136261309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 136261311}
+  - component: {fileID: 136261310}
+  m_Layer: 0
+  m_Name: MainYearTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &136261310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136261309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed2d755a95ddb2e4da1e036bcce075d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &136261311
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136261309}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 121.9616, y: 407.52142, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &140796744
 Prefab:
   m_ObjectHideFlags: 0
@@ -267,6 +307,11 @@ Prefab:
       propertyPath: handler
       value: 
       objectReference: {fileID: 1169346240}
+    - target: {fileID: 114722803374679126, guid: 3b1d11ddf40e3114e821b6c2707c318d,
+        type: 2}
+      propertyPath: resHandler
+      value: 
+      objectReference: {fileID: 1781259589}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b1d11ddf40e3114e821b6c2707c318d, type: 2}
   m_IsPrefabParent: 0
@@ -949,6 +994,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1674704910782538, guid: 1d6bb2b5ddea2e640a053f02421937e0,
     type: 2}
   m_PrefabInternal: {fileID: 113462156}
+--- !u!114 &1781259589 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114440074117657430, guid: 1d6bb2b5ddea2e640a053f02421937e0,
+    type: 2}
+  m_PrefabInternal: {fileID: 113462156}
+  m_Script: {fileID: 11500000, guid: 670657c68eccf1b4d94eeb0ec5b13032, type: 3}
 --- !u!224 &1781259597 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224508855745377528, guid: 1d6bb2b5ddea2e640a053f02421937e0,
