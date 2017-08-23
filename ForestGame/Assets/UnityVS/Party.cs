@@ -14,7 +14,7 @@
             tourism     = 50;
             nature      = 40;
 
-        } else if () { //Tourism
+        } /*else if () { //Tourism
 
             industry = 40;
             tourism = 60;
@@ -26,7 +26,7 @@
             tourism = 50;
             nature = 60;
 
-        }
+        }*/
     }
    
 }
