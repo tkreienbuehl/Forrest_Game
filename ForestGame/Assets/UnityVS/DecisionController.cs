@@ -48,6 +48,8 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
 						SceneManager.LoadScene(11);
                     }
                 }
+                moneyHandler.ChangeMoneyAmount((float)dec.getInfluences().getIncomeInfluence());
+                moneyHandler.ChangeYearlyCostAmount((float)dec.getInfluences().getCostYearlyInfluence());
             }
         }        
         setNewRandomWaitTime();

@@ -13,7 +13,6 @@
         industrialInfluence     = 0;
         environmentalInfluence  = 0;
         touristicInfluence      = 0;
-        Cost                    = 0;
         Cost_Yearly             = 0;
         Income                  = 0;
     }
@@ -42,20 +41,12 @@
         return touristicInfluence;
     }
 
-    public void setCostInfluence(double influence) {
-        Cost = influence;
-    }
-
     public void setCostYearlyInfluence(double influence) {
         Cost_Yearly = influence;
     }
 
     public void setIncomeInfluence(double influence) {
         Income = influence;
-    }
-
-    public double getCostInfluence() {
-        return Cost;
     }
 
     public double getCostYearlyInfluence() {

@@ -15,6 +15,16 @@ public class ResultHandler : MonoBehaviour
     Influences influences;
 
     void Start() {
+
+        Party party = new Party();
+        party.getBasicValue();
+
+        environmental.fillAmount    = party.getNature();
+        industry.fillAmount         = party.getIndustry();
+        tourist.fillAmount          = party.getTourism();
+
+
+
 		influenceEnvironment = environmental.fillAmount * 100;
 		influenceIndustry    = industry.fillAmount * 100;
 		influenceTourism     = tourist.fillAmount * 100;
