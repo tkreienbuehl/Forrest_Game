@@ -215,6 +215,10 @@ Prefab:
       propertyPath: moneyHandler
       value: 
       objectReference: {fileID: 1781259598}
+    - target: {fileID: 1069456785530120, guid: 1d6bb2b5ddea2e640a053f02421937e0, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d6bb2b5ddea2e640a053f02421937e0, type: 2}
   m_IsPrefabParent: 0
