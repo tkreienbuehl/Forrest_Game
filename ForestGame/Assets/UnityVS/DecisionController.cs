@@ -2,7 +2,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
+public class DecisionController : MonoBehaviour, IDecisionPanelObserver
+{
+
+    public GameObject JailGameObject;
 
     private IDecisionPool decisionPool;
     private float delay;
@@ -51,9 +54,9 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
                 }
                 if (dec.getIsBribe()) {
                     double nr = Random.Range(1.0f, max: 100.0f);
-                    if ((int)nr % 4 == 0) {
+                    if ((int)nr % 1 == 0) {
                         // you are busted and go to jail
-						//SceneManager.LoadScene(11);
+						JailGameObject.SetActive(true);
                     }
                 }
                 moneyHandler.ChangeMoneyAmount((float)dec.getInfluences().getIncomeInfluence());
