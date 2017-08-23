@@ -31,4 +31,8 @@ public class MoneyHandler : MonoBehaviour
         yearlyCost += change;
         yearlyCostText.text = "Yearly cost: " + yearlyCost;
     }
+
+    public float getYearlyCosts() {
+        return yearlyCost;
+    }
 }
