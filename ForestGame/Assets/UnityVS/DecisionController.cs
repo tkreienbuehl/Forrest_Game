@@ -18,6 +18,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver
     private bool avoidClearCut;
     public ResultHandler resHandler;
     public MoneyHandler moneyHandler;
+    EventAndDecisionLocker locker;
 
     private enum actionIDs {
         SELECTIVE_CUT = 1,
@@ -28,6 +29,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver
 
     public void setSelectedAnswer(byte answerID) {
         waitingForAnswer = false;
+        locker.unlockAllEvents();
         //TODO use the results
         setNewRandomWaitTime();
     }
@@ -62,7 +64,8 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver
                 moneyHandler.ChangeMoneyAmount((float)dec.getInfluences().getIncomeInfluence());
                 moneyHandler.ChangeYearlyCostAmount(-(float)dec.getInfluences().getCostYearlyInfluence());
             }
-        }        
+        }
+        locker.unlockAllEvents();
         setNewRandomWaitTime();
     }
 
@@ -79,15 +82,17 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver
         content = GameObject.Find("PanelCanvas").gameObject.GetComponent<DecisionPanelContent>();
         decisions = new List<IDecision>();
         content.RegisterObserver(this);
+        locker = EventAndDecisionLocker.getInstance();
         setNewRandomWaitTime();
 	}
 	
 	// Update is called once per frame
 	void Update () {
         actualTimeDelay += Time.deltaTime;
-        if (actualTimeDelay >= delay  && !waitingForAnswer) {
+        if (actualTimeDelay >= delay  && !waitingForAnswer && !locker.getDecisionsLocked()) {
             waitingForAnswer = true;
             decisions.Clear();
+            locker.lockAllEvents();
             if (getSingleDecision()) {
                 IDecision desc = decisionPool.getDecision();
                 decisions.Add(desc);

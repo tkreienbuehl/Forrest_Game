@@ -9,6 +9,7 @@ public class EventController : MonoBehaviour, IEventPanelObserver {
     private float actualTimeDelay;
     private bool waitForAnswer;
     private EventPanelContent content;
+    private EventAndDecisionLocker locker;
 
     public void setSelectedAnswer(byte answerID) {
         //TODO use the results
@@ -33,12 +34,15 @@ public class EventController : MonoBehaviour, IEventPanelObserver {
         content = GameObject.Find("PanelCanvas").gameObject.GetComponent<EventPanelContent>();
         eventPool = EventPoolFactory.getEventPool();
         setNewRandomWaitTime();
+        content.RegisterObserver(this);
+        locker = EventAndDecisionLocker.getInstance();
     }
 
     // Update is called once per frame
     void Update() {
         actualTimeDelay += Time.deltaTime;
-        if (actualTimeDelay >= delay && !waitForAnswer) {
+        if (actualTimeDelay >= delay && !waitForAnswer && !locker.getEventsLocked()) {
+            locker.lockAllDecisions();
             waitForAnswer = true;
             IEvent ievent = eventPool.getEvent();
             content.SetEvent(ievent);
@@ -52,6 +56,7 @@ public class EventController : MonoBehaviour, IEventPanelObserver {
 
     public void setEventCommited() {
         waitForAnswer = false;
+        locker.unlockAllDecisions();
         //TODO give the influences to the bar controller
         setNewRandomWaitTime();
     }
