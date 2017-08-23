@@ -11,6 +11,7 @@ public class DecisionPanelContent : MonoBehaviour
     public IDecisionPanelObserver iDecisionPanelObserver;
     public AnimationManagerPanels animationManagerPanels;
     public ResultHandler resultHandler;
+    public EnvironmentCalculator environmentCalculator;
     public MoneyHandler moneyHandler;
 
     public GameObject panelRightGameObject;
@@ -79,30 +80,33 @@ public class DecisionPanelContent : MonoBehaviour
         if (isRight)
         {
             iDecisionPanelObserver.setSelectedDecision((Int16)decisionIDRight);
-            resultHandler.CalculateEnvironmentalInfluences(rightInfluences.getEnvironmentalInfluence());
+            environmentCalculator.setDecisionValue(rightInfluences.getEnvironmentalInfluence());
+            //resultHandler.CalculateEnvironmentalInfluences(rightInfluences.getEnvironmentalInfluence());
             resultHandler.CalculateIndustrialInfluences(rightInfluences.getIndustrialInfluence());
             resultHandler.CalculateTouristInfluences(rightInfluences.getTouristicalInfluence());
-            moneyHandler.ChangeMoneyAmount((float)rightInfluences.getCostInfluence());
-            moneyHandler.ChangeMoneyAmount((float)rightInfluences.getCostYearlyInfluence());
+            //moneyHandler.ChangeMoneyAmount((float)rightInfluences.getCostInfluence());
+            //moneyHandler.ChangeMoneyAmount((float)rightInfluences.getCostYearlyInfluence());
         }
         else
         {
             iDecisionPanelObserver.setSelectedDecision((Int16)decisionIDLeft);
+            environmentCalculator.setDecisionValue(leftInfluences.getEnvironmentalInfluence());
             resultHandler.CalculateEnvironmentalInfluences(leftInfluences.getEnvironmentalInfluence());
             resultHandler.CalculateIndustrialInfluences(leftInfluences.getIndustrialInfluence());
             resultHandler.CalculateTouristInfluences(leftInfluences.getTouristicalInfluence());
-            moneyHandler.ChangeMoneyAmount((float)leftInfluences.getCostInfluence());
-            moneyHandler.ChangeMoneyAmount((float)leftInfluences.getCostYearlyInfluence());
+            //moneyHandler.ChangeMoneyAmount((float)leftInfluences.getCostInfluence());
+            //moneyHandler.ChangeMoneyAmount((float)leftInfluences.getCostYearlyInfluence());
         }
     }
 
     public void SelectedSingleButton() {
         iDecisionPanelObserver.setSelectedDecision((Int16)decisionIDSingle);
-        resultHandler.CalculateEnvironmentalInfluences(singleInfluences.getEnvironmentalInfluence());
+        environmentCalculator.setDecisionValue(singleInfluences.getEnvironmentalInfluence());
+        //resultHandler.CalculateEnvironmentalInfluences(singleInfluences.getEnvironmentalInfluence());
         resultHandler.CalculateIndustrialInfluences(singleInfluences.getIndustrialInfluence());
         resultHandler.CalculateTouristInfluences(singleInfluences.getTouristicalInfluence());
-        moneyHandler.ChangeMoneyAmount((float)singleInfluences.getCostInfluence());
-        moneyHandler.ChangeMoneyAmount((float)singleInfluences.getCostYearlyInfluence());
+        //moneyHandler.ChangeMoneyAmount((float)singleInfluences.getCostInfluence());
+        //moneyHandler.ChangeMoneyAmount((float)singleInfluences.getCostYearlyInfluence());
     }
 
     public void DeniedDecision()

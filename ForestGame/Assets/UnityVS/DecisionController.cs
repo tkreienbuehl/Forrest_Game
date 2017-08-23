@@ -12,6 +12,9 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     private List<IDecision> decisions;
     private byte speedUpFactor;
     public ClickerEventHandler handler;
+    private bool avoidClearCut;
+    public ResultHandler resHandler;
+    public MoneyHandler moneyHandler;
 
 	private float electionTime = 0;
 
@@ -26,9 +29,18 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
         foreach (IDecision dec in decisions) {
             if (dec.getDecisionID() == decisionID) {
                 if (dec.getActionID() == 1) {
+                    handler.StartClickEvent(CuttingType.SelectiveCut, dec.getNrOfAffectedFields());
+                }
+                if (dec.getActionID() == 2) {
+                    if (avoidClearCut) {
+                        resHandler.CalculateEnvironmentalInfluences(-20);
+                        avoidClearCut = false;
+                    }
                     handler.StartClickEvent(CuttingType.ClearCut, dec.getNrOfAffectedFields());
                 }
-
+                if (dec.getActionID() == 3) {
+                    avoidClearCut = true;
+                }
                 if (dec.getIsBribe()) {
                     double nr = Random.Range(1.0f, max: 100.0f);
                     if ((int)nr % 4 == 0) {
@@ -48,7 +60,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     // Use this for initialization
     void Start () {
         waitingForAnswer = false;
-        speedUpFactor = 1;
+        speedUpFactor = 2;
         decisionPool = DecisionPoolFactory.getDecisionPool();
         content = GameObject.Find("PanelCanvas").gameObject.GetComponent<DecisionPanelContent>();
         decisions = new List<IDecision>();
