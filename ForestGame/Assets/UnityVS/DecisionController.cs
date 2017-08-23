@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
 
@@ -11,6 +12,11 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     private List<IDecision> decisions;
     private byte speedUpFactor;
     public ClickerEventHandler handler;
+    private bool avoidClearCut;
+    public ResultHandler resHandler;
+    public MoneyHandler moneyHandler;
+
+	private float electionTime = 0;
 
     public void setSelectedAnswer(byte answerID) {
         waitingForAnswer = false;
@@ -23,9 +29,18 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
         foreach (IDecision dec in decisions) {
             if (dec.getDecisionID() == decisionID) {
                 if (dec.getActionID() == 1) {
+                    handler.StartClickEvent(CuttingType.SelectiveCut, dec.getNrOfAffectedFields());
+                }
+                if (dec.getActionID() == 2) {
+                    if (avoidClearCut) {
+                        resHandler.CalculateEnvironmentalInfluences(-20);
+                        avoidClearCut = false;
+                    }
                     handler.StartClickEvent(CuttingType.ClearCut, dec.getNrOfAffectedFields());
                 }
-
+                if (dec.getActionID() == 3) {
+                    avoidClearCut = true;
+                }
                 if (dec.getIsBribe()) {
                     double nr = Random.Range(1.0f, max: 100.0f);
                     if ((int)nr % 4 == 0) {
@@ -45,7 +60,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     // Use this for initialization
     void Start () {
         waitingForAnswer = false;
-        speedUpFactor = 1;
+        speedUpFactor = 2;
         decisionPool = DecisionPoolFactory.getDecisionPool();
         content = GameObject.Find("PanelCanvas").gameObject.GetComponent<DecisionPanelContent>();
         decisions = new List<IDecision>();
@@ -55,6 +70,23 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
 	
 	// Update is called once per frame
 	void Update () {
+		
+		// the countdown until the elections
+		electionTime += Time.deltaTime;
+
+		// triggers the elections after a certain amount of time
+		if (electionTime > 30) {
+
+			bool isReelected = content.resultHandler.isReelected();
+
+			// triggers reelected UI based on influence
+			if (isReelected) {
+				SceneManager.LoadScene (9);
+			} else {
+				SceneManager.LoadScene (10);
+			}
+		}
+
         actualTimeDelay += Time.deltaTime;
         if (actualTimeDelay >= delay  && !waitingForAnswer) {
             waitingForAnswer = true;
@@ -70,7 +102,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
                 decisions.Add(pair.getValue());
                 content.SetDecisionPair(pair.getKey(), pair.getValue());
             }
-        }
+		}
 	}
 
     private void setNewRandomWaitTime() {
