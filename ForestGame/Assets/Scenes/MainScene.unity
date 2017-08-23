@@ -352,6 +352,16 @@ Prefab:
       propertyPath: JailGameObject
       value: 
       objectReference: {fileID: 1086344260}
+    - target: {fileID: 114793673300689796, guid: 3b1d11ddf40e3114e821b6c2707c318d,
+        type: 2}
+      propertyPath: calculator
+      value: 
+      objectReference: {fileID: 356060949}
+    - target: {fileID: 114722803374679126, guid: 3b1d11ddf40e3114e821b6c2707c318d,
+        type: 2}
+      propertyPath: calculator
+      value: 
+      objectReference: {fileID: 356060949}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b1d11ddf40e3114e821b6c2707c318d, type: 2}
   m_IsPrefabParent: 0

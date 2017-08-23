@@ -10,6 +10,7 @@ public class EventController : MonoBehaviour, IEventPanelObserver {
     private bool waitForAnswer;
     private EventPanelContent content;
     private EventAndDecisionLocker locker;
+    public EnvironmentCalculator calculator;
 
     public void setSelectedAnswer(byte answerID) {
         //TODO use the results
@@ -56,9 +57,9 @@ public class EventController : MonoBehaviour, IEventPanelObserver {
 
     public void setEventCommited() {
         waitForAnswer = false;
-        locker.unlockAllDecisions();
-        //TODO give the influences to the bar controller
+        calculator.StartForestFire();
         setNewRandomWaitTime();
+        locker.unlockAllDecisions();
     }
 
 

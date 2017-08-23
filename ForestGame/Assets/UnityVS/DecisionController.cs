@@ -19,6 +19,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver
     public ResultHandler resHandler;
     public MoneyHandler moneyHandler;
     EventAndDecisionLocker locker;
+    public EnvironmentCalculator calculator;
 
     private enum actionIDs {
         SELECTIVE_CUT = 1,
@@ -53,10 +54,11 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver
                 }
                 if (dec.getActionID() == (short)actionIDs.PROTECT_COSTLINE) {
                     decisionPool.setCostIsprotected(true);
+                    //TODO call the event
                 }
                 if (dec.getIsBribe()) {
                     double nr = Random.Range(1.0f, max: 100.0f);
-                    if ((int)nr % 1 == 0) {
+                    if ((int)nr % 2 == 0) {
                         // you are busted and go to jail
 						JailGameObject.SetActive(true);
                     }
