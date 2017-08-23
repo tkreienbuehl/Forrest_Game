@@ -60,7 +60,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver
                     }
                 }
                 moneyHandler.ChangeMoneyAmount((float)dec.getInfluences().getIncomeInfluence());
-                moneyHandler.ChangeYearlyCostAmount((float)dec.getInfluences().getCostYearlyInfluence());
+                moneyHandler.ChangeYearlyCostAmount(-(float)dec.getInfluences().getCostYearlyInfluence());
             }
         }        
         setNewRandomWaitTime();

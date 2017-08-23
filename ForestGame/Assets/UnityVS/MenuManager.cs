@@ -29,6 +29,11 @@ public class MenuManager : MonoBehaviour {
 	{
 		StartCoroutine(DelaySceneLoad(4));
 	}
+
+    public void SwitchToGameScene()
+    {
+        SceneManager.LoadScene(5);
+    }
 		
 	public void SwitchToGameSceneMapOverview()
 	{
