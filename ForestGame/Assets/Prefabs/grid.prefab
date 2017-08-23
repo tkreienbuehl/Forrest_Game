@@ -2955,6 +2955,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114065558865311640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3000,6 +3001,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114085154475442094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3087,6 +3089,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114133395054798140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3111,6 +3114,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114137017729916950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3177,6 +3181,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114186971717710252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3222,6 +3227,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114216101819683046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3288,6 +3294,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114278153649696990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3333,6 +3340,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114294331690151366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3399,6 +3407,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114367079006993840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3444,6 +3453,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114398939449871368
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3468,6 +3478,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114411640614988408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3571,6 +3582,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114476796784118738
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3616,6 +3628,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114508536227193098
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3640,6 +3653,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114510760810018894
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3706,6 +3720,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114551162078063036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3730,6 +3745,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114569058127392274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3796,6 +3812,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114616964659206596
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3841,6 +3858,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114656319880748966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3865,6 +3883,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114674328109729180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3889,6 +3908,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114678962312399156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3934,6 +3954,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114691666349789116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4052,6 +4073,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grid: {fileID: 4654571672908158}
   enviromentProgress: {fileID: 0}
+  tilesToProtect:
+  - {fileID: 114749126217600212}
+  - {fileID: 114070596554586068}
+  - {fileID: 114623454106785848}
+  - {fileID: 114115607095089222}
+  - {fileID: 114821378034864012}
 --- !u!114 &114749126217600212
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4076,6 +4103,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114764908647823444
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4100,6 +4128,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114790112542787778
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4124,6 +4153,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114794064589697390
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4148,6 +4178,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114815037785303626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4193,6 +4224,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114821378034864012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4217,6 +4249,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114821834930198822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4262,6 +4295,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114880538078885086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4286,6 +4320,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114886522413705694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4352,6 +4387,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114921737920845336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4397,6 +4433,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114964326020917836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4421,6 +4458,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114986268980630640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4466,6 +4504,7 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}
 --- !u!114 &114998634754030588
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4490,3 +4529,4 @@ MonoBehaviour:
     type: 2}
   fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
   burningTime: 6
+  WWFLogo: {fileID: 2100000, guid: fe166122918c1634e96858ac547080ea, type: 2}

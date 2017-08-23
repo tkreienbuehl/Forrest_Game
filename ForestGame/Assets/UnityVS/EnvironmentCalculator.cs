@@ -22,6 +22,8 @@ public class EnvironmentCalculator : MonoBehaviour
     private float amountOfForest;
     private float decisionValue;
 
+    public ForestTileHandler[] tilesToProtect;
+
 	// Use this for initialization
 	void Start () {
 
@@ -52,7 +54,11 @@ public class EnvironmentCalculator : MonoBehaviour
         {
             StartForestFire();
         }
-	}
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            StartProtectEvent();
+        }
+    }
 
     void CheckTag(string tag)
     {
@@ -100,6 +106,14 @@ public class EnvironmentCalculator : MonoBehaviour
     public void setDecisionValue(int value)
     {
         decisionValue = (float)value / 100f;
+    }
+
+    public void StartProtectEvent()
+    {
+        foreach (ForestTileHandler tile in tilesToProtect)
+        {
+            tile.ChangeToProtectedForest();
+        }
     }
     
     public void StartForestFire()
