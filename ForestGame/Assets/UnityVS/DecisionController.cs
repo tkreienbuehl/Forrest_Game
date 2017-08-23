@@ -16,6 +16,13 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     public ResultHandler resHandler;
     public MoneyHandler moneyHandler;
 
+    private enum actionIDs {
+        SELECTIVE_CUT = 1,
+        CLEAR_CUT = 2,
+        AVOID_CLEAR_CUT = 3,
+        PROTECT_COSTLINE = 4,
+    }
+
 	private float electionTime = 0;
 
     public void setSelectedAnswer(byte answerID) {
@@ -28,18 +35,21 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
         waitingForAnswer = false;
         foreach (IDecision dec in decisions) {
             if (dec.getDecisionID() == decisionID) {
-                if (dec.getActionID() == 1) {
+                if (dec.getActionID() == (short)actionIDs.SELECTIVE_CUT) {
                     handler.StartClickEvent(CuttingType.SelectiveCut, dec.getNrOfAffectedFields());
                 }
-                if (dec.getActionID() == 2) {
+                if (dec.getActionID() == (short)actionIDs.CLEAR_CUT) {
                     if (avoidClearCut) {
                         resHandler.CalculateEnvironmentalInfluences(-20);
                         avoidClearCut = false;
                     }
                     handler.StartClickEvent(CuttingType.ClearCut, dec.getNrOfAffectedFields());
                 }
-                if (dec.getActionID() == 3) {
+                if (dec.getActionID() == (short)actionIDs.AVOID_CLEAR_CUT) {
                     avoidClearCut = true;
+                }
+                if (dec.getActionID() == (short)actionIDs.PROTECT_COSTLINE) {
+                    decisionPool.setCostIsprotected(true);
                 }
                 if (dec.getIsBribe()) {
                     double nr = Random.Range(1.0f, max: 100.0f);
