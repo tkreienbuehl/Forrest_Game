@@ -27,7 +27,7 @@
         influences.setEnvironmentalInfluence(envInfluence);
         influences.setIndustrialInfluence(indInfluence);
         influences.setTouristicalInfluence(touInfluence);
-        influences.setCostInfluence(10000);
+        influences.setIncomeInfluence(10000);
         return influences;
     }
 }

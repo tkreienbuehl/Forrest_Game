@@ -47,6 +47,8 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
                         //TODO set jail event
                     }
                 }
+                moneyHandler.ChangeMoneyAmount((float)dec.getInfluences().getIncomeInfluence());
+                moneyHandler.ChangeYearlyCostAmount((float)dec.getInfluences().getCostYearlyInfluence());
             }
         }        
         setNewRandomWaitTime();
