@@ -1,4 +1,7 @@
-﻿public class Party
+﻿using UnityEngine;
+using UnityEngine.UI;
+
+public class Party : MonoBehaviour
 {
     public static int partyID;
     public static int sloganID;
@@ -16,6 +19,10 @@
 
     public float getNature() {
         return nature;
+    }
+
+    public void setParty(int id) {
+        partyID = id;
     }
 
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -108,12 +108,6 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &8492881 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114315703902205098, guid: 1d6bb2b5ddea2e640a053f02421937e0,
-    type: 2}
-  m_PrefabInternal: {fileID: 113462156}
-  m_Script: {fileID: 11500000, guid: 3e567e7993bec9c44b7820ed8c0dd166, type: 3}
 --- !u!1001 &113462156
 Prefab:
   m_ObjectHideFlags: 0
@@ -270,7 +264,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyHandler: {fileID: 113462160}
-  monthPanel: {fileID: 8492881}
 --- !u!4 &136261311
 Transform:
   m_ObjectHideFlags: 0
