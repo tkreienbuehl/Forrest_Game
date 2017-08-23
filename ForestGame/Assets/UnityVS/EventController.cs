@@ -51,6 +51,7 @@ public class EventController : MonoBehaviour, IEventPanelObserver {
     }
 
     public void setEventCommited() {
+        waitForAnswer = false;
         //TODO give the influences to the bar controller
         setNewRandomWaitTime();
     }
