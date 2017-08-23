@@ -6,6 +6,20 @@
     public static float tourism;
     public static float nature;
 
+    public float getIndustry() {
+        return industry;
+    }
+
+    public float getTourism() {
+        return tourism;
+    }
+
+    public float getNature() {
+        return nature;
+    }
+
+
+
     public void getBasicValue() {
 
         if (partyID == 1) { //industry
@@ -14,19 +28,19 @@
             tourism     = 50;
             nature      = 40;
 
-        } /*else if () { //Tourism
+        } else if (partyID == 2) { //Tourism
 
             industry = 40;
             tourism = 60;
             nature = 50;
 
-        } else if () { //Enviroment
+        } else if (partyID == 3) { //Enviroment
 
             industry = 40;
             tourism = 50;
             nature = 60;
 
-        }*/
+        }
     }
    
 }

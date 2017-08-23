@@ -55,37 +55,68 @@ public class ForestTileHandler : MonoBehaviour {
 
     private void OnMouseDown()
     {
-        if (!ClickerEventHandler.IsClickEventActive || transform.tag == "Clear Cut Forest" || (transform.tag == "Selective Forest" && ClickerEventHandler.currentCuttingType == CuttingType.ClearCut))
+        //if (!ClickerEventHandler.IsClickEventActive || transform.tag == "Clear Cut Forest" || (transform.tag == "Selective Forest" && ClickerEventHandler.currentCuttingType == CuttingType.ClearCut))
+        //{
+        //    return;
+        //}
+
+        //GameObject gameObject;
+
+        //Destroy(transform.GetChild(0).gameObject);
+
+        //if (transform.tag == "Old Forest" || transform.tag == "Managed Forest")
+        //{
+        //    if (ClickerEventHandler.currentCuttingType == CuttingType.SelectiveCut)
+        //    {
+        //        gameObject = Instantiate(selectiveFab, transform.position, transform.rotation);
+        //        transform.tag = "Selective Forest";
+        //    }
+        //    else
+        //    {
+        //        gameObject = Instantiate(clearCutFab, transform.position, transform.rotation);
+        //        transform.tag = "Clear Cut Forest";
+        //    }
+        //}
+        //else
+        //{
+        //    gameObject = Instantiate(clearCutFab, transform.position, transform.rotation);
+        //    transform.tag = "Clear Cut Forest";
+        //}
+
+        //gameObject.transform.SetParent(transform);
+
+        //ClickerEventHandler.amountOfForestCut++;
+
+        if((transform.tag == "Old Forest" || transform.tag == "Managed Forest") && ClickerEventHandler.IsClickEventActive)
         {
-            return;
-        }
+            Destroy(transform.GetChild(0).gameObject);
+            GameObject newForest;
 
-        GameObject gameObject;
-
-        Destroy(transform.GetChild(0).gameObject);
-
-        if (transform.tag == "Old Forest" || transform.tag == "Managed Forest")
-        {
             if (ClickerEventHandler.currentCuttingType == CuttingType.SelectiveCut)
             {
-                gameObject = Instantiate(selectiveFab, transform.position, transform.rotation);
+                newForest = Instantiate(selectiveFab, transform.position, transform.rotation);
                 transform.tag = "Selective Forest";
             }
             else
             {
-                gameObject = Instantiate(clearCutFab, transform.position, transform.rotation);
+                newForest = Instantiate(clearCutFab, transform.position, transform.rotation);
                 transform.tag = "Clear Cut Forest";
             }
+
+            newForest.transform.SetParent(transform);
+            ClickerEventHandler.amountOfForestCut++;
         }
-        else
+        else if(transform.tag == "Selective Forest" && ClickerEventHandler.IsClickEventActive && ClickerEventHandler.currentCuttingType == CuttingType.SelectiveCut)
         {
-            gameObject = Instantiate(clearCutFab, transform.position, transform.rotation);
+            Destroy(transform.GetChild(0).gameObject);
+            GameObject newForest;
+
+            newForest = Instantiate(clearCutFab, transform.position, transform.rotation);
             transform.tag = "Clear Cut Forest";
+
+            newForest.transform.SetParent(transform);
+            ClickerEventHandler.amountOfForestCut++;
         }
-
-        gameObject.transform.SetParent(transform);
-
-        ClickerEventHandler.amountOfForestCut++;
     }
 
     /// <summary>
