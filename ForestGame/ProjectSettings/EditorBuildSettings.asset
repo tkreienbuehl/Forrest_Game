@@ -41,3 +41,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuNotReelected.unity
     guid: 63e83ca769fcedf45a2a186f633a257d
+  - enabled: 1
+    path: Assets/Scenes/MenuJail.unity
+    guid: ef320c9c932c50f4ca69c45f6de2c112
