@@ -19,9 +19,9 @@ public class ResultHandler : MonoBehaviour
         Party party = new Party();
         party.getBasicValue();
 
-        environmental.fillAmount    = party.getNature();
-        industry.fillAmount         = party.getIndustry();
-        tourist.fillAmount          = party.getTourism();
+        environmental.fillAmount    = party.getNature() / 100f;
+        industry.fillAmount         = party.getIndustry() / 100f;
+        tourist.fillAmount          = party.getTourism() / 100f;
 
 
 
