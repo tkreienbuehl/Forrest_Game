@@ -2951,6 +2951,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114065558865311640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2965,10 +2969,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114070596554586068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2989,6 +2995,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114085154475442094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3003,10 +3013,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114099159395120476
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3021,10 +3033,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114104705075153454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3039,10 +3053,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114115607095089222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3063,6 +3079,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114133395054798140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3083,6 +3103,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114137017729916950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3097,10 +3121,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114158505968475826
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3115,10 +3141,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114159150254187712
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3139,6 +3167,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114186971717710252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3153,10 +3185,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114189505366014002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3177,6 +3211,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114216101819683046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3191,10 +3229,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114226301438023606
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3209,10 +3249,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114254423248813190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3233,6 +3275,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114278153649696990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3247,10 +3293,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114287242580580412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3271,6 +3319,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114294331690151366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3285,10 +3337,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114304576545078504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3303,10 +3357,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114341685271688292
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3327,6 +3383,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114367079006993840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3341,10 +3401,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114374175822880760
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3365,6 +3427,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114398939449871368
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3385,6 +3451,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114411640614988408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3399,10 +3469,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114420655226314358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3433,10 +3505,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114444977492727626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3451,10 +3525,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114463887098880218
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3475,6 +3551,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114476796784118738
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3489,10 +3569,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114502401508368138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3513,6 +3595,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114508536227193098
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3533,6 +3619,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114510760810018894
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3547,10 +3637,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114519518357750998
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3565,10 +3657,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114546284444931998
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3589,6 +3683,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114551162078063036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3609,6 +3707,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114569058127392274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3623,10 +3725,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114570996316503270
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3641,10 +3745,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114573161382399462
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3665,6 +3771,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114616964659206596
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3679,10 +3789,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114623454106785848
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3703,6 +3815,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114656319880748966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3723,6 +3839,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114674328109729180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3743,6 +3863,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114678962312399156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3757,10 +3881,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114678990041204820
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3781,6 +3907,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114691666349789116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3795,10 +3925,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114699433987014656
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3813,10 +3945,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114702462721699060
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3831,10 +3965,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114716613194590160
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3849,10 +3985,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114730740136274226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3867,10 +4005,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114739848084617016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3904,6 +4044,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114764908647823444
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3924,6 +4068,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114790112542787778
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3944,6 +4092,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114794064589697390
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3964,6 +4116,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114815037785303626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3978,10 +4134,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114815927364011006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4002,6 +4160,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114821378034864012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4022,6 +4184,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114821834930198822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4036,10 +4202,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114845805522641060
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4060,6 +4228,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114880538078885086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4080,6 +4252,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114886522413705694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4094,10 +4270,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114888503724463330
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4112,10 +4290,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114911431179970244
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4136,6 +4316,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114921737920845336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4150,10 +4334,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114963684241345416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4174,6 +4360,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114964326020917836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4194,6 +4384,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114986268980630640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4208,10 +4402,12 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  treeFabSelective: {fileID: 0}
   timer: 0
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+  burnedTimer: 70
 --- !u!114 &114986545677431376
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4232,6 +4428,10 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
 --- !u!114 &114998634754030588
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4252,3 +4452,7 @@ MonoBehaviour:
   treeFab: {fileID: 1627010775456996, guid: 129e433c43a3d4f42bcf7d16cc2fa2b6, type: 2}
   treeFabManaged: {fileID: 1100048528892374, guid: 83096b84f665d8d4abdd9f45886d9632,
     type: 2}
+  BurnedForest: {fileID: 1374138559863422, guid: 90c6f91bc78053f409cd30f96c1f5102,
+    type: 2}
+  fires: {fileID: 1630699605636550, guid: 26431c7b9a97d194b95a2bf859e4f306, type: 2}
+  burningTime: 6
