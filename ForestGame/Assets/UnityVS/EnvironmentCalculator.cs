@@ -83,7 +83,6 @@ public class EnvironmentCalculator : MonoBehaviour
         value += amountOldForest * oldForestValue;
         value += decisionValue;
 
-        Debug.Log(value);
         return value;
     }
 
