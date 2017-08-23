@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MainYearTrigger : MonoBehaviour {
 
     public MoneyHandler moneyHandler;
     public MonthPanel monthPanel;
+    private DecisionPanelContent content;
     private float deltaYearTime;
     private float deltaMonthTime;
     private const float timeForAYear = 120.0f;
@@ -18,6 +20,7 @@ public class MainYearTrigger : MonoBehaviour {
         deltaYearTime = 0.0f;
         yearCounter = 0;
         monthCounter = 1;
+        content = GameObject.Find("PanelCanvas").gameObject.GetComponent<DecisionPanelContent>();
     }
 
     // Update is called once per frame
@@ -32,7 +35,17 @@ public class MainYearTrigger : MonoBehaviour {
                 //TODO start election campain
             }
             if (yearCounter == 4) {
-                //TODO start election
+                // triggers the elections after a certain amount of time
+
+                bool isReelected = content.resultHandler.isReelected();
+
+                // triggers reelected UI based on influence
+                if (isReelected) {
+                    SceneManager.LoadScene(9);
+                }
+                else {
+                    SceneManager.LoadScene(10);
+                }
                 yearCounter = 0;
             }
             moneyHandler.ChangeMoneyAmount(moneyHandler.getYearlyCosts());

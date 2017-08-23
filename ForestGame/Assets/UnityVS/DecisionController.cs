@@ -23,8 +23,6 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
         PROTECT_COSTLINE = 4,
     }
 
-	private float electionTime = 0;
-
     public void setSelectedAnswer(byte answerID) {
         waitingForAnswer = false;
         //TODO use the results
@@ -55,7 +53,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
                     double nr = Random.Range(1.0f, max: 100.0f);
                     if ((int)nr % 4 == 0) {
                         // you are busted and go to jail
-						SceneManager.LoadScene(11);
+						//SceneManager.LoadScene(11);
                     }
                 }
                 moneyHandler.ChangeMoneyAmount((float)dec.getInfluences().getIncomeInfluence());
@@ -83,23 +81,6 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
 	
 	// Update is called once per frame
 	void Update () {
-		
-		// the countdown until the elections
-		electionTime += Time.deltaTime;
-
-		// triggers the elections after a certain amount of time
-		if (electionTime > 30) {
-
-			bool isReelected = content.resultHandler.isReelected();
-
-			// triggers reelected UI based on influence
-			if (isReelected) {
-				SceneManager.LoadScene (9);
-			} else {
-				SceneManager.LoadScene (10);
-			}
-		}
-
         actualTimeDelay += Time.deltaTime;
         if (actualTimeDelay >= delay  && !waitingForAnswer) {
             waitingForAnswer = true;
