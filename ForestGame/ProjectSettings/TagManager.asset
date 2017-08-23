@@ -8,6 +8,8 @@ TagManager:
   - Managed Forest
   - Selective Forest
   - Clear Cut Forest
+  - Fire
+  - Burned Forest
   layers:
   - Default
   - TransparentFX

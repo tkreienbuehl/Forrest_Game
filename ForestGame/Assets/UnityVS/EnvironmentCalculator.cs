@@ -47,6 +47,11 @@ public class EnvironmentCalculator : MonoBehaviour
 	    }
 
         SetEnvironmentBar(CalculateValue());
+
+        if(Input.GetKeyDown(KeyCode.O))
+        {
+            StartForestFire();
+        }
 	}
 
     void CheckTag(string tag)
@@ -111,6 +116,12 @@ public class EnvironmentCalculator : MonoBehaviour
             }
         }
 
-        possibleBlocks[Random.Range(0, possibleBlocks.Count)].GetComponent<ForestTileHandler>().StartFire();
+        for (int i = 0; i < Random.Range(1, 4); i++)
+        {
+            int forestIndex = Random.Range(0, possibleBlocks.Count);
+            possibleBlocks[forestIndex].GetComponent<ForestTileHandler>().StartFire();
+            possibleBlocks.RemoveAt(forestIndex);
+        }
+        
     }
 }

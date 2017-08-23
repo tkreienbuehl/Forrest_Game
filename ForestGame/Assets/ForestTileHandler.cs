@@ -10,8 +10,12 @@ public class ForestTileHandler : MonoBehaviour {
     public GameObject selectiveFab;
     public GameObject treeFab;
     public GameObject treeFabManaged;
+    public GameObject BurnedForest;
+    public GameObject fires;
 
     public float burningTime = 6f;
+
+    private GameObject currentFire;
 
     public Renderer[] Renderers
 	{
@@ -46,13 +50,11 @@ public class ForestTileHandler : MonoBehaviour {
         }
 
 		_targetColor = GlowColor;
-		enabled = true;
 	}
 
 	private void OnMouseExit()
 	{
         _targetColor = Color.clear;
-		enabled = true;
 	}
 
     private void OnMouseDown()
@@ -77,15 +79,13 @@ public class ForestTileHandler : MonoBehaviour {
             newForest.transform.SetParent(transform);
 
             ClickerEventHandler.amountOfForestCut++;
-        }
-
-        if(transform.tag == "Selective Forest" && ClickerEventHandler.IsClickEventActive && ClickerEventHandler.currentCuttingType == CuttingType.SelectiveCut)
+        } else if(transform.tag == "Selective Forest" && ClickerEventHandler.IsClickEventActive && ClickerEventHandler.currentCuttingType == CuttingType.SelectiveCut)
         {
             GameObject newForest;
             Destroy(transform.GetChild(0).gameObject);
 
-            newForest = Instantiate(selectiveFab, transform.position, transform.rotation);
-            transform.tag = "Selective Forest";
+            newForest = Instantiate(clearCutFab, transform.position, transform.rotation);
+            transform.tag = "Clear Cut Forest";
 
             newForest.transform.SetParent(transform);
 
@@ -98,22 +98,23 @@ public class ForestTileHandler : MonoBehaviour {
     /// </summary>
     private void Update()
 	{
-		_currentColor = Color.Lerp(_currentColor, _targetColor, Time.deltaTime * LerpFactor);
+        if (!_currentColor.Equals(_targetColor))
+        {
+            _currentColor = Color.Lerp(_currentColor, _targetColor, Time.deltaTime * LerpFactor);
 
-		for (int i = 0; i < _materials.Count; i++)
-		{
-			_materials[i].SetColor("_Color", _currentColor);
-		}
-
-		if (_currentColor.Equals(_targetColor))
-		{
-			enabled = false;
-		}        
+            for (int i = 0; i < _materials.Count; i++)
+            {
+                _materials[i].SetColor("_Color", _currentColor);
+            }
+        }
     }
 
     public void StartFire()
     {
+        Destroy(currentFire);
+
         //Instantiate fire
+        currentFire = Instantiate(fires, transform.position, transform.rotation);
 
         Invoke("EndFire", burningTime);
     }
@@ -121,14 +122,15 @@ public class ForestTileHandler : MonoBehaviour {
     private void EndFire()
     {
         //Delete fire
+        Destroy(currentFire);
 
         GameObject newForest;
 
         Destroy(transform.GetChild(0).gameObject);
 
         // Should be burned forest
-        newForest = Instantiate(selectiveFab, transform.position, transform.rotation);
-        transform.tag = "Selective Forest";
+        newForest = Instantiate(BurnedForest, transform.position, transform.rotation);
+        transform.tag = "Burned Forest";
 
         newForest.transform.SetParent(transform);
     }

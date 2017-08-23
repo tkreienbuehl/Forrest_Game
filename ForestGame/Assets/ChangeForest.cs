@@ -6,8 +6,9 @@ public class ChangeForest : MonoBehaviour {
 
     public GameObject treeFab;
     public GameObject treeFabManaged;
+    public GameObject treeFabSelective;
     public float timer;
-    public float selectiveTime = 12.0f, managedTime = 20.0f, clearCutTime = 10.0f;
+    public float selectiveTime = 12.0f, managedTime = 20.0f, clearCutTime = 10.0f, burnedTimer = 8f;
 
     // Use this for initialization
     void Start () {
@@ -23,6 +24,10 @@ public class ChangeForest : MonoBehaviour {
         else if (transform.tag == "Clear Cut Forest")
         {
             timer = clearCutTime;
+        }
+        else if (transform.tag == "Burned Forest")
+        {
+            timer = burnedTimer;
         }
     }
 
@@ -69,6 +74,16 @@ public class ChangeForest : MonoBehaviour {
                 gameObject.transform.SetParent(transform);
                 go.transform.tag = "Old Forest";
                 timer = managedTime;
+
+            }
+
+            else if (go.transform.tag == "Burned Forest")
+            {
+                Destroy(go.transform.GetChild(0).gameObject);
+                gameObject = Instantiate(treeFabSelective, go.transform.position, go.transform.rotation);
+                gameObject.transform.SetParent(transform);
+                go.transform.tag = "Selective Forest";
+                timer = selectiveTime;
 
             }
         }
