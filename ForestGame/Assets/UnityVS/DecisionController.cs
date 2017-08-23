@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
 
@@ -11,6 +12,8 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     private List<IDecision> decisions;
     private byte speedUpFactor;
     public ClickerEventHandler handler;
+
+	private float electionTime = 0;
 
     public void setSelectedAnswer(byte answerID) {
         waitingForAnswer = false;
@@ -55,6 +58,23 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
 	
 	// Update is called once per frame
 	void Update () {
+		
+		// the countdown until the elections
+		electionTime += Time.deltaTime;
+
+		// triggers the elections after a certain amount of time
+		if (electionTime > 30) {
+
+			bool isReelected = content.resultHandler.isReelected();
+
+			// triggers reelected UI based on influence
+			if (isReelected) {
+				SceneManager.LoadScene (9);
+			} else {
+				SceneManager.LoadScene (10);
+			}
+		}
+
         actualTimeDelay += Time.deltaTime;
         if (actualTimeDelay >= delay  && !waitingForAnswer) {
             waitingForAnswer = true;
@@ -70,7 +90,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
                 decisions.Add(pair.getValue());
                 content.SetDecisionPair(pair.getKey(), pair.getValue());
             }
-        }
+		}
 	}
 
     private void setNewRandomWaitTime() {
