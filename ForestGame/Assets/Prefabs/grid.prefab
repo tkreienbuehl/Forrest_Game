@@ -280,6 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4654571672908158}
   - component: {fileID: 114420655226314358}
+  - component: {fileID: 114739848084617016}
   m_Layer: 0
   m_Name: grid
   m_TagString: Untagged
@@ -3870,6 +3871,19 @@ MonoBehaviour:
   selectiveTime: 100
   managedTime: 150
   clearCutTime: 90
+--- !u!114 &114739848084617016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1541819334129860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7a0c40f6cf177469e2966590447d17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 4654571672908158}
+  enviromentProgress: {fileID: 0}
 --- !u!114 &114749126217600212
 MonoBehaviour:
   m_ObjectHideFlags: 1
