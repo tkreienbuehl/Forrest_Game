@@ -15,32 +15,27 @@ public class ForestTileHandler : MonoBehaviour {
 
     public float burningTime = 6f;
 
+    public Material WWFLogo;
+    private bool isProtectedForest;
+
     private GameObject currentFire;
 
-    public Renderer[] Renderers
-	{
-		get;
-		private set;
-	}
 
 	public Color CurrentColor
 	{
 		get { return _currentColor; }
 	}
 
-	private List<Material> _materials = new List<Material>();
+
 	private Color _currentColor;
 	private Color _targetColor;
 
-	void Start()
-	{
-		Renderers = GetComponentsInChildren<Renderer>();
 
-		foreach (var renderer in Renderers)
-		{	
-			_materials.AddRange(renderer.materials);
-		}
-	}
+    public void ChangeToProtectedForest()
+    {
+        isProtectedForest = true;
+        GetComponent<MeshRenderer>().material = WWFLogo;
+    }
 
 	private void OnMouseEnter()
 	{
@@ -59,6 +54,8 @@ public class ForestTileHandler : MonoBehaviour {
 
     private void OnMouseDown()
     {
+        if (isProtectedForest)
+            return;
 
         if ((transform.tag == "Old Forest" || transform.tag == "Managed Forest") && ClickerEventHandler.IsClickEventActive)
         {
@@ -102,10 +99,7 @@ public class ForestTileHandler : MonoBehaviour {
         {
             _currentColor = Color.Lerp(_currentColor, _targetColor, Time.deltaTime * LerpFactor);
 
-            for (int i = 0; i < _materials.Count; i++)
-            {
-                _materials[i].SetColor("_Color", _currentColor);
-            }
+            GetComponent<MeshRenderer>().material.SetColor("_Color", _currentColor);
         }
     }
 
