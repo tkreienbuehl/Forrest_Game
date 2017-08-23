@@ -13,6 +13,7 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     public ClickerEventHandler handler;
     private bool avoidClearCut;
     public ResultHandler resHandler;
+    public MoneyHandler moneyHandler;
 
     public void setSelectedAnswer(byte answerID) {
         waitingForAnswer = false;

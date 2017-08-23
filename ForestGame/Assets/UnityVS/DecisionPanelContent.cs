@@ -82,8 +82,8 @@ public class DecisionPanelContent : MonoBehaviour
             resultHandler.CalculateEnvironmentalInfluences(rightInfluences.getEnvironmentalInfluence());
             resultHandler.CalculateIndustrialInfluences(rightInfluences.getIndustrialInfluence());
             resultHandler.CalculateTouristInfluences(rightInfluences.getTouristicalInfluence());
-            moneyHandler.ChangeMoneyAmount((float)rightInfluences.getCostInfluence());
-            moneyHandler.ChangeMoneyAmount((float)rightInfluences.getCostYearlyInfluence());
+            //moneyHandler.ChangeMoneyAmount((float)rightInfluences.getCostInfluence());
+            //moneyHandler.ChangeMoneyAmount((float)rightInfluences.getCostYearlyInfluence());
         }
         else
         {
@@ -91,8 +91,8 @@ public class DecisionPanelContent : MonoBehaviour
             resultHandler.CalculateEnvironmentalInfluences(leftInfluences.getEnvironmentalInfluence());
             resultHandler.CalculateIndustrialInfluences(leftInfluences.getIndustrialInfluence());
             resultHandler.CalculateTouristInfluences(leftInfluences.getTouristicalInfluence());
-            moneyHandler.ChangeMoneyAmount((float)leftInfluences.getCostInfluence());
-            moneyHandler.ChangeMoneyAmount((float)leftInfluences.getCostYearlyInfluence());
+            //moneyHandler.ChangeMoneyAmount((float)leftInfluences.getCostInfluence());
+            //moneyHandler.ChangeMoneyAmount((float)leftInfluences.getCostYearlyInfluence());
         }
     }
 
@@ -101,8 +101,8 @@ public class DecisionPanelContent : MonoBehaviour
         resultHandler.CalculateEnvironmentalInfluences(singleInfluences.getEnvironmentalInfluence());
         resultHandler.CalculateIndustrialInfluences(singleInfluences.getIndustrialInfluence());
         resultHandler.CalculateTouristInfluences(singleInfluences.getTouristicalInfluence());
-        moneyHandler.ChangeMoneyAmount((float)singleInfluences.getCostInfluence());
-        moneyHandler.ChangeMoneyAmount((float)singleInfluences.getCostYearlyInfluence());
+        //moneyHandler.ChangeMoneyAmount((float)singleInfluences.getCostInfluence());
+        //moneyHandler.ChangeMoneyAmount((float)singleInfluences.getCostYearlyInfluence());
     }
 
     public void DeniedDecision()
