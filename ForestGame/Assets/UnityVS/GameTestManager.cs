@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/**
+ * Test class to run the scene in a short amount of time.
+ **/
+
 public class GameTestManager : MonoBehaviour {
 
 	public float time = 0;
