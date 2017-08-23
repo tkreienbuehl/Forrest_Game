@@ -2,7 +2,10 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class MainYearTrigger : MonoBehaviour {
+public class MainYearTrigger : MonoBehaviour
+{
+
+    public GameObject reelectGameObject;
 
     public MoneyHandler moneyHandler;
     public MonthPanel monthPanel;
@@ -10,7 +13,7 @@ public class MainYearTrigger : MonoBehaviour {
     private float deltaYearTime;
     private float deltaMonthTime;
     private const float timeForAYear = 120.0f;
-    private const float timeForAMonth = timeForAYear / 12.0f;
+    private const float timeForAMonth = timeForAYear / 12f;
     private short yearCounter;
     private int monthCounter;
 
@@ -41,7 +44,8 @@ public class MainYearTrigger : MonoBehaviour {
 
                 // triggers reelected UI based on influence
                 if (isReelected) {
-                    SceneManager.LoadScene(9);
+
+                    reelectGameObject.SetActive(true);
                 }
                 else {
                     SceneManager.LoadScene(10);

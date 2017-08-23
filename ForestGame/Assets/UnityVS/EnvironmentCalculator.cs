@@ -96,5 +96,21 @@ public class EnvironmentCalculator : MonoBehaviour
     {
         decisionValue = (float)value / 100f;
     }
+    
+    public void StartForestFire()
+    {
+        List<GameObject> possibleBlocks = new List<GameObject>();
 
+        foreach (GameObject forestBlock in forestBlocks)
+        {
+            if(forestBlock.tag == "Old Forest" || forestBlock.tag == "Managed Forest")
+            {
+
+                possibleBlocks.Add(forestBlock);
+
+            }
+        }
+
+        possibleBlocks[Random.Range(0, possibleBlocks.Count)].GetComponent<ForestTileHandler>().StartFire();
+    }
 }
