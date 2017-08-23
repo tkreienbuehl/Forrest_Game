@@ -9,6 +9,9 @@ public class Party : MonoBehaviour
     public static float tourism;
     public static float nature;
 
+	private string party_name;
+	private string slogan;
+
     public float getIndustry() {
         return industry;
     }
@@ -25,7 +28,28 @@ public class Party : MonoBehaviour
         partyID = id;
     }
 
+	public void SetSlogan(string input){
+		slogan = input;
+	}
 
+	public string GetSlogan(){
+		return slogan;
+	}
+
+	public string GetPartyName(){
+		
+		string name = "";
+
+		// checks which party the id belongs to
+		if (partyID == 1) {
+			name = "Conservative party";
+		} else if (partyID == 2) {
+			name = "Democratic party";
+		} else if (partyID == 3) {
+			name = "Environment party";
+		}
+		return name;
+	}
 
     public void getBasicValue() {
 

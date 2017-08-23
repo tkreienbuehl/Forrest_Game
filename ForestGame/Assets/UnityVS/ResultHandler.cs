@@ -4,26 +4,29 @@ using System;
 
 public class ResultHandler : MonoBehaviour
 {
+	// the progress bars
     public Image environmental;
     public Image industry;
     public Image tourist;
 
+	// the percentages of influence
 	private float influenceEnvironment;
 	private float influenceIndustry;
 	private float influenceTourism;
 
     Influences influences;
 
+	// the party values
+	private Party party;
+
     void Start() {
 
-        Party party = new Party();
+        party = new Party();
         party.getBasicValue();
 
-        environmental.fillAmount    = party.getNature() / 100f;
-        industry.fillAmount         = party.getIndustry() / 100f;
-        tourist.fillAmount          = party.getTourism() / 100f;
-
-
+        environmental.fillAmount = party.getNature() / 100f;
+        industry.fillAmount      = party.getIndustry() / 100f;
+        tourist.fillAmount       = party.getTourism() / 100f;
 
 		influenceEnvironment = environmental.fillAmount * 100;
 		influenceIndustry    = industry.fillAmount * 100;
@@ -35,7 +38,19 @@ public class ResultHandler : MonoBehaviour
         
     }
 
-	public bool isReelected(){
+	public float GetInfluenceEnvironment(){
+		return influenceEnvironment;
+	}
+
+	public float GetInfluenceIndustry(){
+		return influenceIndustry;
+	}
+
+	public float GetInfluenceTourism(){
+		return influenceTourism;
+	}
+
+	public bool IsReelected(){
 		
 		bool reelected = false;
 
@@ -65,10 +80,15 @@ public class ResultHandler : MonoBehaviour
         tourist.fillAmount += influences / 100f;
     }
 
-	public void DebugResults(){
+	public void DebugResultsInfluence(){
 		Debug.Log (influenceEnvironment.ToString());
 		Debug.Log (influenceIndustry.ToString());
 		Debug.Log (influenceTourism.ToString());
+	}
+
+	public void DebugResultsParty(Party party){
+		Debug.Log (party.GetPartyName());
+		Debug.Log (party.GetSlogan());
 	}
 
 }
