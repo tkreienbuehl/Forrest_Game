@@ -2,7 +2,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
+public class DecisionController : MonoBehaviour, IDecisionPanelObserver
+{
+
+    public GameObject JailGameObject;
 
     private IDecisionPool decisionPool;
     private float delay;
@@ -16,7 +19,12 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
     public ResultHandler resHandler;
     public MoneyHandler moneyHandler;
 
-	private float electionTime = 0;
+    private enum actionIDs {
+        SELECTIVE_CUT = 1,
+        CLEAR_CUT = 2,
+        AVOID_CLEAR_CUT = 3,
+        PROTECT_COSTLINE = 4,
+    }
 
     public void setSelectedAnswer(byte answerID) {
         waitingForAnswer = false;
@@ -28,24 +36,27 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
         waitingForAnswer = false;
         foreach (IDecision dec in decisions) {
             if (dec.getDecisionID() == decisionID) {
-                if (dec.getActionID() == 1) {
+                if (dec.getActionID() == (short)actionIDs.SELECTIVE_CUT) {
                     handler.StartClickEvent(CuttingType.SelectiveCut, dec.getNrOfAffectedFields());
                 }
-                if (dec.getActionID() == 2) {
+                if (dec.getActionID() == (short)actionIDs.CLEAR_CUT) {
                     if (avoidClearCut) {
                         resHandler.CalculateEnvironmentalInfluences(-20);
                         avoidClearCut = false;
                     }
                     handler.StartClickEvent(CuttingType.ClearCut, dec.getNrOfAffectedFields());
                 }
-                if (dec.getActionID() == 3) {
+                if (dec.getActionID() == (short)actionIDs.AVOID_CLEAR_CUT) {
                     avoidClearCut = true;
+                }
+                if (dec.getActionID() == (short)actionIDs.PROTECT_COSTLINE) {
+                    decisionPool.setCostIsprotected(true);
                 }
                 if (dec.getIsBribe()) {
                     double nr = Random.Range(1.0f, max: 100.0f);
-                    if ((int)nr % 4 == 0) {
+                    if ((int)nr % 1 == 0) {
                         // you are busted and go to jail
-						SceneManager.LoadScene(11);
+						JailGameObject.SetActive(true);
                     }
                 }
                 moneyHandler.ChangeMoneyAmount((float)dec.getInfluences().getIncomeInfluence());
@@ -73,23 +84,6 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
 	
 	// Update is called once per frame
 	void Update () {
-		
-		// the countdown until the elections
-		electionTime += Time.deltaTime;
-
-		// triggers the elections after a certain amount of time
-		if (electionTime > 30) {
-
-			bool isReelected = content.resultHandler.isReelected();
-
-			// triggers reelected UI based on influence
-			if (isReelected) {
-				SceneManager.LoadScene (9);
-			} else {
-				SceneManager.LoadScene (10);
-			}
-		}
-
         actualTimeDelay += Time.deltaTime;
         if (actualTimeDelay >= delay  && !waitingForAnswer) {
             waitingForAnswer = true;

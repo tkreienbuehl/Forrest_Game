@@ -4,4 +4,6 @@
 
     IDecision getDecision();
 
+    void setCostIsprotected(bool isProtected);
+
 }

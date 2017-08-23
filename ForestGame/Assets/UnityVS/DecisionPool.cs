@@ -9,10 +9,16 @@ public class DecisionPool : IDecisionPool {
     private static IDictionary decisions = new Dictionary<int, int>();
     private Database db;
     private static bool useStub = false;
+    private bool costIsProtected;
+    private const int COST_IS_PROTECTED = 4;
 
     public DecisionPool() {
         //instance of db class.
         db = new Database();
+    }
+
+    public void setCostIsprotected(bool isProtected) {
+        costIsProtected = isProtected;
     }
 
     private int SelectRandomID(bool pairDecisionAsked) {
@@ -71,6 +77,11 @@ public class DecisionPool : IDecisionPool {
         }
         else {
             int requestID = SelectRandomID(true);
+            if (costIsProtected) {
+                while (requestID == COST_IS_PROTECTED) {
+                    requestID = SelectRandomID(true);
+                }
+            }
             IDecision desc1 = db.get_descision(requestID);
             IDecision desc2 = db.get_descision(db.getOpponentID(requestID));
             return new Pair<IDecision, IDecision>(desc1, desc2);

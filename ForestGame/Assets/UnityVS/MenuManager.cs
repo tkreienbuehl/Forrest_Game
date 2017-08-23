@@ -32,7 +32,7 @@ public class MenuManager : MonoBehaviour {
 		
 	public void SwitchToGameSceneMapOverview()
 	{
-		SceneManager.LoadScene (5);
+		gameObject.SetActive(false);
 	}
 
 	public void SwitchToGameSceneResults()

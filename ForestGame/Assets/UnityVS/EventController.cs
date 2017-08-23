@@ -46,11 +46,12 @@ public class EventController : MonoBehaviour, IEventPanelObserver {
     }
 
     private void setNewRandomWaitTime() {
-        delay = Random.Range(100f, max: 300f);
+        delay = Random.Range(40.0f, max: 75.0f);
         actualTimeDelay = 0.0f;
     }
 
     public void setEventCommited() {
+        waitForAnswer = false;
         //TODO give the influences to the bar controller
         setNewRandomWaitTime();
     }
