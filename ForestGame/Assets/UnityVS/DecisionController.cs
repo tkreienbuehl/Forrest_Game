@@ -54,7 +54,8 @@ public class DecisionController : MonoBehaviour, IDecisionPanelObserver {
                 if (dec.getIsBribe()) {
                     double nr = Random.Range(1.0f, max: 100.0f);
                     if ((int)nr % 4 == 0) {
-                        //TODO set jail event
+                        // you are busted and go to jail
+						SceneManager.LoadScene(11);
                     }
                 }
                 moneyHandler.ChangeMoneyAmount((float)dec.getInfluences().getIncomeInfluence());
