@@ -36,7 +36,7 @@ public class DecisionPool : IDecisionPool {
             if (decisions.Contains(extractNumber)) {
 
                 int amount = Convert.ToInt32(decisions[extractNumber]);
-                if (amount == 10) {
+                if (amount == 4) {
 
                     //can reuse the decision.
                     amount = 1;
